@@ -1,0 +1,268 @@
+INFO main com.techfocus.util.AutoDetector - 开始加载资源
+INFO main com.techfocus.util.AutoDetector - E:\1\config.txt
+INFO main com.techfocus.util.AutoDetector - 加载资源：E:\1\config.txt
+INFO main com.techfocus.util.AutoDetector - 加载资源：E:\test\1.txt
+INFO main com.techfocus.util.AutoDetector - 加载资源：E:\test\2.txt
+INFO main com.techfocus.util.AutoDetector - 加载资源：E:\test\56\265.txt
+INFO main com.techfocus.util.AutoDetector - 加载资源：E:\test\sd.txt
+INFO main com.techfocus.util.AutoDetector - 加载资源：E:\test\test.apk
+INFO main com.techfocus.util.AutoDetector - 加载资源：E:\test\XMind 7 Pro.lnk
+INFO main com.techfocus.util.DirectoryWatcher - 注册事件：ENTRY_CREATE
+INFO main com.techfocus.util.DirectoryWatcher - 注册事件：ENTRY_MODIFY
+INFO main com.techfocus.util.DirectoryWatcher - 监控目录:E:\test
+INFO main com.techfocus.util.DirectoryWatcher - 监控目录:E:\test\56
+INFO main com.techfocus.util.AutoDetector - 加载资源：E:\test1\testapk.apk
+INFO main com.techfocus.util.DirectoryWatcher - 注册事件：ENTRY_CREATE
+INFO main com.techfocus.util.DirectoryWatcher - 注册事件：ENTRY_MODIFY
+INFO main com.techfocus.util.DirectoryWatcher - 监控目录:E:\test1
+INFO main com.techfocus.util.AutoDetector - 监控文件：E:\1\config.txt
+INFO main com.techfocus.util.DirectoryWatcher - 注册事件：ENTRY_MODIFY
+INFO main com.techfocus.util.DirectoryWatcher - 注册事件：ENTRY_DELETE
+INFO main com.techfocus.util.DirectoryWatcher - 监控目录:E:\1
+INFO main com.techfocus.util.AutoDetector - 加载资源 0 行
+INFO main com.techfocus.util.AutoDetector - 完成加载资源，耗时31 毫秒
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - contextPath:testapk.apk
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - directoryPath:E:\test
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - absolutePath:E:\test\testapk.apk
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - kind:ENTRY_CREATE
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - 新增文件：E:\test\testapk.apk
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 重新加载数据
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 开始加载资源
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - E:\1\config.txt
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\1\config.txt
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test\1.txt
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test\2.txt
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test\56\265.txt
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test\sd.txt
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test\test.apk
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test\testapk.apk
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test\XMind 7 Pro.lnk
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test1\testapk.apk
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源 0 行
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 完成加载资源，耗时0 毫秒
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - contextPath:testapk.apk
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - directoryPath:E:\test
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - absolutePath:E:\test\testapk.apk
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - kind:ENTRY_MODIFY
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - 修改：E:\test\testapk.apk
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - contextPath:testapk.apk
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - directoryPath:E:\test\56
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - absolutePath:E:\test\56\testapk.apk
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - kind:ENTRY_CREATE
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - 新增文件：E:\test\56\testapk.apk
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 重新加载数据
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 开始加载资源
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - E:\1\config.txt
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\1\config.txt
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test\1.txt
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test\2.txt
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test\56\265.txt
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test\56\testapk.apk
+ERROR pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源失败：E:\test\56\testapk.apk
+java.io.FileNotFoundException: E:\test\56\testapk.apk (另一个程序正在使用此文件，进程无法访问。)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.techfocus.util.AutoDetector.load(AutoDetector.java:189)
+	at com.techfocus.util.AutoDetector.access$0(AutoDetector.java:181)
+	at com.techfocus.util.AutoDetector$1.visitFile(AutoDetector.java:126)
+	at com.techfocus.util.AutoDetector$1.visitFile(AutoDetector.java:1)
+	at java.nio.file.Files.walkFileTree(Files.java:2670)
+	at java.nio.file.Files.walkFileTree(Files.java:2742)
+	at com.techfocus.util.AutoDetector.loadAndWatchDir(AutoDetector.java:122)
+	at com.techfocus.util.AutoDetector.loadResource(AutoDetector.java:97)
+	at com.techfocus.util.AutoDetector.loadAndWatch(AutoDetector.java:61)
+	at com.techfocus.util.AutoDetector$2.execute(AutoDetector.java:159)
+	at com.techfocus.util.DirectoryWatcher.watch(DirectoryWatcher.java:155)
+	at com.techfocus.util.DirectoryWatcher.access$0(DirectoryWatcher.java:112)
+	at com.techfocus.util.DirectoryWatcher$1.run(DirectoryWatcher.java:64)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test\sd.txt
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test\test.apk
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test\testapk.apk
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test\XMind 7 Pro.lnk
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test1\testapk.apk
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源 0 行
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 完成加载资源，耗时16 毫秒
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - contextPath:56
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - directoryPath:E:\test
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - absolutePath:E:\test\56
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - kind:ENTRY_MODIFY
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - 修改：E:\test\56
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - contextPath:testapk.apk
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - directoryPath:E:\test\56
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - absolutePath:E:\test\56\testapk.apk
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - kind:ENTRY_MODIFY
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - 修改：E:\test\56\testapk.apk
+INFO main com.techfocus.util.AutoDetector - 开始加载资源
+INFO main com.techfocus.util.AutoDetector - E:\1\config.txt
+INFO main com.techfocus.util.AutoDetector - 加载资源：E:\1\config.txt
+INFO main com.techfocus.util.AutoDetector - 加载资源：E:\test\1.txt
+INFO main com.techfocus.util.AutoDetector - 加载资源：E:\test\2.txt
+INFO main com.techfocus.util.AutoDetector - 加载资源：E:\test\56\265.txt
+INFO main com.techfocus.util.AutoDetector - 加载资源：E:\test\56\testapk.apk
+INFO main com.techfocus.util.AutoDetector - 加载资源：E:\test\sd.txt
+INFO main com.techfocus.util.AutoDetector - 加载资源：E:\test\test.apk
+INFO main com.techfocus.util.AutoDetector - 加载资源：E:\test\testapk.apk
+INFO main com.techfocus.util.AutoDetector - 加载资源：E:\test\XMind 7 Pro.lnk
+INFO main com.techfocus.util.DirectoryWatcher - 注册事件：ENTRY_CREATE
+INFO main com.techfocus.util.DirectoryWatcher - 注册事件：ENTRY_MODIFY
+INFO main com.techfocus.util.DirectoryWatcher - 监控目录:E:\test
+INFO main com.techfocus.util.DirectoryWatcher - 监控目录:E:\test\56
+INFO main com.techfocus.util.AutoDetector - 加载资源：E:\test1\in.apk
+INFO main com.techfocus.util.AutoDetector - 加载资源：E:\test1\testapk.apk
+INFO main com.techfocus.util.DirectoryWatcher - 注册事件：ENTRY_CREATE
+INFO main com.techfocus.util.DirectoryWatcher - 注册事件：ENTRY_MODIFY
+INFO main com.techfocus.util.DirectoryWatcher - 监控目录:E:\test1
+INFO main com.techfocus.util.AutoDetector - 监控文件：E:\1\config.txt
+INFO main com.techfocus.util.DirectoryWatcher - 注册事件：ENTRY_MODIFY
+INFO main com.techfocus.util.DirectoryWatcher - 注册事件：ENTRY_DELETE
+INFO main com.techfocus.util.DirectoryWatcher - 监控目录:E:\1
+INFO main com.techfocus.util.AutoDetector - 加载资源 0 行
+INFO main com.techfocus.util.AutoDetector - 完成加载资源，耗时28 毫秒
+INFO pool-1-thread-2 com.techfocus.util.DirectoryWatcher - contextPath:新建文本文档.txt
+INFO pool-1-thread-2 com.techfocus.util.DirectoryWatcher - directoryPath:E:\test1
+INFO pool-1-thread-2 com.techfocus.util.DirectoryWatcher - absolutePath:E:\test1\新建文本文档.txt
+INFO pool-1-thread-2 com.techfocus.util.DirectoryWatcher - kind:ENTRY_CREATE
+INFO pool-1-thread-2 com.techfocus.util.DirectoryWatcher - 新增文件：E:\test1\新建文本文档.txt
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - 重新加载数据
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - 开始加载资源
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - E:\1\config.txt
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - 加载资源：E:\1\config.txt
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - 加载资源：E:\test\1.txt
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - 加载资源：E:\test\2.txt
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - 加载资源：E:\test\56\265.txt
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - 加载资源：E:\test\56\testapk.apk
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - 加载资源：E:\test\sd.txt
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - 加载资源：E:\test\test.apk
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - 加载资源：E:\test\testapk.apk
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - 加载资源：E:\test\XMind 7 Pro.lnk
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - 加载资源：E:\test1\in.apk
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - 加载资源：E:\test1\testapk.apk
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - 加载资源：E:\test1\新建文本文档.txt
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - 加载资源 0 行
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - 完成加载资源，耗时5 毫秒
+INFO pool-1-thread-2 com.techfocus.util.DirectoryWatcher - contextPath:out.apk
+INFO pool-1-thread-2 com.techfocus.util.DirectoryWatcher - directoryPath:E:\test1
+INFO pool-1-thread-2 com.techfocus.util.DirectoryWatcher - absolutePath:E:\test1\out.apk
+INFO pool-1-thread-2 com.techfocus.util.DirectoryWatcher - kind:ENTRY_CREATE
+INFO pool-1-thread-2 com.techfocus.util.DirectoryWatcher - 新增文件：E:\test1\out.apk
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - 重新加载数据
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - 开始加载资源
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - E:\1\config.txt
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - 加载资源：E:\1\config.txt
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - 加载资源：E:\test\1.txt
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - 加载资源：E:\test\2.txt
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - 加载资源：E:\test\56\265.txt
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - 加载资源：E:\test\56\testapk.apk
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - 加载资源：E:\test\sd.txt
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - 加载资源：E:\test\test.apk
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - 加载资源：E:\test\testapk.apk
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - 加载资源：E:\test\XMind 7 Pro.lnk
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - 加载资源：E:\test1\in.apk
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - 加载资源：E:\test1\out.apk
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - 加载资源：E:\test1\testapk.apk
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - 加载资源 0 行
+INFO pool-1-thread-2 com.techfocus.util.AutoDetector - 完成加载资源，耗时5 毫秒
+INFO pool-1-thread-2 com.techfocus.util.DirectoryWatcher - contextPath:out.apk
+INFO pool-1-thread-2 com.techfocus.util.DirectoryWatcher - directoryPath:E:\test1
+INFO pool-1-thread-2 com.techfocus.util.DirectoryWatcher - absolutePath:E:\test1\out.apk
+INFO pool-1-thread-2 com.techfocus.util.DirectoryWatcher - kind:ENTRY_MODIFY
+INFO pool-1-thread-2 com.techfocus.util.DirectoryWatcher - 修改：E:\test1\out.apk
+INFO main com.techfocus.util.AutoDetector - 开始加载资源
+INFO main com.techfocus.util.AutoDetector - E:\1\config.txt
+INFO main com.techfocus.util.AutoDetector - 加载资源：E:\1\config.txt
+INFO main com.techfocus.util.AutoDetector - 加载资源：E:\test\1.txt
+INFO main com.techfocus.util.AutoDetector - 加载资源：E:\test\2.txt
+INFO main com.techfocus.util.AutoDetector - 加载资源：E:\test\56\265.txt
+INFO main com.techfocus.util.AutoDetector - 加载资源：E:\test\56\testapk.apk
+INFO main com.techfocus.util.AutoDetector - 加载资源：E:\test\sd.txt
+INFO main com.techfocus.util.AutoDetector - 加载资源：E:\test\test.apk
+INFO main com.techfocus.util.AutoDetector - 加载资源：E:\test\testapk.apk
+INFO main com.techfocus.util.AutoDetector - 加载资源：E:\test\XMind 7 Pro.lnk
+INFO main com.techfocus.util.DirectoryWatcher - 注册事件：ENTRY_CREATE
+INFO main com.techfocus.util.DirectoryWatcher - 注册事件：ENTRY_MODIFY
+INFO main com.techfocus.util.DirectoryWatcher - 监控目录:E:\test
+INFO main com.techfocus.util.DirectoryWatcher - 监控目录:E:\test\56
+INFO main com.techfocus.util.AutoDetector - 加载资源：E:\test1\in.apk
+INFO main com.techfocus.util.AutoDetector - 加载资源：E:\test1\out.apk
+INFO main com.techfocus.util.AutoDetector - 加载资源：E:\test1\testapk.apk
+INFO main com.techfocus.util.DirectoryWatcher - 注册事件：ENTRY_CREATE
+INFO main com.techfocus.util.DirectoryWatcher - 注册事件：ENTRY_MODIFY
+INFO main com.techfocus.util.DirectoryWatcher - 监控目录:E:\test1
+INFO main com.techfocus.util.AutoDetector - 监控文件：E:\1\config.txt
+INFO main com.techfocus.util.DirectoryWatcher - 注册事件：ENTRY_MODIFY
+INFO main com.techfocus.util.DirectoryWatcher - 注册事件：ENTRY_DELETE
+INFO main com.techfocus.util.DirectoryWatcher - 监控目录:E:\1
+INFO main com.techfocus.util.AutoDetector - 加载资源 0 行
+INFO main com.techfocus.util.AutoDetector - 完成加载资源，耗时27 毫秒
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - contextPath:in.apk
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - directoryPath:E:\test\56
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - absolutePath:E:\test\56\in.apk
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - contextPath:in.apk
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - kind:ENTRY_CREATE
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - 新增文件：E:\test\56\in.apk
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 重新加载数据
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 开始加载资源
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - E:\1\config.txt
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\1\config.txt
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - directoryPath:E:\test\56
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - absolutePath:E:\test\56\in.apk
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - kind:ENTRY_CREATE
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test\1.txt
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - 新增文件：E:\test\56\in.apk
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - -------------------auto test..E:\test\56\in.apk.......
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 事件：ENTRY_CREATE ,路径：E:\test\56\in.apk
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test\2.txt
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 重新加载数据
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 开始加载资源
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - E:\1\config.txt
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\1\config.txt
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test\56\265.txt
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test\1.txt
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test\2.txt
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test\56\in.apk
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test\56\265.txt
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test\56\testapk.apk
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test\sd.txt
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test\test.apk
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test\testapk.apk
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test\56\in.apk
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test\XMind 7 Pro.lnk
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test1\out.apk
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test1\testapk.apk
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test\56\testapk.apk
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源 0 行
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test\sd.txt
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 完成加载资源，耗时5 毫秒
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test\test.apk
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - contextPath:in.apk
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - directoryPath:E:\test\56
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - absolutePath:E:\test\56\in.apk
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test\testapk.apk
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - kind:ENTRY_MODIFY
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - 修改：E:\test\56\in.apk
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - contextPath:56
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - directoryPath:E:\test
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test\XMind 7 Pro.lnk
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - absolutePath:E:\test\56
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - kind:ENTRY_MODIFY
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - 修改：E:\test\56
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test1\out.apk
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源：E:\test1\testapk.apk
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 加载资源 0 行
+INFO pool-1-thread-1 com.techfocus.util.AutoDetector - 完成加载资源，耗时9 毫秒
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - contextPath:in.apk
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - directoryPath:E:\test\56
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - absolutePath:E:\test\56\in.apk
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - kind:ENTRY_MODIFY
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - 修改：E:\test\56\in.apk
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - contextPath:56
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - directoryPath:E:\test
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - absolutePath:E:\test\56
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - kind:ENTRY_MODIFY
+INFO pool-1-thread-1 com.techfocus.util.DirectoryWatcher - 修改：E:\test\56
