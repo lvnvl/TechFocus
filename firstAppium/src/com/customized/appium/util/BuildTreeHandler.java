@@ -58,7 +58,7 @@ public class BuildTreeHandler extends DefaultHandler {
 		element.setpNodeID(count-1);
 		element.setmNodeID(count);
 		element.setClazz(qName);
-		//取出标记内的属性	
+		//取出标记内的属性
 		element.setEnabled(attributes.getValue("enabled"));
 		element.setBounds(attributes.getValue("bounds"));
 		element.setClickable(attributes.getValue("clickable"));
@@ -68,10 +68,6 @@ public class BuildTreeHandler extends DefaultHandler {
 		element.setScrollable(attributes.getValue("scrollable"));
 		element.setPassword(attributes.getValue("password"));
 		element.setResourceId(attributes.getValue("resource-id"));//动态生成都控件不会有id
-		
-		//增加一个 text 属性，用来分辨控件是否更新
-		element.setText(attributes.getValue("text"));
-		
 		elements.add(element);// 则将创建完成的view/widget加入到集合
 		//listview 需要直接点击或者内部控件
 		count++;

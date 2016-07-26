@@ -68,6 +68,9 @@ public class BuildTreeHandler extends DefaultHandler {
 		element.setScrollable(attributes.getValue("scrollable"));
 		element.setPassword(attributes.getValue("password"));
 		element.setResourceId(attributes.getValue("resource-id"));//动态生成都控件不会有id
+		element.setText(attributes.getValue("text"));
+//		System.out.println("text is:"+element.getText());
+		element.setContentDesc(attributes.getValue("content-desc"));
 		elements.add(element);// 则将创建完成的view/widget加入到集合
 		//listview 需要直接点击或者内部控件
 		count++;

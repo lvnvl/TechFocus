@@ -35,17 +35,6 @@ public class AElementWidget {
 	private int childAmounts; // 子节点个数
 	private int isRepeat; // 重复节点
 
-	private ActivityElement childAcitivityElement;
-	
-	
-	public ActivityElement getChildAcitivityElement() {
-		return childAcitivityElement;
-	}
-
-	public void setChildAcitivityElement(ActivityElement childAcitivityElement) {
-		this.childAcitivityElement = childAcitivityElement;
-	}
-
 	public String getwName() {
 		return wName;
 	}

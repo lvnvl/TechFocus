@@ -175,19 +175,39 @@ public class TreeLikeAutoTraversal {
 			 * 同一个Activity时，检测页面变化、添加新的widget到list中
 			 */
 			List<AElementWidget> oldWidgetList = ae.getWidgets();
-			for(AElementWidget elementWidget : newWidgetList){
-				if( ! oldWidgetList.contains(elementWidget)){
-					oldWidgetList.add(elementWidget);
+			for (int i = 0; i < newWidgetList.size(); i++) {
+				AElementWidget elementTemp = newWidgetList.get(i);
+				if (elementTemp.getClickable().equals("true")){// 能点击的,再检测是否已经加入到oldWidgetList中
+					boolean isexist = false;
+					for(int j = 0;j < oldWidgetList.size(); j++){
+						AElementWidget elementTempOld = oldWidgetList.get(j);
+						if (elementTempOld.getClickable().equals("true")
+								&& elementTempOld.getClazz().equals(elementTemp.getClazz())){
+							if(elementTempOld.getText()!=null 
+									&& elementTemp.getText()!=null
+									&& elementTempOld.getText().equals(elementTemp.getText())){
+								isexist = true;
+								break;
+							}
+						}
+					}
+					if(!isexist){
+						oldWidgetList.add(elementTemp);
+						ae.setWidgets(oldWidgetList);
+					}
 				}
 			}
-			ae.setWidgets(oldWidgetList);
+			if (isForceClose || isExit)
+				break;
 			return;
 		}else{
-
-			ActivityElement ae = new ActivityElement();
-			ae.setActivityName(activityName);
-			ae.setWidgets(widgetList);
-			activityList.add(ae);
+			/**
+			 * 跳转到不同的Activity,则判断Activity的level再进行处理
+			 */
+			ActivityElement newAE = new ActivityElement();
+			ae.setActivityName(driver.currentActivity());
+			ae.setWidgets(newWidgetList);
+//			activityList.add();
 
 			bufferWidgetList = null;
 			bufferWidgetList = widgetList;

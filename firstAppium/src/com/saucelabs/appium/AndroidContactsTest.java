@@ -9,6 +9,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import com.customized.appium.util.XMLUtil;
+
 import java.io.File;
 import java.net.URL;
 import java.util.List;
@@ -31,7 +33,9 @@ public class AndroidContactsTest {
         capabilities.setCapability("appPackage", "com.example.android.contactmanager");
         capabilities.setCapability("appActivity", ".ContactManager");
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-        System.out.print(driver.getPageSource());
+        String xml = driver.getPageSource();
+        System.out.println("xml is :"+xml);
+        System.out.println("包含节点数量为"+ XMLUtil.dealWithXML(xml).size());
     }
 
     @After
@@ -49,6 +53,10 @@ public class AndroidContactsTest {
 		}
         WebElement el = driver.findElement(By.xpath(".//*[@text='Add Contact']"));
         el.click();
+
+        String xml = driver.getPageSource();
+        System.out.println("xml is :"+xml);
+        System.out.println("包含节点数量为"+ XMLUtil.dealWithXML(xml).size());
         List<WebElement> textFieldsList = driver.findElementsByClassName("android.widget.EditText");
         textFieldsList.get(0).sendKeys("Some Name");
         textFieldsList.get(2).sendKeys("Some@example.com");
