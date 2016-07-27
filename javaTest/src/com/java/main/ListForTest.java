@@ -6,6 +6,11 @@ import java.util.List;
 
 public class ListForTest {
 
+	public ListForTest() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		List<Integer> aList = new ArrayList<Integer>();
@@ -31,5 +36,11 @@ public class ListForTest {
 //			}
 //		}
 		System.out.println(aList.toString());
+		new ListForTest().addOne(aList);
+		System.out.println(aList.toString());
 	}
+
+	private void addOne(List<Integer> llist){
+		llist.add(90);
+	}	
 }
