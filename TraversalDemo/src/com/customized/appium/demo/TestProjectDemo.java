@@ -11,6 +11,7 @@ import com.customized.appium.CommonSetting;
 //import com.beust.jcommander.Parameterized;
 //import com.customized.appium.CommonSetting;
 import com.customized.appium.algorithm.AutoTraversalById;
+import com.customized.appium.algorithm.TreeLikeAutoTraversal;
 import com.customized.appium.framework.TestProject;
 import com.customized.appium.model.RecordEventModel;
 import com.customized.appium.util.ADBUtil;
@@ -43,7 +44,7 @@ public class TestProjectDemo extends TestProject {
 	private String packageName;
 	private String workPath;
 	private String activity;
-	private AutoTraversalById at;
+	private TreeLikeAutoTraversal at;
 
 	/**
 	 * 
@@ -130,13 +131,14 @@ public class TestProjectDemo extends TestProject {
 
 		lastEventList = FileUtil.readRecordFile(workPath, "record");
 
-		at = new AutoTraversalById(driver, workPath);// N轮测试放不同文件夹？。。
+//		at = new AutoTraversalById(driver, workPath);// N轮测试放不同文件夹？。。
+		at = new TreeLikeAutoTraversal(driver, workPath);// N轮测试放不同文件夹？。。
 		// 测试读取记录文件 或 重新开始评测
-		if (lastEventList != null) {
-			at.toLastExceptionPlace(lastEventList);
-		} else {
-			at.restartTest();
-		}
+//		if (lastEventList != null) {
+//			at.toLastExceptionPlace(lastEventList);
+//		} else {
+//			at.restartTest();
+//		}
 	}
 
 	public void stopTest() {
