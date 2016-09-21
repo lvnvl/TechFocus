@@ -4,6 +4,8 @@ import java.io.File;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import com.customized.appium.util.FileUtil;
+
 /**
  * 初始化相关
  * @author kaliwn

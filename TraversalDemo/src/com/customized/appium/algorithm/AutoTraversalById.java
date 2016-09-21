@@ -7,6 +7,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.openqa.selenium.WebElement;
+
 import com.customized.appium.demo.EventDriver;
 import com.customized.appium.model.AElementWidget;
 import com.customized.appium.model.ActivityElement;

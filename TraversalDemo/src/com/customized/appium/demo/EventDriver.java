@@ -5,8 +5,8 @@ import java.util.List;
 
 import com.customized.appium.model.AElementWidget;
 import com.customized.appium.model.RecordEventModel;
-import com.customized.appium.util.FileUtil;
 import com.customized.appium.util.UIUtil;
+import com.customized.appium.util.FileUtil;
 
 import io.appium.java_client.android.AndroidDriver;
 
@@ -36,6 +36,10 @@ public class EventDriver {
 
 	public void click(AElementWidget element){
 		addRecord(element, "click", null, driver.currentActivity());
+		System.out.println("当前点击的element为：");
+		System.out.println("\tclass:"+element.getClazz());
+		System.out.println("\ttext:"+element.getText());
+		System.out.println("\tdesc:"+element.getContentDesc());
 		UIUtil.click(element, driver);
 	}
 

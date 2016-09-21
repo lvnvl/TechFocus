@@ -22,6 +22,10 @@
 	<classpathentry kind="lib" path="E:/appium-jar/org.apache.commons.io.jar"/>
 	<classpathentry kind="lib" path="E:/appium-jar/selenium-java-2.44.0.jar"/>
 	<classpathentry kind="lib" path="E:/appium-jar/selenium-server-standalone-2.44.0.jar"/>
-	<classpathentry kind="lib" path="E:/appiumUtil.jar"/>
+	<classpathentry kind="lib" path="E:/plugins/poi-3.14-20160307.jar"/>
+	<classpathentry kind="lib" path="E:/GitRepo/AutoTraveler/lib/jai_imageio-1.1.jar"/>
+	<classpathentry kind="lib" path="E:/GitRepo/AutoTraveler/lib/jmf.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.swt"/>
+	<classpathentry kind="lib" path="E:/plugins/uiauto/org-eclipse-jface-3.6.2.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

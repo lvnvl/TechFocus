@@ -1,7 +1,6 @@
 package com.saucelabs.appium;
 
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import junit.framework.Assert;
@@ -17,8 +16,9 @@ import java.net.URL;
 /**
  * Created by saikrisv on 26/04/16.
  */
+@SuppressWarnings("deprecation")
 public class AndroidDragAndDrop {
-    private AppiumDriver driver;
+    private AppiumDriver<WebElement> driver;
 
     @Before
     public void setUp() throws Exception {
@@ -31,7 +31,7 @@ public class AndroidDragAndDrop {
         capabilities.setCapability("app", app.getAbsolutePath());
         capabilities.setCapability("appPackage", "io.appium.android.apis");
         capabilities.setCapability("appActivity", ".ApiDemos");
-        driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+        driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
     }
 
     @After
@@ -39,12 +39,11 @@ public class AndroidDragAndDrop {
         driver.quit();
     }
 
-    @SuppressWarnings("deprecation")
 	@Test
     public void testDragAndDrop() throws InterruptedException {
         driver.findElementByXPath(".//*[@text='Views']").click();
         driver.findElementByXPath(".//*[@text='Drag and Drop']").click();
-        MobileElement calc = (MobileElement) driver.findElementById("io.appium.android.apis:id/drag_dot_1");
+        WebElement calc = (WebElement) driver.findElementById("io.appium.android.apis:id/drag_dot_1");
         TouchAction touchAction = new TouchAction(driver);
         touchAction.press(calc).perform();
         try {

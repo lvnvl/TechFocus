@@ -7,6 +7,7 @@ import java.util.List;
 import org.openqa.selenium.OutputType;
 
 import com.customized.appium.model.AElementWidget;
+import com.customized.appium.util.FileUtil;
 
 import io.appium.java_client.AppiumDriver;
 

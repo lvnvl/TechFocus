@@ -15,9 +15,9 @@ import com.customized.appium.algorithm.TreeLikeAutoTraversal;
 import com.customized.appium.framework.TestProject;
 import com.customized.appium.model.RecordEventModel;
 import com.customized.appium.util.ADBUtil;
-import com.customized.appium.util.FileUtil;
 import com.customized.appium.util.InitUtil;
 import com.customized.appium.util.Log;
+import com.customized.appium.util.FileUtil;
 
 import io.appium.java_client.android.AndroidDriver;
 

@@ -1,17 +1,10 @@
 package com.customized.appium.algorithm;
 
-import java.io.UnsupportedEncodingException;
-import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-
 import com.customized.appium.demo.EventDriver;
 import com.customized.appium.model.AElementWidget;
 import com.customized.appium.model.ActivityElement;
-import com.customized.appium.model.RecordEventModel;
-import com.customized.appium.util.CommonUtil;
 import com.customized.appium.util.UIUtil;
 import com.customized.appium.util.XMLUtil;
 
@@ -84,67 +77,6 @@ public class TreeLikeAutoTraversal {
 		}
 		isExit = true;
 	}
-
-	/**
-	 * 倒序遍历寻找跳转节点，快速定位最后触发错误activity</br>
-	 */
-//	public void toLastExceptionPlace(List<RecordEventModel> lastEventList) {
-//		List<AElementWidget> widgetList = null;
-//		
-//
-//		String bufferActivity = lastEventList.get(0).getActivity();
-//		int bufferID = lastEventList.get(0).getID();
-//
-//		// 跳转的路径节点
-//		List<Integer> quickID = new ArrayList<Integer>();
-//
-//		// 根据activity和标记，提取节点。
-//		for (RecordEventModel model : lastEventList) {
-//			if (!bufferActivity.equals(model.getActivity())) {
-//				bufferActivity = model.getActivity();
-//				quickID.add(bufferID);
-//			}
-//			bufferID = model.getID();
-//		}
-//
-//		// 进入最后产生错误的activity
-//		String xml;
-//		for (int id : quickID) {
-//			xml = driver.getPageSource();
-//			widgetList = XMLUtil.dealWithXML(xml);
-//			ActivityElement ae = new ActivityElement();
-//			activityName = driver.currentActivity();
-//			ae.setActivityName(activityName);
-//			ae.setWidgets(widgetList);
-//			activityList.add(ae);
-//			UIUtil.click(UIUtil.findMyElementById(id, widgetList), driver);
-//		}
-//
-//		xml = driver.getPageSource();
-//		widgetList = XMLUtil.dealWithXML(xml);
-//		bufferID = lastEventList.get(lastEventList.size() - 1).getID()+1;
-//
-//		mdriver.setEventList(lastEventList);
-//
-//		if (bufferID < widgetList.size()) {
-//			// 继续进行当前页面的测试
-//			for (; bufferID < widgetList.size(); bufferID++) {
-//				if (widgetList.get(bufferID).getClickable().equals("true")){//.getClazz().equals("android.widget.Button")) {
-//					if (isForceClose || isExit)
-//						break;
-//					Recursion(widgetList.get(bufferID));
-//				}
-//			}
-//		} else {
-//			driver.sendKeyEvent(AndroidKeyCode.BACK);
-//		}
-//
-//		isExit = true;
-//		// 从最后一次记录xml开始运行，～
-////		Set<Entry<String, List<AElementWidget>>> set = buffer.entrySet();
-////		Iterator<Entry<String, List<AElementWidget>>> iter = set.iterator();
-//
-//	}
 
 	/**
 	 * 递归式寻径，默认点击完成后返回</br>

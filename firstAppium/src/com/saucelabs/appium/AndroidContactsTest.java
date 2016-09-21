@@ -16,7 +16,7 @@ import java.net.URL;
 import java.util.List;
 
 public class AndroidContactsTest {
-    private AppiumDriver driver;
+    private AppiumDriver<WebElement> driver;
 
     @Before
     public void setUp() throws Exception {
@@ -32,7 +32,7 @@ public class AndroidContactsTest {
         capabilities.setCapability("app", app.getAbsolutePath());
         capabilities.setCapability("appPackage", "com.example.android.contactmanager");
         capabilities.setCapability("appActivity", ".ContactManager");
-        driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+        driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
         String xml = driver.getPageSource();
         System.out.println("xml is :"+xml);
         System.out.println("包含节点数量为"+ XMLUtil.dealWithXML(xml).size());

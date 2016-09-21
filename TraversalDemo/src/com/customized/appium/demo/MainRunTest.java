@@ -1,15 +1,9 @@
 package com.customized.appium.demo;
 
 import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 import com.customized.appium.CommonSetting;
-import com.customized.appium.model.DebugDevice;
-import com.customized.appium.util.ADBUtil;
 import com.customized.appium.util.CommonUtil;
-import com.customized.appium.util.FileUtil;
 
 /**
  * 外部主程序：执行单元测试项目
