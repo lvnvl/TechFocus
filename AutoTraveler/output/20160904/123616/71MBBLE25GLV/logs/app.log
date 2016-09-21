@@ -1,0 +1,1247 @@
+2016-09-04 12:37:24 sys_log : [ERROR]   error wait for 允许：允许android.widget.Button
+2016-09-04 12:37:26 sys_log : [ERROR]   允许   clicked!!
+2016-09-04 12:37:36 sys_log : [INFO] click -> //android.widget.LinearLayout[@resource-id='com.alibaba.aliyun:id/fragment_footer_menu']//android.widget.RelativeLayout[4]//android.widget.ImageView
+2016-09-04 12:37:36 sys_log : [INFO]       -> text:
+2016-09-04 12:37:36 sys_log : [INFO]       -> location(909, 1793)
+2016-09-04 12:37:48 sys_log : [INFO] click -> com.alibaba.aliyun:id/login
+2016-09-04 12:37:48 sys_log : [INFO]       -> text:立即登录
+2016-09-04 12:37:48 sys_log : [INFO]       -> location:(444, 453)
+2016-09-04 12:37:59 sys_log : [INFO] input -> com.alibaba.aliyun:id/accountCompleteTextView, sendKeys -> 528437847@qq.com
+2016-09-04 12:38:19 sys_log : [INFO] input -> com.alibaba.aliyun:id/content, sendKeys -> v73alice
+2016-09-04 12:38:35 sys_log : [INFO] click -> com.alibaba.aliyun:id/loginButton
+2016-09-04 12:38:36 sys_log : [INFO]       -> text:登录
+2016-09-04 12:38:36 sys_log : [INFO]       -> location:(30, 635)
+2016-09-04 12:38:57 sys_log : [INFO] 	1
+2016-09-04 12:38:57 sys_log : [INFO] 		1
+2016-09-04 12:38:57 sys_log : [INFO] 				----go to the next depth:1
+2016-09-04 12:38:57 sys_log : [INFO] 	2
+2016-09-04 12:38:57 sys_log : [INFO] 		2
+2016-09-04 12:38:57 sys_log : [INFO] 				----go to the next depth:2
+2016-09-04 12:38:57 sys_log : [INFO] 	3
+2016-09-04 12:38:57 sys_log : [INFO] 		3
+2016-09-04 12:38:57 sys_log : [INFO] 				----go to the next depth:3
+2016-09-04 12:38:57 sys_log : [INFO] 	4
+2016-09-04 12:38:57 sys_log : [INFO] 		4
+2016-09-04 12:38:57 sys_log : [INFO] 				----go to the next depth:4
+2016-09-04 12:38:57 sys_log : [INFO] 	5
+2016-09-04 12:38:57 sys_log : [INFO] 		5
+2016-09-04 12:38:57 sys_log : [INFO] 				----go to the next depth:5
+2016-09-04 12:38:57 sys_log : [INFO] 	6
+2016-09-04 12:38:57 sys_log : [INFO] 		6
+2016-09-04 12:38:57 sys_log : [INFO] 				----go to the next depth:6
+2016-09-04 12:38:57 sys_log : [INFO] 	7
+2016-09-04 12:38:57 sys_log : [INFO] 		7
+2016-09-04 12:38:57 sys_log : [INFO] 				----go to the next depth:7
+2016-09-04 12:38:57 sys_log : [INFO] 	8
+2016-09-04 12:38:57 sys_log : [INFO] 		8
+2016-09-04 12:38:57 sys_log : [INFO] 				----go to the next depth:8
+2016-09-04 12:38:57 sys_log : [INFO] 	9
+2016-09-04 12:38:57 sys_log : [INFO] 		9
+2016-09-04 12:38:57 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:38:57 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,com.alibaba.aliyun:id/profile,9
+2016-09-04 12:38:57 sys_log : [INFO] 				----go to the next depth:9
+2016-09-04 12:38:57 sys_log : [INFO] 	10
+2016-09-04 12:38:57 sys_log : [INFO] 		10
+2016-09-04 12:38:57 sys_log : [INFO] 		10
+2016-09-04 12:38:57 sys_log : [INFO] 		10
+2016-09-04 12:38:57 sys_log : [INFO] 		9
+2016-09-04 12:38:57 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:38:57 sys_log : [INFO] 			      info:android.widget.ImageView,,,com.alibaba.aliyun:id/message_button,9
+2016-09-04 12:38:57 sys_log : [INFO] 		9
+2016-09-04 12:38:57 sys_log : [INFO] 		9
+2016-09-04 12:38:57 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:38:57 sys_log : [INFO] 			      info:android.widget.LinearLayout,,,com.alibaba.aliyun:id/my_live,9
+2016-09-04 12:38:57 sys_log : [INFO] 				----go to the next depth:9
+2016-09-04 12:38:57 sys_log : [INFO] 	10
+2016-09-04 12:38:57 sys_log : [INFO] 		10
+2016-09-04 12:38:57 sys_log : [INFO] 		10
+2016-09-04 12:38:57 sys_log : [INFO] 				----go to the next depth:10
+2016-09-04 12:38:57 sys_log : [INFO] 	11
+2016-09-04 12:38:57 sys_log : [INFO] 		11
+2016-09-04 12:38:57 sys_log : [INFO] 		11
+2016-09-04 12:38:57 sys_log : [INFO] 		11
+2016-09-04 12:38:57 sys_log : [INFO] 		10
+2016-09-04 12:38:57 sys_log : [INFO] 		9
+2016-09-04 12:38:57 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:38:57 sys_log : [INFO] 			      info:android.widget.LinearLayout,,,com.alibaba.aliyun:id/my_ask,9
+2016-09-04 12:38:57 sys_log : [INFO] 				----go to the next depth:9
+2016-09-04 12:38:57 sys_log : [INFO] 	10
+2016-09-04 12:38:57 sys_log : [INFO] 		10
+2016-09-04 12:38:57 sys_log : [INFO] 		10
+2016-09-04 12:38:57 sys_log : [INFO] 				----go to the next depth:10
+2016-09-04 12:38:57 sys_log : [INFO] 	11
+2016-09-04 12:38:57 sys_log : [INFO] 		11
+2016-09-04 12:38:57 sys_log : [INFO] 		11
+2016-09-04 12:38:57 sys_log : [INFO] 		11
+2016-09-04 12:38:57 sys_log : [INFO] 		10
+2016-09-04 12:38:57 sys_log : [INFO] 		9
+2016-09-04 12:38:57 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:38:57 sys_log : [INFO] 			      info:android.widget.LinearLayout,,,com.alibaba.aliyun:id/activityView,9
+2016-09-04 12:38:57 sys_log : [INFO] 				----go to the next depth:9
+2016-09-04 12:38:57 sys_log : [INFO] 	10
+2016-09-04 12:38:57 sys_log : [INFO] 		10
+2016-09-04 12:38:57 sys_log : [INFO] 		10
+2016-09-04 12:38:57 sys_log : [INFO] 				----go to the next depth:10
+2016-09-04 12:38:57 sys_log : [INFO] 	11
+2016-09-04 12:38:57 sys_log : [INFO] 		11
+2016-09-04 12:38:57 sys_log : [INFO] 		11
+2016-09-04 12:38:57 sys_log : [INFO] 		11
+2016-09-04 12:38:57 sys_log : [INFO] 		10
+2016-09-04 12:38:57 sys_log : [INFO] 		9
+2016-09-04 12:38:57 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:38:57 sys_log : [INFO] 			      info:android.widget.LinearLayout,,,com.alibaba.aliyun:id/monthlyConsumptionView,9
+2016-09-04 12:38:57 sys_log : [INFO] 				----go to the next depth:9
+2016-09-04 12:38:57 sys_log : [INFO] 	10
+2016-09-04 12:38:57 sys_log : [INFO] 		10
+2016-09-04 12:38:57 sys_log : [INFO] 		10
+2016-09-04 12:38:57 sys_log : [INFO] 				----go to the next depth:10
+2016-09-04 12:38:57 sys_log : [INFO] 	11
+2016-09-04 12:38:57 sys_log : [INFO] 		11
+2016-09-04 12:38:57 sys_log : [INFO] 		11
+2016-09-04 12:38:57 sys_log : [INFO] 		11
+2016-09-04 12:38:57 sys_log : [INFO] 		10
+2016-09-04 12:38:57 sys_log : [INFO] 		9
+2016-09-04 12:38:57 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:38:57 sys_log : [INFO] 			      info:android.widget.LinearLayout,,,com.alibaba.aliyun:id/userCountView,9
+2016-09-04 12:38:57 sys_log : [INFO] 				----go to the next depth:9
+2016-09-04 12:38:57 sys_log : [INFO] 	10
+2016-09-04 12:38:57 sys_log : [INFO] 		10
+2016-09-04 12:38:57 sys_log : [INFO] 				----go to the next depth:10
+2016-09-04 12:38:57 sys_log : [INFO] 	11
+2016-09-04 12:38:57 sys_log : [INFO] 		11
+2016-09-04 12:38:57 sys_log : [INFO] 		11
+2016-09-04 12:38:57 sys_log : [INFO] 		11
+2016-09-04 12:38:57 sys_log : [INFO] 		11
+2016-09-04 12:38:57 sys_log : [INFO] 		10
+2016-09-04 12:38:57 sys_log : [INFO] 		9
+2016-09-04 12:38:57 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:38:57 sys_log : [INFO] 			      info:android.widget.LinearLayout,,,com.alibaba.aliyun:id/userInviteCodeView,9
+2016-09-04 12:38:57 sys_log : [INFO] 				----go to the next depth:9
+2016-09-04 12:38:57 sys_log : [INFO] 	10
+2016-09-04 12:38:57 sys_log : [INFO] 		10
+2016-09-04 12:38:57 sys_log : [INFO] 		10
+2016-09-04 12:38:57 sys_log : [INFO] 				----go to the next depth:10
+2016-09-04 12:38:57 sys_log : [INFO] 	11
+2016-09-04 12:38:57 sys_log : [INFO] 		11
+2016-09-04 12:38:57 sys_log : [INFO] 		11
+2016-09-04 12:38:57 sys_log : [INFO] 		11
+2016-09-04 12:38:57 sys_log : [INFO] 		10
+2016-09-04 12:38:57 sys_log : [INFO] 		9
+2016-09-04 12:38:57 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:38:57 sys_log : [INFO] 			      info:android.widget.LinearLayout,,,com.alibaba.aliyun:id/userVoucherView,9
+2016-09-04 12:38:57 sys_log : [INFO] 				----go to the next depth:9
+2016-09-04 12:38:57 sys_log : [INFO] 	10
+2016-09-04 12:38:57 sys_log : [INFO] 		10
+2016-09-04 12:38:57 sys_log : [INFO] 				----go to the next depth:10
+2016-09-04 12:38:57 sys_log : [INFO] 	11
+2016-09-04 12:38:57 sys_log : [INFO] 		11
+2016-09-04 12:38:57 sys_log : [INFO] 		11
+2016-09-04 12:38:57 sys_log : [INFO] 		11
+2016-09-04 12:38:57 sys_log : [INFO] 		11
+2016-09-04 12:38:57 sys_log : [INFO] 		6
+2016-09-04 12:38:57 sys_log : [INFO] 				----go to the next depth:6
+2016-09-04 12:38:57 sys_log : [INFO] 	7
+2016-09-04 12:38:57 sys_log : [INFO] 		7
+2016-09-04 12:38:57 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:38:57 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,,7
+2016-09-04 12:38:57 sys_log : [INFO] 				----go to the next depth:7
+2016-09-04 12:38:57 sys_log : [INFO] 	8
+2016-09-04 12:38:57 sys_log : [INFO] 		8
+2016-09-04 12:38:57 sys_log : [INFO] 				----go to the next depth:8
+2016-09-04 12:38:57 sys_log : [INFO] 	9
+2016-09-04 12:38:57 sys_log : [INFO] 		9
+2016-09-04 12:38:57 sys_log : [INFO] 		9
+2016-09-04 12:38:57 sys_log : [INFO] 		7
+2016-09-04 12:38:57 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:38:57 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,,7
+2016-09-04 12:38:57 sys_log : [INFO] 				----go to the next depth:7
+2016-09-04 12:38:57 sys_log : [INFO] 	8
+2016-09-04 12:38:57 sys_log : [INFO] 		8
+2016-09-04 12:38:57 sys_log : [INFO] 				----go to the next depth:8
+2016-09-04 12:38:57 sys_log : [INFO] 	9
+2016-09-04 12:38:57 sys_log : [INFO] 		9
+2016-09-04 12:38:57 sys_log : [INFO] 		9
+2016-09-04 12:38:57 sys_log : [INFO] 		7
+2016-09-04 12:38:57 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:38:57 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,,7
+2016-09-04 12:38:57 sys_log : [INFO] 				----go to the next depth:7
+2016-09-04 12:38:57 sys_log : [INFO] 	8
+2016-09-04 12:38:57 sys_log : [INFO] 		8
+2016-09-04 12:38:57 sys_log : [INFO] 				----go to the next depth:8
+2016-09-04 12:38:57 sys_log : [INFO] 	9
+2016-09-04 12:38:57 sys_log : [INFO] 		9
+2016-09-04 12:38:57 sys_log : [INFO] 		9
+2016-09-04 12:38:57 sys_log : [INFO] 		7
+2016-09-04 12:38:57 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:38:57 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,,7
+2016-09-04 12:38:57 sys_log : [INFO] 				----go to the next depth:7
+2016-09-04 12:38:57 sys_log : [INFO] 	8
+2016-09-04 12:38:57 sys_log : [INFO] 		8
+2016-09-04 12:38:57 sys_log : [INFO] 				----go to the next depth:8
+2016-09-04 12:38:57 sys_log : [INFO] 	9
+2016-09-04 12:38:57 sys_log : [INFO] 		9
+2016-09-04 12:38:57 sys_log : [INFO] 		9
+2016-09-04 12:38:57 sys_log : [INFO] 		3
+2016-09-04 12:38:57 sys_log : [INFO] ########################### 开始执行探索性遍历测试 ###########################
+2016-09-04 12:38:57 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有12个任务待运行, [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/profile,9], 4002296d1b4876b4e756ddbcd64a285f-0,75-1080,655-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]
+2016-09-04 12:38:58 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> true
+2016-09-04 12:38:58 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/profile,9], 4002296d1b4876b4e756ddbcd64a285f >> 开始执行节点任务......
+2016-09-04 12:38:58 sys_log : [INFO] click -> [info = android.widget.RelativeLayout,,,com.alibaba.aliyun:id/profile,9], [depth = 9]4002296d1b4876b4e756ddbcd64a285f-0,75-1080,655-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]
+2016-09-04 12:39:12 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有11个任务待运行, [android.widget.ImageView,,,com.alibaba.aliyun:id/message_button,9], 4002296d1b4876b4e756ddbcd64a285f-966,114-1032,180-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/android.widget.RelativeLayout[1]/android.widget.ImageView[1]
+2016-09-04 12:39:13 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> true
+2016-09-04 12:39:13 sys_log : [INFO] [android.widget.ImageView,,,com.alibaba.aliyun:id/message_button,9], 4002296d1b4876b4e756ddbcd64a285f >> 开始执行节点任务......
+2016-09-04 12:39:13 sys_log : [INFO] click -> [info = android.widget.ImageView,,,com.alibaba.aliyun:id/message_button,9], [depth = 9]4002296d1b4876b4e756ddbcd64a285f-966,114-1032,180-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/android.widget.RelativeLayout[1]/android.widget.ImageView[1]
+2016-09-04 12:39:23 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有10个任务待运行, [android.widget.LinearLayout,,,com.alibaba.aliyun:id/my_live,9], 4002296d1b4876b4e756ddbcd64a285f-0,679-1080,831-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]
+2016-09-04 12:39:24 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:39:24 sys_log : [INFO] 4002296d1b4876b4e756ddbcd64a285f >> a3925efbff389f3b3b5c5b2b9eeebfdd, 窗口迁移至新窗口......
+2016-09-04 12:39:24 sys_log : [INFO] 相同窗口执行次数 -> 0
+2016-09-04 12:39:24 sys_log : [INFO] [android.widget.LinearLayout,,,com.alibaba.aliyun:id/my_live,9], 4002296d1b4876b4e756ddbcd64a285f >> a3925efbff389f3b3b5c5b2b9eeebfdd, 窗口虽然发生迁移,但已达到最大遍历深度 -> 9, 点击返回......
+2016-09-04 12:39:36 sys_log : [INFO] [android.widget.LinearLayout,,,com.alibaba.aliyun:id/my_live,9], 4002296d1b4876b4e756ddbcd64a285f >> 开始执行节点任务......
+2016-09-04 12:39:36 sys_log : [INFO] click -> [info = android.widget.LinearLayout,,,com.alibaba.aliyun:id/my_live,9], [depth = 9]4002296d1b4876b4e756ddbcd64a285f-0,679-1080,831-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]
+2016-09-04 12:39:47 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有9个任务待运行, [android.widget.LinearLayout,,,com.alibaba.aliyun:id/my_ask,9], 4002296d1b4876b4e756ddbcd64a285f-0,831-1080,983-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[2]
+2016-09-04 12:39:48 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:39:48 sys_log : [INFO] 4002296d1b4876b4e756ddbcd64a285f >> a3925efbff389f3b3b5c5b2b9eeebfdd, 窗口迁移至新窗口......
+2016-09-04 12:39:48 sys_log : [INFO] 相同窗口执行次数 -> 1
+2016-09-04 12:39:48 sys_log : [INFO] [android.widget.LinearLayout,,,com.alibaba.aliyun:id/my_ask,9], 4002296d1b4876b4e756ddbcd64a285f >> a3925efbff389f3b3b5c5b2b9eeebfdd, 窗口虽然发生迁移,但已达到最大遍历深度 -> 9, 点击返回......
+2016-09-04 12:39:59 sys_log : [INFO] [android.widget.LinearLayout,,,com.alibaba.aliyun:id/my_ask,9], 4002296d1b4876b4e756ddbcd64a285f >> 开始执行节点任务......
+2016-09-04 12:39:59 sys_log : [INFO] click -> [info = android.widget.LinearLayout,,,com.alibaba.aliyun:id/my_ask,9], [depth = 9]4002296d1b4876b4e756ddbcd64a285f-0,831-1080,983-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[2]
+2016-09-04 12:40:10 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有8个任务待运行, [android.widget.LinearLayout,,,com.alibaba.aliyun:id/activityView,9], 4002296d1b4876b4e756ddbcd64a285f-0,983-1080,1135-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[3]
+2016-09-04 12:40:11 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:40:11 sys_log : [INFO] 4002296d1b4876b4e756ddbcd64a285f >> a3925efbff389f3b3b5c5b2b9eeebfdd, 窗口迁移至新窗口......
+2016-09-04 12:40:11 sys_log : [INFO] 相同窗口执行次数 -> 2
+2016-09-04 12:40:11 sys_log : [INFO] [android.widget.LinearLayout,,,com.alibaba.aliyun:id/activityView,9], 4002296d1b4876b4e756ddbcd64a285f >> a3925efbff389f3b3b5c5b2b9eeebfdd, 窗口虽然发生迁移,但已达到最大遍历深度 -> 9, 点击返回......
+2016-09-04 12:40:22 sys_log : [INFO] [android.widget.LinearLayout,,,com.alibaba.aliyun:id/activityView,9], 4002296d1b4876b4e756ddbcd64a285f >> 开始执行节点任务......
+2016-09-04 12:40:22 sys_log : [INFO] click -> [info = android.widget.LinearLayout,,,com.alibaba.aliyun:id/activityView,9], [depth = 9]4002296d1b4876b4e756ddbcd64a285f-0,983-1080,1135-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[3]
+2016-09-04 12:40:33 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有7个任务待运行, [android.widget.LinearLayout,,,com.alibaba.aliyun:id/monthlyConsumptionView,9], 4002296d1b4876b4e756ddbcd64a285f-0,1159-1080,1311-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[4]
+2016-09-04 12:40:33 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:40:33 sys_log : [INFO] 4002296d1b4876b4e756ddbcd64a285f >> a3925efbff389f3b3b5c5b2b9eeebfdd, 窗口迁移至新窗口......
+2016-09-04 12:40:33 sys_log : [INFO] 相同窗口执行次数 -> 3
+2016-09-04 12:40:33 sys_log : [INFO] [android.widget.LinearLayout,,,com.alibaba.aliyun:id/monthlyConsumptionView,9], 4002296d1b4876b4e756ddbcd64a285f >> a3925efbff389f3b3b5c5b2b9eeebfdd, 窗口虽然发生迁移,但已达到最大遍历深度 -> 9, 点击返回......
+2016-09-04 12:40:45 sys_log : [INFO] [android.widget.LinearLayout,,,com.alibaba.aliyun:id/monthlyConsumptionView,9], 4002296d1b4876b4e756ddbcd64a285f >> 开始执行节点任务......
+2016-09-04 12:40:45 sys_log : [INFO] click -> [info = android.widget.LinearLayout,,,com.alibaba.aliyun:id/monthlyConsumptionView,9], [depth = 9]4002296d1b4876b4e756ddbcd64a285f-0,1159-1080,1311-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[4]
+2016-09-04 12:40:55 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有6个任务待运行, [android.widget.LinearLayout,,,com.alibaba.aliyun:id/userCountView,9], 4002296d1b4876b4e756ddbcd64a285f-0,1311-1080,1462-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[5]
+2016-09-04 12:40:56 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:40:56 sys_log : [INFO] 4002296d1b4876b4e756ddbcd64a285f >> a3925efbff389f3b3b5c5b2b9eeebfdd, 窗口迁移至新窗口......
+2016-09-04 12:40:56 sys_log : [INFO] 相同窗口执行次数 -> 4
+2016-09-04 12:40:56 sys_log : [INFO] [android.widget.LinearLayout,,,com.alibaba.aliyun:id/userCountView,9], 4002296d1b4876b4e756ddbcd64a285f >> a3925efbff389f3b3b5c5b2b9eeebfdd, 窗口虽然发生迁移,但已达到最大遍历深度 -> 9, 点击返回......
+2016-09-04 12:41:08 sys_log : [INFO] [android.widget.LinearLayout,,,com.alibaba.aliyun:id/userCountView,9], 4002296d1b4876b4e756ddbcd64a285f >> 开始执行节点任务......
+2016-09-04 12:41:08 sys_log : [INFO] click -> [info = android.widget.LinearLayout,,,com.alibaba.aliyun:id/userCountView,9], [depth = 9]4002296d1b4876b4e756ddbcd64a285f-0,1311-1080,1462-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[5]
+2016-09-04 12:41:18 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有5个任务待运行, [android.widget.LinearLayout,,,com.alibaba.aliyun:id/userInviteCodeView,9], 4002296d1b4876b4e756ddbcd64a285f-0,1486-1080,1638-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[6]
+2016-09-04 12:41:19 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:41:19 sys_log : [INFO] 4002296d1b4876b4e756ddbcd64a285f >> a3925efbff389f3b3b5c5b2b9eeebfdd, 窗口迁移至新窗口......
+2016-09-04 12:41:19 sys_log : [INFO] 相同窗口执行次数 -> 5
+2016-09-04 12:41:19 sys_log : [INFO] [android.widget.LinearLayout,,,com.alibaba.aliyun:id/userInviteCodeView,9], 4002296d1b4876b4e756ddbcd64a285f >> a3925efbff389f3b3b5c5b2b9eeebfdd, 窗口虽然发生迁移,但已达到最大遍历深度 -> 9, 点击返回......
+2016-09-04 12:41:31 sys_log : [INFO] [android.widget.LinearLayout,,,com.alibaba.aliyun:id/userInviteCodeView,9], 4002296d1b4876b4e756ddbcd64a285f >> 开始执行节点任务......
+2016-09-04 12:41:31 sys_log : [INFO] click -> [info = android.widget.LinearLayout,,,com.alibaba.aliyun:id/userInviteCodeView,9], [depth = 9]4002296d1b4876b4e756ddbcd64a285f-0,1486-1080,1638-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[6]
+2016-09-04 12:41:41 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有4个任务待运行, [android.widget.LinearLayout,,,com.alibaba.aliyun:id/userVoucherView,9], 4002296d1b4876b4e756ddbcd64a285f-0,1638-1080,1770-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[7]
+2016-09-04 12:41:42 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:41:42 sys_log : [INFO] 4002296d1b4876b4e756ddbcd64a285f >> a3925efbff389f3b3b5c5b2b9eeebfdd, 窗口迁移至新窗口......
+2016-09-04 12:41:42 sys_log : [INFO] 相同窗口执行次数 -> 6
+2016-09-04 12:41:42 sys_log : [INFO] [android.widget.LinearLayout,,,com.alibaba.aliyun:id/userVoucherView,9], 4002296d1b4876b4e756ddbcd64a285f >> a3925efbff389f3b3b5c5b2b9eeebfdd, 窗口虽然发生迁移,但已达到最大遍历深度 -> 9, 点击返回......
+2016-09-04 12:41:54 sys_log : [INFO] [android.widget.LinearLayout,,,com.alibaba.aliyun:id/userVoucherView,9], 4002296d1b4876b4e756ddbcd64a285f >> 开始执行节点任务......
+2016-09-04 12:41:54 sys_log : [INFO] click -> [info = android.widget.LinearLayout,,,com.alibaba.aliyun:id/userVoucherView,9], [depth = 9]4002296d1b4876b4e756ddbcd64a285f-0,1638-1080,1770-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[7]
+2016-09-04 12:42:04 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有3个任务待运行, [android.widget.RelativeLayout,,,,7], 4002296d1b4876b4e756ddbcd64a285f-0,1770-270,1920-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]
+2016-09-04 12:42:05 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:42:05 sys_log : [INFO] 4002296d1b4876b4e756ddbcd64a285f >> a3925efbff389f3b3b5c5b2b9eeebfdd, 窗口迁移至新窗口......
+2016-09-04 12:42:05 sys_log : [INFO] 相同窗口执行次数 -> 7
+2016-09-04 12:42:05 sys_log : [INFO] 	8
+2016-09-04 12:42:05 sys_log : [INFO] 		8
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:8
+2016-09-04 12:42:05 sys_log : [INFO] 	9
+2016-09-04 12:42:05 sys_log : [INFO] 		9
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:9
+2016-09-04 12:42:05 sys_log : [INFO] 	10
+2016-09-04 12:42:05 sys_log : [INFO] 		10
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:10
+2016-09-04 12:42:05 sys_log : [INFO] 	11
+2016-09-04 12:42:05 sys_log : [INFO] 		11
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:11
+2016-09-04 12:42:05 sys_log : [INFO] 	12
+2016-09-04 12:42:05 sys_log : [INFO] 		12
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:12
+2016-09-04 12:42:05 sys_log : [INFO] 	13
+2016-09-04 12:42:05 sys_log : [INFO] 		13
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:13
+2016-09-04 12:42:05 sys_log : [INFO] 	14
+2016-09-04 12:42:05 sys_log : [INFO] 		14
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:14
+2016-09-04 12:42:05 sys_log : [INFO] 	15
+2016-09-04 12:42:05 sys_log : [INFO] 		15
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:15
+2016-09-04 12:42:05 sys_log : [INFO] 	16
+2016-09-04 12:42:05 sys_log : [INFO] 		16
+2016-09-04 12:42:05 sys_log : [INFO] 		15
+2016-09-04 12:42:05 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:42:05 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,com.alibaba.aliyun:id/rl_left_button,15
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:15
+2016-09-04 12:42:05 sys_log : [INFO] 	16
+2016-09-04 12:42:05 sys_log : [INFO] 		16
+2016-09-04 12:42:05 sys_log : [INFO] 		15
+2016-09-04 12:42:05 sys_log : [INFO] 		13
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:13
+2016-09-04 12:42:05 sys_log : [INFO] 	14
+2016-09-04 12:42:05 sys_log : [INFO] 		14
+2016-09-04 12:42:05 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:42:05 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,com.alibaba.aliyun:id/filter_header,14
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:14
+2016-09-04 12:42:05 sys_log : [INFO] 	15
+2016-09-04 12:42:05 sys_log : [INFO] 		15
+2016-09-04 12:42:05 sys_log : [INFO] 		15
+2016-09-04 12:42:05 sys_log : [INFO] 		15
+2016-09-04 12:42:05 sys_log : [INFO] 		13
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:13
+2016-09-04 12:42:05 sys_log : [INFO] 	14
+2016-09-04 12:42:05 sys_log : [INFO] 		14
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:14
+2016-09-04 12:42:05 sys_log : [INFO] 	15
+2016-09-04 12:42:05 sys_log : [INFO] 		15
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:15
+2016-09-04 12:42:05 sys_log : [INFO] 	16
+2016-09-04 12:42:05 sys_log : [INFO] 		16
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:16
+2016-09-04 12:42:05 sys_log : [INFO] 	17
+2016-09-04 12:42:05 sys_log : [INFO] 		17
+2016-09-04 12:42:05 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:42:05 sys_log : [INFO] 			      info:android.widget.LinearLayout,,,,17
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:17
+2016-09-04 12:42:05 sys_log : [INFO] 	18
+2016-09-04 12:42:05 sys_log : [INFO] 		18
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:18
+2016-09-04 12:42:05 sys_log : [INFO] 	19
+2016-09-04 12:42:05 sys_log : [INFO] 		19
+2016-09-04 12:42:05 sys_log : [INFO] 		19
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:42:05 sys_log : [INFO] 	20
+2016-09-04 12:42:05 sys_log : [INFO] 		20
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:20
+2016-09-04 12:42:05 sys_log : [INFO] 	21
+2016-09-04 12:42:05 sys_log : [INFO] 		21
+2016-09-04 12:42:05 sys_log : [INFO] 		21
+2016-09-04 12:42:05 sys_log : [INFO] 		20
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:20
+2016-09-04 12:42:05 sys_log : [INFO] 	21
+2016-09-04 12:42:05 sys_log : [INFO] 		21
+2016-09-04 12:42:05 sys_log : [INFO] 		21
+2016-09-04 12:42:05 sys_log : [INFO] 		20
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:20
+2016-09-04 12:42:05 sys_log : [INFO] 	21
+2016-09-04 12:42:05 sys_log : [INFO] 		21
+2016-09-04 12:42:05 sys_log : [INFO] 		21
+2016-09-04 12:42:05 sys_log : [INFO] 		19
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:42:05 sys_log : [INFO] 	20
+2016-09-04 12:42:05 sys_log : [INFO] 		20
+2016-09-04 12:42:05 sys_log : [INFO] 		20
+2016-09-04 12:42:05 sys_log : [INFO] 		17
+2016-09-04 12:42:05 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:42:05 sys_log : [INFO] 			      info:android.widget.LinearLayout,,,,17
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:17
+2016-09-04 12:42:05 sys_log : [INFO] 	18
+2016-09-04 12:42:05 sys_log : [INFO] 		18
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:18
+2016-09-04 12:42:05 sys_log : [INFO] 	19
+2016-09-04 12:42:05 sys_log : [INFO] 		19
+2016-09-04 12:42:05 sys_log : [INFO] 		19
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:42:05 sys_log : [INFO] 	20
+2016-09-04 12:42:05 sys_log : [INFO] 		20
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:20
+2016-09-04 12:42:05 sys_log : [INFO] 	21
+2016-09-04 12:42:05 sys_log : [INFO] 		21
+2016-09-04 12:42:05 sys_log : [INFO] 		21
+2016-09-04 12:42:05 sys_log : [INFO] 		20
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:20
+2016-09-04 12:42:05 sys_log : [INFO] 	21
+2016-09-04 12:42:05 sys_log : [INFO] 		21
+2016-09-04 12:42:05 sys_log : [INFO] 		21
+2016-09-04 12:42:05 sys_log : [INFO] 		20
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:20
+2016-09-04 12:42:05 sys_log : [INFO] 	21
+2016-09-04 12:42:05 sys_log : [INFO] 		21
+2016-09-04 12:42:05 sys_log : [INFO] 		21
+2016-09-04 12:42:05 sys_log : [INFO] 		19
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:42:05 sys_log : [INFO] 	20
+2016-09-04 12:42:05 sys_log : [INFO] 		20
+2016-09-04 12:42:05 sys_log : [INFO] 		20
+2016-09-04 12:42:05 sys_log : [INFO] 		17
+2016-09-04 12:42:05 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:42:05 sys_log : [INFO] 			      info:android.widget.LinearLayout,,,,17
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:17
+2016-09-04 12:42:05 sys_log : [INFO] 	18
+2016-09-04 12:42:05 sys_log : [INFO] 		18
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:18
+2016-09-04 12:42:05 sys_log : [INFO] 	19
+2016-09-04 12:42:05 sys_log : [INFO] 		19
+2016-09-04 12:42:05 sys_log : [INFO] 		19
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:42:05 sys_log : [INFO] 	20
+2016-09-04 12:42:05 sys_log : [INFO] 		20
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:20
+2016-09-04 12:42:05 sys_log : [INFO] 	21
+2016-09-04 12:42:05 sys_log : [INFO] 		21
+2016-09-04 12:42:05 sys_log : [INFO] 		21
+2016-09-04 12:42:05 sys_log : [INFO] 		20
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:20
+2016-09-04 12:42:05 sys_log : [INFO] 	21
+2016-09-04 12:42:05 sys_log : [INFO] 		21
+2016-09-04 12:42:05 sys_log : [INFO] 		21
+2016-09-04 12:42:05 sys_log : [INFO] 		20
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:20
+2016-09-04 12:42:05 sys_log : [INFO] 	21
+2016-09-04 12:42:05 sys_log : [INFO] 		21
+2016-09-04 12:42:05 sys_log : [INFO] 		21
+2016-09-04 12:42:05 sys_log : [INFO] 		19
+2016-09-04 12:42:05 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:42:05 sys_log : [INFO] 	20
+2016-09-04 12:42:05 sys_log : [INFO] 		20
+2016-09-04 12:42:05 sys_log : [INFO] 		20
+2016-09-04 12:42:05 sys_log : [INFO] 		10
+2016-09-04 12:42:05 sys_log : [INFO] 5个新任务准备入栈......
+2016-09-04 12:42:05 sys_log : [INFO] 5个新任务允许入栈......
+2016-09-04 12:42:05 sys_log : [INFO] 任务栈已更新, 5个新任务允许入栈, 现在还有9个任务待运行......
+2016-09-04 12:42:05 sys_log : [INFO] 任务栈已更新,现在还有8个任务待运行......
+2016-09-04 12:42:05 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/rl_left_button,15], a3925efbff389f3b3b5c5b2b9eeebfdd >> 开始执行节点任务......
+2016-09-04 12:42:05 sys_log : [INFO] click -> [info = android.widget.RelativeLayout,,,com.alibaba.aliyun:id/rl_left_button,15], [depth = 15]a3925efbff389f3b3b5c5b2b9eeebfdd-0,75-120,219-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]
+2016-09-04 12:42:19 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有7个任务待运行, [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/filter_header,14], a3925efbff389f3b3b5c5b2b9eeebfdd-0,219-1080,351-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]
+2016-09-04 12:42:20 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:42:20 sys_log : [INFO] a3925efbff389f3b3b5c5b2b9eeebfdd >> 4002296d1b4876b4e756ddbcd64a285f, 窗口迁移至老窗口,获取到窗口任务列表 -> 4
+2016-09-04 12:42:20 sys_log : [INFO] 任务栈已更新,现在还有7个任务待运行......
+2016-09-04 12:42:20 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/filter_header,14], a3925efbff389f3b3b5c5b2b9eeebfdd >> 开始执行节点任务......
+2016-09-04 12:42:50 sys_log : [ERROR]   节点任务 -> [info = android.widget.RelativeLayout,,,com.alibaba.aliyun:id/filter_header,14], NoSuchElementException, 弹出下一个节点任务, a3925efbff389f3b3b5c5b2b9eeebfdd-0,219-1080,351-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]
+2016-09-04 12:42:50 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有6个任务待运行, [android.widget.RelativeLayout,,,,7], 4002296d1b4876b4e756ddbcd64a285f-0,1770-270,1920-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]
+2016-09-04 12:42:51 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> true
+2016-09-04 12:42:51 sys_log : [INFO] [android.widget.RelativeLayout,,,,7], 4002296d1b4876b4e756ddbcd64a285f >> 开始执行节点任务......
+2016-09-04 12:42:51 sys_log : [INFO] click -> [info = android.widget.RelativeLayout,,,,7], [depth = 7]4002296d1b4876b4e756ddbcd64a285f-0,1770-270,1920-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]
+2016-09-04 12:43:02 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有5个任务待运行, [android.widget.RelativeLayout,,,,7], 4002296d1b4876b4e756ddbcd64a285f-270,1770-540,1920-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[2]
+2016-09-04 12:43:03 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:43:03 sys_log : [INFO] 4002296d1b4876b4e756ddbcd64a285f >> c46f85534e237b2727336cae9910cfaa, 窗口迁移至新窗口......
+2016-09-04 12:43:03 sys_log : [INFO] 相同窗口执行次数 -> 0
+2016-09-04 12:43:03 sys_log : [INFO] 	8
+2016-09-04 12:43:03 sys_log : [INFO] 		8
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:8
+2016-09-04 12:43:03 sys_log : [INFO] 	9
+2016-09-04 12:43:03 sys_log : [INFO] 		9
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:9
+2016-09-04 12:43:03 sys_log : [INFO] 	10
+2016-09-04 12:43:03 sys_log : [INFO] 		10
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:10
+2016-09-04 12:43:03 sys_log : [INFO] 	11
+2016-09-04 12:43:03 sys_log : [INFO] 		11
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:11
+2016-09-04 12:43:03 sys_log : [INFO] 	12
+2016-09-04 12:43:03 sys_log : [INFO] 		12
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:12
+2016-09-04 12:43:03 sys_log : [INFO] 	13
+2016-09-04 12:43:03 sys_log : [INFO] 		13
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:13
+2016-09-04 12:43:03 sys_log : [INFO] 	14
+2016-09-04 12:43:03 sys_log : [INFO] 		14
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:14
+2016-09-04 12:43:03 sys_log : [INFO] 	15
+2016-09-04 12:43:03 sys_log : [INFO] 		15
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:15
+2016-09-04 12:43:03 sys_log : [INFO] 	16
+2016-09-04 12:43:03 sys_log : [INFO] 		16
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:16
+2016-09-04 12:43:03 sys_log : [INFO] 	17
+2016-09-04 12:43:03 sys_log : [INFO] 		17
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:17
+2016-09-04 12:43:03 sys_log : [INFO] 	18
+2016-09-04 12:43:03 sys_log : [INFO] 		18
+2016-09-04 12:43:03 sys_log : [INFO] 		17
+2016-09-04 12:43:03 sys_log : [INFO] 		17
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:17
+2016-09-04 12:43:03 sys_log : [INFO] 	18
+2016-09-04 12:43:03 sys_log : [INFO] 		18
+2016-09-04 12:43:03 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:43:03 sys_log : [INFO] 			      info:android.widget.ImageView,,,com.alibaba.aliyun:id/common_right_button,18
+2016-09-04 12:43:03 sys_log : [INFO] 		15
+2016-09-04 12:43:03 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:43:03 sys_log : [INFO] 			      info:android.widget.ImageView,,,com.alibaba.aliyun:id/scan,15
+2016-09-04 12:43:03 sys_log : [INFO] 		15
+2016-09-04 12:43:03 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:43:03 sys_log : [INFO] 			      info:android.widget.ImageView,,,com.alibaba.aliyun:id/message_button,15
+2016-09-04 12:43:03 sys_log : [INFO] 		15
+2016-09-04 12:43:03 sys_log : [INFO] 		15
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:15
+2016-09-04 12:43:03 sys_log : [INFO] 	16
+2016-09-04 12:43:03 sys_log : [INFO] 		16
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:16
+2016-09-04 12:43:03 sys_log : [INFO] 	17
+2016-09-04 12:43:03 sys_log : [INFO] 		17
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:17
+2016-09-04 12:43:03 sys_log : [INFO] 	18
+2016-09-04 12:43:03 sys_log : [INFO] 		18
+2016-09-04 12:43:03 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:43:03 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:18
+2016-09-04 12:43:03 sys_log : [INFO] 	19
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 		18
+2016-09-04 12:43:03 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:43:03 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:18
+2016-09-04 12:43:03 sys_log : [INFO] 	19
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 		18
+2016-09-04 12:43:03 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:43:03 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:18
+2016-09-04 12:43:03 sys_log : [INFO] 	19
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 		18
+2016-09-04 12:43:03 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:43:03 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:18
+2016-09-04 12:43:03 sys_log : [INFO] 	19
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 		17
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:17
+2016-09-04 12:43:03 sys_log : [INFO] 	18
+2016-09-04 12:43:03 sys_log : [INFO] 		18
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:18
+2016-09-04 12:43:03 sys_log : [INFO] 	19
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 		17
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:17
+2016-09-04 12:43:03 sys_log : [INFO] 	18
+2016-09-04 12:43:03 sys_log : [INFO] 		18
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:18
+2016-09-04 12:43:03 sys_log : [INFO] 	19
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:43:03 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,com.alibaba.aliyun:id/item_0,19
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:43:03 sys_log : [INFO] 	20
+2016-09-04 12:43:03 sys_log : [INFO] 		20
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:20
+2016-09-04 12:43:03 sys_log : [INFO] 	21
+2016-09-04 12:43:03 sys_log : [INFO] 		21
+2016-09-04 12:43:03 sys_log : [INFO] 		21
+2016-09-04 12:43:03 sys_log : [INFO] 		20
+2016-09-04 12:43:03 sys_log : [INFO] 		20
+2016-09-04 12:43:03 sys_log : [INFO] 		20
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:43:03 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,com.alibaba.aliyun:id/item_1,19
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:43:03 sys_log : [INFO] 	20
+2016-09-04 12:43:03 sys_log : [INFO] 		20
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:20
+2016-09-04 12:43:03 sys_log : [INFO] 	21
+2016-09-04 12:43:03 sys_log : [INFO] 		21
+2016-09-04 12:43:03 sys_log : [INFO] 		20
+2016-09-04 12:43:03 sys_log : [INFO] 		20
+2016-09-04 12:43:03 sys_log : [INFO] 		20
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:43:03 sys_log : [INFO] 	20
+2016-09-04 12:43:03 sys_log : [INFO] 		20
+2016-09-04 12:43:03 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:43:03 sys_log : [INFO] 			      info:android.widget.ImageView,,,com.alibaba.aliyun:id/img_2,20
+2016-09-04 12:43:03 sys_log : [INFO] 		20
+2016-09-04 12:43:03 sys_log : [INFO] 		20
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 		17
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:17
+2016-09-04 12:43:03 sys_log : [INFO] 	18
+2016-09-04 12:43:03 sys_log : [INFO] 		18
+2016-09-04 12:43:03 sys_log : [INFO] 		18
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:18
+2016-09-04 12:43:03 sys_log : [INFO] 	19
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 		18
+2016-09-04 12:43:03 sys_log : [INFO] 		18
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:18
+2016-09-04 12:43:03 sys_log : [INFO] 	19
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:43:03 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,19
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:43:03 sys_log : [INFO] 	20
+2016-09-04 12:43:03 sys_log : [INFO] 		20
+2016-09-04 12:43:03 sys_log : [INFO] 		20
+2016-09-04 12:43:03 sys_log : [INFO] 		20
+2016-09-04 12:43:03 sys_log : [INFO] 		20
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:43:03 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,19
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:43:03 sys_log : [INFO] 	20
+2016-09-04 12:43:03 sys_log : [INFO] 		20
+2016-09-04 12:43:03 sys_log : [INFO] 		20
+2016-09-04 12:43:03 sys_log : [INFO] 		20
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:43:03 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,19
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:43:03 sys_log : [INFO] 	20
+2016-09-04 12:43:03 sys_log : [INFO] 		20
+2016-09-04 12:43:03 sys_log : [INFO] 		20
+2016-09-04 12:43:03 sys_log : [INFO] 		20
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:43:03 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,19
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:43:03 sys_log : [INFO] 	20
+2016-09-04 12:43:03 sys_log : [INFO] 		20
+2016-09-04 12:43:03 sys_log : [INFO] 		20
+2016-09-04 12:43:03 sys_log : [INFO] 		20
+2016-09-04 12:43:03 sys_log : [INFO] 		17
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:17
+2016-09-04 12:43:03 sys_log : [INFO] 	18
+2016-09-04 12:43:03 sys_log : [INFO] 		18
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:18
+2016-09-04 12:43:03 sys_log : [INFO] 	19
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:43:03 sys_log : [INFO] 	20
+2016-09-04 12:43:03 sys_log : [INFO] 		20
+2016-09-04 12:43:03 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:43:03 sys_log : [INFO] 			      info:android.widget.ImageView,,,,20
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:43:03 sys_log : [INFO] 	20
+2016-09-04 12:43:03 sys_log : [INFO] 		20
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:20
+2016-09-04 12:43:03 sys_log : [INFO] 	21
+2016-09-04 12:43:03 sys_log : [INFO] 		21
+2016-09-04 12:43:03 sys_log : [INFO] 		21
+2016-09-04 12:43:03 sys_log : [INFO] 		21
+2016-09-04 12:43:03 sys_log : [INFO] 		21
+2016-09-04 12:43:03 sys_log : [INFO] 		17
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:17
+2016-09-04 12:43:03 sys_log : [INFO] 	18
+2016-09-04 12:43:03 sys_log : [INFO] 		18
+2016-09-04 12:43:03 sys_log : [INFO] 		18
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:18
+2016-09-04 12:43:03 sys_log : [INFO] 	19
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 		19
+2016-09-04 12:43:03 sys_log : [INFO] 		13
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:13
+2016-09-04 12:43:03 sys_log : [INFO] 	14
+2016-09-04 12:43:03 sys_log : [INFO] 		14
+2016-09-04 12:43:03 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:43:03 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,,14
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:14
+2016-09-04 12:43:03 sys_log : [INFO] 	15
+2016-09-04 12:43:03 sys_log : [INFO] 		15
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:15
+2016-09-04 12:43:03 sys_log : [INFO] 	16
+2016-09-04 12:43:03 sys_log : [INFO] 		16
+2016-09-04 12:43:03 sys_log : [INFO] 		16
+2016-09-04 12:43:03 sys_log : [INFO] 		14
+2016-09-04 12:43:03 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:43:03 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,,14
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:14
+2016-09-04 12:43:03 sys_log : [INFO] 	15
+2016-09-04 12:43:03 sys_log : [INFO] 		15
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:15
+2016-09-04 12:43:03 sys_log : [INFO] 	16
+2016-09-04 12:43:03 sys_log : [INFO] 		16
+2016-09-04 12:43:03 sys_log : [INFO] 		16
+2016-09-04 12:43:03 sys_log : [INFO] 		14
+2016-09-04 12:43:03 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:43:03 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,,14
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:14
+2016-09-04 12:43:03 sys_log : [INFO] 	15
+2016-09-04 12:43:03 sys_log : [INFO] 		15
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:15
+2016-09-04 12:43:03 sys_log : [INFO] 	16
+2016-09-04 12:43:03 sys_log : [INFO] 		16
+2016-09-04 12:43:03 sys_log : [INFO] 		16
+2016-09-04 12:43:03 sys_log : [INFO] 		14
+2016-09-04 12:43:03 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:43:03 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,,14
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:14
+2016-09-04 12:43:03 sys_log : [INFO] 	15
+2016-09-04 12:43:03 sys_log : [INFO] 		15
+2016-09-04 12:43:03 sys_log : [INFO] 				----go to the next depth:15
+2016-09-04 12:43:03 sys_log : [INFO] 	16
+2016-09-04 12:43:03 sys_log : [INFO] 		16
+2016-09-04 12:43:03 sys_log : [INFO] 		16
+2016-09-04 12:43:03 sys_log : [INFO] 		10
+2016-09-04 12:43:03 sys_log : [INFO] 19个新任务准备入栈......
+2016-09-04 12:43:03 sys_log : [INFO] 19个新任务允许入栈......
+2016-09-04 12:43:03 sys_log : [INFO] 任务栈已更新, 19个新任务允许入栈, 现在还有25个任务待运行......
+2016-09-04 12:43:03 sys_log : [INFO] 任务栈已更新,现在还有24个任务待运行......
+2016-09-04 12:43:03 sys_log : [INFO] [android.widget.ImageView,,,com.alibaba.aliyun:id/common_right_button,18], c46f85534e237b2727336cae9910cfaa >> 开始执行节点任务......
+2016-09-04 12:43:03 sys_log : [INFO] click -> [info = android.widget.ImageView,,,com.alibaba.aliyun:id/common_right_button,18], [depth = 18]c46f85534e237b2727336cae9910cfaa-960,111-1032,183-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[2]/android.widget.ImageView[1]
+2016-09-04 12:43:14 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有23个任务待运行, [android.widget.ImageView,,,com.alibaba.aliyun:id/scan,15], c46f85534e237b2727336cae9910cfaa-48,114-114,180-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ImageView[1]
+2016-09-04 12:43:15 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:43:15 sys_log : [INFO] c46f85534e237b2727336cae9910cfaa >> a3925efbff389f3b3b5c5b2b9eeebfdd, 窗口迁移至老窗口,获取到窗口任务列表 -> 3
+2016-09-04 12:43:15 sys_log : [INFO] 任务栈已更新,现在还有23个任务待运行......
+2016-09-04 12:43:15 sys_log : [INFO] [android.widget.ImageView,,,com.alibaba.aliyun:id/scan,15], c46f85534e237b2727336cae9910cfaa >> 开始执行节点任务......
+2016-09-04 12:43:45 sys_log : [ERROR]   节点任务 -> [info = android.widget.ImageView,,,com.alibaba.aliyun:id/scan,15], NoSuchElementException, 弹出下一个节点任务, c46f85534e237b2727336cae9910cfaa-48,114-114,180-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ImageView[1]
+2016-09-04 12:43:45 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有22个任务待运行, [android.widget.LinearLayout,,,,17], a3925efbff389f3b3b5c5b2b9eeebfdd-24,351-1056,770-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.ViewFlipper[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.ListView[1]/android.widget.LinearLayout[1]
+2016-09-04 12:43:46 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> true
+2016-09-04 12:43:46 sys_log : [INFO] [android.widget.LinearLayout,,,,17], a3925efbff389f3b3b5c5b2b9eeebfdd >> 开始执行节点任务......
+2016-09-04 12:44:17 sys_log : [ERROR]   节点任务 -> [info = android.widget.LinearLayout,,,,17], NoSuchElementException, 弹出下一个节点任务, a3925efbff389f3b3b5c5b2b9eeebfdd-24,351-1056,770-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.ViewFlipper[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.ListView[1]/android.widget.LinearLayout[1]
+2016-09-04 12:44:17 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有21个任务待运行, [android.widget.LinearLayout,,,,17], a3925efbff389f3b3b5c5b2b9eeebfdd-24,769-1056,1189-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.ViewFlipper[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.ListView[1]/android.widget.LinearLayout[2]
+2016-09-04 12:44:18 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> true
+2016-09-04 12:44:18 sys_log : [INFO] [android.widget.LinearLayout,,,,17], a3925efbff389f3b3b5c5b2b9eeebfdd >> 开始执行节点任务......
+2016-09-04 12:44:48 sys_log : [ERROR]   节点任务 -> [info = android.widget.LinearLayout,,,,17], NoSuchElementException, 弹出下一个节点任务, a3925efbff389f3b3b5c5b2b9eeebfdd-24,769-1056,1189-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.ViewFlipper[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.ListView[1]/android.widget.LinearLayout[2]
+2016-09-04 12:44:48 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有20个任务待运行, [android.widget.LinearLayout,,,,17], a3925efbff389f3b3b5c5b2b9eeebfdd-24,1188-1056,1608-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.ViewFlipper[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.ListView[1]/android.widget.LinearLayout[3]
+2016-09-04 12:44:49 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> true
+2016-09-04 12:44:49 sys_log : [INFO] [android.widget.LinearLayout,,,,17], a3925efbff389f3b3b5c5b2b9eeebfdd >> 开始执行节点任务......
+2016-09-04 12:45:20 sys_log : [ERROR]   节点任务 -> [info = android.widget.LinearLayout,,,,17], NoSuchElementException, 弹出下一个节点任务, a3925efbff389f3b3b5c5b2b9eeebfdd-24,1188-1056,1608-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.ViewFlipper[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.ListView[1]/android.widget.LinearLayout[3]
+2016-09-04 12:45:20 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有19个任务待运行, [android.widget.ImageView,,,com.alibaba.aliyun:id/message_button,15], c46f85534e237b2727336cae9910cfaa-966,114-1032,180-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ImageView[2]
+2016-09-04 12:45:21 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:45:21 sys_log : [INFO] c46f85534e237b2727336cae9910cfaa >> a3925efbff389f3b3b5c5b2b9eeebfdd, 窗口迁移至新窗口......
+2016-09-04 12:45:21 sys_log : [INFO] 相同窗口执行次数 -> 0
+2016-09-04 12:45:21 sys_log : [INFO] [android.widget.ImageView,,,com.alibaba.aliyun:id/message_button,15], c46f85534e237b2727336cae9910cfaa >> a3925efbff389f3b3b5c5b2b9eeebfdd, 窗口虽然发生迁移,但已达到最大遍历深度 -> 15, 点击返回......
+2016-09-04 12:45:33 sys_log : [INFO] [android.widget.ImageView,,,com.alibaba.aliyun:id/message_button,15], c46f85534e237b2727336cae9910cfaa >> 开始执行节点任务......
+2016-09-04 12:45:33 sys_log : [INFO] click -> [info = android.widget.ImageView,,,com.alibaba.aliyun:id/message_button,15], [depth = 15]c46f85534e237b2727336cae9910cfaa-966,114-1032,180-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ImageView[2]
+2016-09-04 12:45:43 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有18个任务待运行, [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], c46f85534e237b2727336cae9910cfaa-0,219-270,534-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[1]
+2016-09-04 12:45:44 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:45:44 sys_log : [INFO] c46f85534e237b2727336cae9910cfaa >> a3925efbff389f3b3b5c5b2b9eeebfdd, 窗口迁移至新窗口......
+2016-09-04 12:45:44 sys_log : [INFO] 相同窗口执行次数 -> 1
+2016-09-04 12:45:44 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], c46f85534e237b2727336cae9910cfaa >> a3925efbff389f3b3b5c5b2b9eeebfdd, 窗口虽然发生迁移,但已达到最大遍历深度 -> 18, 点击返回......
+2016-09-04 12:45:56 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], c46f85534e237b2727336cae9910cfaa >> 开始执行节点任务......
+2016-09-04 12:45:57 sys_log : [INFO] click -> [info = android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], [depth = 18]c46f85534e237b2727336cae9910cfaa-0,219-270,534-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[1]
+2016-09-04 12:46:07 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有17个任务待运行, [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], c46f85534e237b2727336cae9910cfaa-270,219-540,534-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[2]
+2016-09-04 12:46:08 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:46:08 sys_log : [INFO] c46f85534e237b2727336cae9910cfaa >> a3925efbff389f3b3b5c5b2b9eeebfdd, 窗口迁移至新窗口......
+2016-09-04 12:46:08 sys_log : [INFO] 相同窗口执行次数 -> 2
+2016-09-04 12:46:08 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], c46f85534e237b2727336cae9910cfaa >> a3925efbff389f3b3b5c5b2b9eeebfdd, 窗口虽然发生迁移,但已达到最大遍历深度 -> 18, 点击返回......
+2016-09-04 12:46:20 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], c46f85534e237b2727336cae9910cfaa >> 开始执行节点任务......
+2016-09-04 12:46:20 sys_log : [INFO] click -> [info = android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], [depth = 18]c46f85534e237b2727336cae9910cfaa-270,219-540,534-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[2]
+2016-09-04 12:46:31 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有16个任务待运行, [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], c46f85534e237b2727336cae9910cfaa-540,219-810,534-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[3]
+2016-09-04 12:46:32 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:46:32 sys_log : [INFO] c46f85534e237b2727336cae9910cfaa >> 599b9bbb96a22f93fb54710191ad9c7a, 窗口迁移至新窗口......
+2016-09-04 12:46:32 sys_log : [INFO] 相同窗口执行次数 -> 0
+2016-09-04 12:46:32 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], c46f85534e237b2727336cae9910cfaa >> 599b9bbb96a22f93fb54710191ad9c7a, 窗口虽然发生迁移,但已达到最大遍历深度 -> 18, 点击返回......
+2016-09-04 12:46:44 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], c46f85534e237b2727336cae9910cfaa >> 开始执行节点任务......
+2016-09-04 12:46:44 sys_log : [INFO] click -> [info = android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], [depth = 18]c46f85534e237b2727336cae9910cfaa-540,219-810,534-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[3]
+2016-09-04 12:46:55 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有15个任务待运行, [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], c46f85534e237b2727336cae9910cfaa-810,219-1080,534-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[4]
+2016-09-04 12:46:56 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:46:56 sys_log : [INFO] c46f85534e237b2727336cae9910cfaa >> 599b9bbb96a22f93fb54710191ad9c7a, 窗口迁移至新窗口......
+2016-09-04 12:46:56 sys_log : [INFO] 相同窗口执行次数 -> 1
+2016-09-04 12:46:56 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], c46f85534e237b2727336cae9910cfaa >> 599b9bbb96a22f93fb54710191ad9c7a, 窗口虽然发生迁移,但已达到最大遍历深度 -> 18, 点击返回......
+2016-09-04 12:47:09 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], c46f85534e237b2727336cae9910cfaa >> 开始执行节点任务......
+2016-09-04 12:47:09 sys_log : [INFO] click -> [info = android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], [depth = 18]c46f85534e237b2727336cae9910cfaa-810,219-1080,534-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[4]
+2016-09-04 12:47:19 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有14个任务待运行, [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/item_0,19], c46f85534e237b2727336cae9910cfaa-0,606-540,840-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[2]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]
+2016-09-04 12:47:20 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:47:20 sys_log : [INFO] c46f85534e237b2727336cae9910cfaa >> 599b9bbb96a22f93fb54710191ad9c7a, 窗口迁移至新窗口......
+2016-09-04 12:47:20 sys_log : [INFO] 相同窗口执行次数 -> 2
+2016-09-04 12:47:20 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/item_0,19], c46f85534e237b2727336cae9910cfaa >> 599b9bbb96a22f93fb54710191ad9c7a, 窗口虽然发生迁移,但已达到最大遍历深度 -> 19, 点击返回......
+2016-09-04 12:47:32 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/item_0,19], c46f85534e237b2727336cae9910cfaa >> 开始执行节点任务......
+2016-09-04 12:47:32 sys_log : [INFO] click -> [info = android.widget.RelativeLayout,,,com.alibaba.aliyun:id/item_0,19], [depth = 19]c46f85534e237b2727336cae9910cfaa-0,606-540,840-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[2]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]
+2016-09-04 12:47:43 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有13个任务待运行, [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/item_1,19], c46f85534e237b2727336cae9910cfaa-541,606-1080,840-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[2]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[2]
+2016-09-04 12:47:44 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:47:44 sys_log : [INFO] c46f85534e237b2727336cae9910cfaa >> 599b9bbb96a22f93fb54710191ad9c7a, 窗口迁移至新窗口......
+2016-09-04 12:47:44 sys_log : [INFO] 相同窗口执行次数 -> 3
+2016-09-04 12:47:44 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/item_1,19], c46f85534e237b2727336cae9910cfaa >> 599b9bbb96a22f93fb54710191ad9c7a, 窗口虽然发生迁移,但已达到最大遍历深度 -> 19, 点击返回......
+2016-09-04 12:47:56 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/item_1,19], c46f85534e237b2727336cae9910cfaa >> 开始执行节点任务......
+2016-09-04 12:47:56 sys_log : [INFO] click -> [info = android.widget.RelativeLayout,,,com.alibaba.aliyun:id/item_1,19], [depth = 19]c46f85534e237b2727336cae9910cfaa-541,606-1080,840-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[2]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[2]
+2016-09-04 12:48:07 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有12个任务待运行, [android.widget.ImageView,,,com.alibaba.aliyun:id/img_2,20], c46f85534e237b2727336cae9910cfaa-48,877-252,937-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[2]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.ImageView[1]
+2016-09-04 12:48:08 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:48:08 sys_log : [INFO] c46f85534e237b2727336cae9910cfaa >> 374144b2e81dbd00a9286a3955e12a2e, 窗口迁移至新窗口......
+2016-09-04 12:48:08 sys_log : [INFO] 相同窗口执行次数 -> 0
+2016-09-04 12:48:08 sys_log : [INFO] [android.widget.ImageView,,,com.alibaba.aliyun:id/img_2,20], c46f85534e237b2727336cae9910cfaa >> 374144b2e81dbd00a9286a3955e12a2e, 窗口虽然发生迁移,但已达到最大遍历深度 -> 20, 点击返回......
+2016-09-04 12:48:20 sys_log : [INFO] [android.widget.ImageView,,,com.alibaba.aliyun:id/img_2,20], c46f85534e237b2727336cae9910cfaa >> 开始执行节点任务......
+2016-09-04 12:48:20 sys_log : [INFO] click -> [info = android.widget.ImageView,,,com.alibaba.aliyun:id/img_2,20], [depth = 20]c46f85534e237b2727336cae9910cfaa-48,877-252,937-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[2]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.ImageView[1]
+2016-09-04 12:48:31 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有11个任务待运行, [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,19], c46f85534e237b2727336cae9910cfaa-0,1114-270,1453-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.GridView[1]/android.widget.RelativeLayout[1]
+2016-09-04 12:48:34 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:48:34 sys_log : [INFO] c46f85534e237b2727336cae9910cfaa >> 599b9bbb96a22f93fb54710191ad9c7a, 窗口迁移至新窗口......
+2016-09-04 12:48:34 sys_log : [INFO] 相同窗口执行次数 -> 0
+2016-09-04 12:48:34 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,19], c46f85534e237b2727336cae9910cfaa >> 599b9bbb96a22f93fb54710191ad9c7a, 窗口虽然发生迁移,但已达到最大遍历深度 -> 19, 点击返回......
+2016-09-04 12:48:48 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,19], c46f85534e237b2727336cae9910cfaa >> 开始执行节点任务......
+2016-09-04 12:48:48 sys_log : [INFO] click -> [info = android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,19], [depth = 19]c46f85534e237b2727336cae9910cfaa-0,1114-270,1453-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.GridView[1]/android.widget.RelativeLayout[1]
+2016-09-04 12:48:59 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有10个任务待运行, [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,19], c46f85534e237b2727336cae9910cfaa-270,1114-540,1453-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.GridView[1]/android.widget.RelativeLayout[2]
+2016-09-04 12:49:00 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:49:00 sys_log : [INFO] c46f85534e237b2727336cae9910cfaa >> 599b9bbb96a22f93fb54710191ad9c7a, 窗口迁移至新窗口......
+2016-09-04 12:49:00 sys_log : [INFO] 相同窗口执行次数 -> 1
+2016-09-04 12:49:00 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,19], c46f85534e237b2727336cae9910cfaa >> 599b9bbb96a22f93fb54710191ad9c7a, 窗口虽然发生迁移,但已达到最大遍历深度 -> 19, 点击返回......
+2016-09-04 12:49:13 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,19], c46f85534e237b2727336cae9910cfaa >> 开始执行节点任务......
+2016-09-04 12:49:13 sys_log : [INFO] click -> [info = android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,19], [depth = 19]c46f85534e237b2727336cae9910cfaa-270,1114-540,1453-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.GridView[1]/android.widget.RelativeLayout[2]
+2016-09-04 12:49:23 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有9个任务待运行, [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,19], c46f85534e237b2727336cae9910cfaa-540,1114-810,1453-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.GridView[1]/android.widget.RelativeLayout[3]
+2016-09-04 12:49:25 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:49:25 sys_log : [INFO] c46f85534e237b2727336cae9910cfaa >> 599b9bbb96a22f93fb54710191ad9c7a, 窗口迁移至新窗口......
+2016-09-04 12:49:25 sys_log : [INFO] 相同窗口执行次数 -> 2
+2016-09-04 12:49:25 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,19], c46f85534e237b2727336cae9910cfaa >> 599b9bbb96a22f93fb54710191ad9c7a, 窗口虽然发生迁移,但已达到最大遍历深度 -> 19, 点击返回......
+2016-09-04 12:49:37 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,19], c46f85534e237b2727336cae9910cfaa >> 开始执行节点任务......
+2016-09-04 12:49:38 sys_log : [INFO] click -> [info = android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,19], [depth = 19]c46f85534e237b2727336cae9910cfaa-540,1114-810,1453-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.GridView[1]/android.widget.RelativeLayout[3]
+2016-09-04 12:49:48 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有8个任务待运行, [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,19], c46f85534e237b2727336cae9910cfaa-810,1114-1080,1453-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.GridView[1]/android.widget.RelativeLayout[4]
+2016-09-04 12:49:49 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:49:49 sys_log : [INFO] c46f85534e237b2727336cae9910cfaa >> 599b9bbb96a22f93fb54710191ad9c7a, 窗口迁移至新窗口......
+2016-09-04 12:49:49 sys_log : [INFO] 相同窗口执行次数 -> 3
+2016-09-04 12:49:49 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,19], c46f85534e237b2727336cae9910cfaa >> 599b9bbb96a22f93fb54710191ad9c7a, 窗口虽然发生迁移,但已达到最大遍历深度 -> 19, 点击返回......
+2016-09-04 12:50:01 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,19], c46f85534e237b2727336cae9910cfaa >> 开始执行节点任务......
+2016-09-04 12:50:02 sys_log : [INFO] click -> [info = android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,19], [depth = 19]c46f85534e237b2727336cae9910cfaa-810,1114-1080,1453-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.GridView[1]/android.widget.RelativeLayout[4]
+2016-09-04 12:50:12 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有7个任务待运行, [android.widget.ImageView,,,,20], c46f85534e237b2727336cae9910cfaa-0,1471-1080,1690-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.support.v4.view.ViewPager[1]/android.widget.ImageView[1]
+2016-09-04 12:50:13 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:50:13 sys_log : [INFO] c46f85534e237b2727336cae9910cfaa >> 599b9bbb96a22f93fb54710191ad9c7a, 窗口迁移至新窗口......
+2016-09-04 12:50:13 sys_log : [INFO] 相同窗口执行次数 -> 4
+2016-09-04 12:50:13 sys_log : [INFO] [android.widget.ImageView,,,,20], c46f85534e237b2727336cae9910cfaa >> 599b9bbb96a22f93fb54710191ad9c7a, 窗口虽然发生迁移,但已达到最大遍历深度 -> 20, 点击返回......
+2016-09-04 12:50:25 sys_log : [INFO] [android.widget.ImageView,,,,20], c46f85534e237b2727336cae9910cfaa >> 开始执行节点任务......
+2016-09-04 12:50:26 sys_log : [INFO] click -> [info = android.widget.ImageView,,,,20], [depth = 20]c46f85534e237b2727336cae9910cfaa-0,1471-1080,1690-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.support.v4.view.ViewPager[1]/android.widget.ImageView[1]
+2016-09-04 12:50:36 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有6个任务待运行, [android.widget.RelativeLayout,,,,14], c46f85534e237b2727336cae9910cfaa-0,1770-270,1920-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]
+2016-09-04 12:50:39 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:50:39 sys_log : [INFO] c46f85534e237b2727336cae9910cfaa >> 599b9bbb96a22f93fb54710191ad9c7a, 窗口迁移至新窗口......
+2016-09-04 12:50:39 sys_log : [INFO] 相同窗口执行次数 -> 5
+2016-09-04 12:50:39 sys_log : [INFO] [android.widget.RelativeLayout,,,,14], c46f85534e237b2727336cae9910cfaa >> 599b9bbb96a22f93fb54710191ad9c7a, 窗口虽然发生迁移,但已达到最大遍历深度 -> 14, 点击返回......
+2016-09-04 12:50:51 sys_log : [INFO] [android.widget.RelativeLayout,,,,14], c46f85534e237b2727336cae9910cfaa >> 开始执行节点任务......
+2016-09-04 12:50:52 sys_log : [INFO] click -> [info = android.widget.RelativeLayout,,,,14], [depth = 14]c46f85534e237b2727336cae9910cfaa-0,1770-270,1920-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]
+2016-09-04 12:51:05 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有5个任务待运行, [android.widget.RelativeLayout,,,,14], c46f85534e237b2727336cae9910cfaa-270,1770-540,1920-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[2]
+2016-09-04 12:51:06 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> true
+2016-09-04 12:51:06 sys_log : [INFO] [android.widget.RelativeLayout,,,,14], c46f85534e237b2727336cae9910cfaa >> 开始执行节点任务......
+2016-09-04 12:51:07 sys_log : [INFO] click -> [info = android.widget.RelativeLayout,,,,14], [depth = 14]c46f85534e237b2727336cae9910cfaa-270,1770-540,1920-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[2]
+2016-09-04 12:51:17 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有4个任务待运行, [android.widget.RelativeLayout,,,,14], c46f85534e237b2727336cae9910cfaa-540,1770-810,1920-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[3]
+2016-09-04 12:51:18 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:51:18 sys_log : [INFO] c46f85534e237b2727336cae9910cfaa >> fb7f90c27d261e9bba9aae7e7c26cf71, 窗口迁移至新窗口......
+2016-09-04 12:51:18 sys_log : [INFO] 相同窗口执行次数 -> 0
+2016-09-04 12:51:18 sys_log : [INFO] [android.widget.RelativeLayout,,,,14], c46f85534e237b2727336cae9910cfaa >> fb7f90c27d261e9bba9aae7e7c26cf71, 窗口虽然发生迁移,但已达到最大遍历深度 -> 14, 点击返回......
+2016-09-04 12:51:30 sys_log : [INFO] [android.widget.RelativeLayout,,,,14], c46f85534e237b2727336cae9910cfaa >> 开始执行节点任务......
+2016-09-04 12:51:30 sys_log : [INFO] click -> [info = android.widget.RelativeLayout,,,,14], [depth = 14]c46f85534e237b2727336cae9910cfaa-540,1770-810,1920-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[3]
+2016-09-04 12:51:41 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有3个任务待运行, [android.widget.RelativeLayout,,,,14], c46f85534e237b2727336cae9910cfaa-810,1770-1080,1920-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[4]
+2016-09-04 12:51:42 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:51:42 sys_log : [INFO] c46f85534e237b2727336cae9910cfaa >> 26a636f78c625579ab51ebd035b9f931, 窗口迁移至新窗口......
+2016-09-04 12:51:42 sys_log : [INFO] 相同窗口执行次数 -> 0
+2016-09-04 12:51:42 sys_log : [INFO] [android.widget.RelativeLayout,,,,14], c46f85534e237b2727336cae9910cfaa >> 26a636f78c625579ab51ebd035b9f931, 窗口虽然发生迁移,但已达到最大遍历深度 -> 14, 点击返回......
+2016-09-04 12:51:54 sys_log : [INFO] [android.widget.RelativeLayout,,,,14], c46f85534e237b2727336cae9910cfaa >> 开始执行节点任务......
+2016-09-04 12:51:54 sys_log : [INFO] click -> [info = android.widget.RelativeLayout,,,,14], [depth = 14]c46f85534e237b2727336cae9910cfaa-810,1770-1080,1920-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[4]
+2016-09-04 12:52:05 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有2个任务待运行, [android.widget.RelativeLayout,,,,7], 4002296d1b4876b4e756ddbcd64a285f-270,1770-540,1920-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[2]
+2016-09-04 12:52:05 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> true
+2016-09-04 12:52:05 sys_log : [INFO] [android.widget.RelativeLayout,,,,7], 4002296d1b4876b4e756ddbcd64a285f >> 开始执行节点任务......
+2016-09-04 12:52:06 sys_log : [INFO] click -> [info = android.widget.RelativeLayout,,,,7], [depth = 7]4002296d1b4876b4e756ddbcd64a285f-270,1770-540,1920-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[2]
+2016-09-04 12:52:16 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有1个任务待运行, [android.widget.RelativeLayout,,,,7], 4002296d1b4876b4e756ddbcd64a285f-540,1770-810,1920-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[3]
+2016-09-04 12:52:17 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:52:17 sys_log : [INFO] 4002296d1b4876b4e756ddbcd64a285f >> 6a4a1160061d84ef4d87aada5a6d969, 窗口迁移至新窗口......
+2016-09-04 12:52:17 sys_log : [INFO] 相同窗口执行次数 -> 0
+2016-09-04 12:52:17 sys_log : [INFO] 	8
+2016-09-04 12:52:17 sys_log : [INFO] 		8
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:8
+2016-09-04 12:52:17 sys_log : [INFO] 	9
+2016-09-04 12:52:17 sys_log : [INFO] 		9
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:9
+2016-09-04 12:52:17 sys_log : [INFO] 	10
+2016-09-04 12:52:17 sys_log : [INFO] 		10
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:10
+2016-09-04 12:52:17 sys_log : [INFO] 	11
+2016-09-04 12:52:17 sys_log : [INFO] 		11
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:11
+2016-09-04 12:52:17 sys_log : [INFO] 	12
+2016-09-04 12:52:17 sys_log : [INFO] 		12
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:12
+2016-09-04 12:52:17 sys_log : [INFO] 	13
+2016-09-04 12:52:17 sys_log : [INFO] 		13
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:13
+2016-09-04 12:52:17 sys_log : [INFO] 	14
+2016-09-04 12:52:17 sys_log : [INFO] 		14
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:14
+2016-09-04 12:52:17 sys_log : [INFO] 	15
+2016-09-04 12:52:17 sys_log : [INFO] 		15
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:15
+2016-09-04 12:52:17 sys_log : [INFO] 	16
+2016-09-04 12:52:17 sys_log : [INFO] 		16
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:16
+2016-09-04 12:52:17 sys_log : [INFO] 	17
+2016-09-04 12:52:17 sys_log : [INFO] 		17
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:17
+2016-09-04 12:52:17 sys_log : [INFO] 	18
+2016-09-04 12:52:17 sys_log : [INFO] 		18
+2016-09-04 12:52:17 sys_log : [INFO] 		17
+2016-09-04 12:52:17 sys_log : [INFO] 		17
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:17
+2016-09-04 12:52:17 sys_log : [INFO] 	18
+2016-09-04 12:52:17 sys_log : [INFO] 		18
+2016-09-04 12:52:17 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:52:17 sys_log : [INFO] 			      info:android.widget.ImageView,,,com.alibaba.aliyun:id/common_right_button,18
+2016-09-04 12:52:17 sys_log : [INFO] 		15
+2016-09-04 12:52:17 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:52:17 sys_log : [INFO] 			      info:android.widget.ImageView,,,com.alibaba.aliyun:id/message_button,15
+2016-09-04 12:52:17 sys_log : [INFO] 		15
+2016-09-04 12:52:17 sys_log : [INFO] 		15
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:15
+2016-09-04 12:52:17 sys_log : [INFO] 	16
+2016-09-04 12:52:17 sys_log : [INFO] 		16
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:16
+2016-09-04 12:52:17 sys_log : [INFO] 	17
+2016-09-04 12:52:17 sys_log : [INFO] 		17
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:17
+2016-09-04 12:52:17 sys_log : [INFO] 	18
+2016-09-04 12:52:17 sys_log : [INFO] 		18
+2016-09-04 12:52:17 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:52:17 sys_log : [INFO] 			      info:android.widget.LinearLayout,,,,18
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:18
+2016-09-04 12:52:17 sys_log : [INFO] 	19
+2016-09-04 12:52:17 sys_log : [INFO] 		19
+2016-09-04 12:52:17 sys_log : [INFO] 		19
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:52:17 sys_log : [INFO] 	20
+2016-09-04 12:52:17 sys_log : [INFO] 		20
+2016-09-04 12:52:17 sys_log : [INFO] 		20
+2016-09-04 12:52:17 sys_log : [INFO] 		20
+2016-09-04 12:52:17 sys_log : [INFO] 		19
+2016-09-04 12:52:17 sys_log : [INFO] 		19
+2016-09-04 12:52:17 sys_log : [INFO] 		18
+2016-09-04 12:52:17 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:52:17 sys_log : [INFO] 			      info:android.widget.LinearLayout,,,,18
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:18
+2016-09-04 12:52:17 sys_log : [INFO] 	19
+2016-09-04 12:52:17 sys_log : [INFO] 		19
+2016-09-04 12:52:17 sys_log : [INFO] 		19
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:52:17 sys_log : [INFO] 	20
+2016-09-04 12:52:17 sys_log : [INFO] 		20
+2016-09-04 12:52:17 sys_log : [INFO] 		20
+2016-09-04 12:52:17 sys_log : [INFO] 		20
+2016-09-04 12:52:17 sys_log : [INFO] 		19
+2016-09-04 12:52:17 sys_log : [INFO] 		19
+2016-09-04 12:52:17 sys_log : [INFO] 		18
+2016-09-04 12:52:17 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:52:17 sys_log : [INFO] 			      info:android.widget.LinearLayout,,,,18
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:18
+2016-09-04 12:52:17 sys_log : [INFO] 	19
+2016-09-04 12:52:17 sys_log : [INFO] 		19
+2016-09-04 12:52:17 sys_log : [INFO] 		19
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:52:17 sys_log : [INFO] 	20
+2016-09-04 12:52:17 sys_log : [INFO] 		20
+2016-09-04 12:52:17 sys_log : [INFO] 		20
+2016-09-04 12:52:17 sys_log : [INFO] 		20
+2016-09-04 12:52:17 sys_log : [INFO] 		19
+2016-09-04 12:52:17 sys_log : [INFO] 		17
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:17
+2016-09-04 12:52:17 sys_log : [INFO] 	18
+2016-09-04 12:52:17 sys_log : [INFO] 		18
+2016-09-04 12:52:17 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:52:17 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:18
+2016-09-04 12:52:17 sys_log : [INFO] 	19
+2016-09-04 12:52:17 sys_log : [INFO] 		19
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:52:17 sys_log : [INFO] 	20
+2016-09-04 12:52:17 sys_log : [INFO] 		20
+2016-09-04 12:52:17 sys_log : [INFO] 		19
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:52:17 sys_log : [INFO] 	20
+2016-09-04 12:52:17 sys_log : [INFO] 		20
+2016-09-04 12:52:17 sys_log : [INFO] 		18
+2016-09-04 12:52:17 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:52:17 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:18
+2016-09-04 12:52:17 sys_log : [INFO] 	19
+2016-09-04 12:52:17 sys_log : [INFO] 		19
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:52:17 sys_log : [INFO] 	20
+2016-09-04 12:52:17 sys_log : [INFO] 		20
+2016-09-04 12:52:17 sys_log : [INFO] 		20
+2016-09-04 12:52:17 sys_log : [INFO] 		19
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:52:17 sys_log : [INFO] 	20
+2016-09-04 12:52:17 sys_log : [INFO] 		20
+2016-09-04 12:52:17 sys_log : [INFO] 		18
+2016-09-04 12:52:17 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:52:17 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:18
+2016-09-04 12:52:17 sys_log : [INFO] 	19
+2016-09-04 12:52:17 sys_log : [INFO] 		19
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:52:17 sys_log : [INFO] 	20
+2016-09-04 12:52:17 sys_log : [INFO] 		20
+2016-09-04 12:52:17 sys_log : [INFO] 		19
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:52:17 sys_log : [INFO] 	20
+2016-09-04 12:52:17 sys_log : [INFO] 		20
+2016-09-04 12:52:17 sys_log : [INFO] 		18
+2016-09-04 12:52:17 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:52:17 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:18
+2016-09-04 12:52:17 sys_log : [INFO] 	19
+2016-09-04 12:52:17 sys_log : [INFO] 		19
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:52:17 sys_log : [INFO] 	20
+2016-09-04 12:52:17 sys_log : [INFO] 		20
+2016-09-04 12:52:17 sys_log : [INFO] 		19
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:52:17 sys_log : [INFO] 	20
+2016-09-04 12:52:17 sys_log : [INFO] 		20
+2016-09-04 12:52:17 sys_log : [INFO] 		18
+2016-09-04 12:52:17 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:52:17 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:18
+2016-09-04 12:52:17 sys_log : [INFO] 	19
+2016-09-04 12:52:17 sys_log : [INFO] 		19
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:52:17 sys_log : [INFO] 	20
+2016-09-04 12:52:17 sys_log : [INFO] 		20
+2016-09-04 12:52:17 sys_log : [INFO] 		19
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:52:17 sys_log : [INFO] 	20
+2016-09-04 12:52:17 sys_log : [INFO] 		20
+2016-09-04 12:52:17 sys_log : [INFO] 		18
+2016-09-04 12:52:17 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:52:17 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:18
+2016-09-04 12:52:17 sys_log : [INFO] 	19
+2016-09-04 12:52:17 sys_log : [INFO] 		19
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:52:17 sys_log : [INFO] 	20
+2016-09-04 12:52:17 sys_log : [INFO] 		20
+2016-09-04 12:52:17 sys_log : [INFO] 		19
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:52:17 sys_log : [INFO] 	20
+2016-09-04 12:52:17 sys_log : [INFO] 		20
+2016-09-04 12:52:17 sys_log : [INFO] 		18
+2016-09-04 12:52:17 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:52:17 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:18
+2016-09-04 12:52:17 sys_log : [INFO] 	19
+2016-09-04 12:52:17 sys_log : [INFO] 		19
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:52:17 sys_log : [INFO] 	20
+2016-09-04 12:52:17 sys_log : [INFO] 		20
+2016-09-04 12:52:17 sys_log : [INFO] 		19
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:52:17 sys_log : [INFO] 	20
+2016-09-04 12:52:17 sys_log : [INFO] 		20
+2016-09-04 12:52:17 sys_log : [INFO] 		18
+2016-09-04 12:52:17 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:52:17 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:18
+2016-09-04 12:52:17 sys_log : [INFO] 	19
+2016-09-04 12:52:17 sys_log : [INFO] 		19
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:52:17 sys_log : [INFO] 	20
+2016-09-04 12:52:17 sys_log : [INFO] 		20
+2016-09-04 12:52:17 sys_log : [INFO] 		19
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:52:17 sys_log : [INFO] 	20
+2016-09-04 12:52:17 sys_log : [INFO] 		20
+2016-09-04 12:52:17 sys_log : [INFO] 		18
+2016-09-04 12:52:17 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:52:17 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:18
+2016-09-04 12:52:17 sys_log : [INFO] 	19
+2016-09-04 12:52:17 sys_log : [INFO] 		19
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:52:17 sys_log : [INFO] 	20
+2016-09-04 12:52:17 sys_log : [INFO] 		20
+2016-09-04 12:52:17 sys_log : [INFO] 		19
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:52:17 sys_log : [INFO] 	20
+2016-09-04 12:52:17 sys_log : [INFO] 		20
+2016-09-04 12:52:17 sys_log : [INFO] 		18
+2016-09-04 12:52:17 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:52:17 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:18
+2016-09-04 12:52:17 sys_log : [INFO] 	19
+2016-09-04 12:52:17 sys_log : [INFO] 		19
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:52:17 sys_log : [INFO] 	20
+2016-09-04 12:52:17 sys_log : [INFO] 		20
+2016-09-04 12:52:17 sys_log : [INFO] 		18
+2016-09-04 12:52:17 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:52:17 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:18
+2016-09-04 12:52:17 sys_log : [INFO] 	19
+2016-09-04 12:52:17 sys_log : [INFO] 		19
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:19
+2016-09-04 12:52:17 sys_log : [INFO] 	20
+2016-09-04 12:52:17 sys_log : [INFO] 		20
+2016-09-04 12:52:17 sys_log : [INFO] 		13
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:13
+2016-09-04 12:52:17 sys_log : [INFO] 	14
+2016-09-04 12:52:17 sys_log : [INFO] 		14
+2016-09-04 12:52:17 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:52:17 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,,14
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:14
+2016-09-04 12:52:17 sys_log : [INFO] 	15
+2016-09-04 12:52:17 sys_log : [INFO] 		15
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:15
+2016-09-04 12:52:17 sys_log : [INFO] 	16
+2016-09-04 12:52:17 sys_log : [INFO] 		16
+2016-09-04 12:52:17 sys_log : [INFO] 		16
+2016-09-04 12:52:17 sys_log : [INFO] 		14
+2016-09-04 12:52:17 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:52:17 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,,14
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:14
+2016-09-04 12:52:17 sys_log : [INFO] 	15
+2016-09-04 12:52:17 sys_log : [INFO] 		15
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:15
+2016-09-04 12:52:17 sys_log : [INFO] 	16
+2016-09-04 12:52:17 sys_log : [INFO] 		16
+2016-09-04 12:52:17 sys_log : [INFO] 		16
+2016-09-04 12:52:17 sys_log : [INFO] 		14
+2016-09-04 12:52:17 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:52:17 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,,14
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:14
+2016-09-04 12:52:17 sys_log : [INFO] 	15
+2016-09-04 12:52:17 sys_log : [INFO] 		15
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:15
+2016-09-04 12:52:17 sys_log : [INFO] 	16
+2016-09-04 12:52:17 sys_log : [INFO] 		16
+2016-09-04 12:52:17 sys_log : [INFO] 		16
+2016-09-04 12:52:17 sys_log : [INFO] 		14
+2016-09-04 12:52:17 sys_log : [INFO] 			push a element to stack--
+2016-09-04 12:52:17 sys_log : [INFO] 			      info:android.widget.RelativeLayout,,,,14
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:14
+2016-09-04 12:52:17 sys_log : [INFO] 	15
+2016-09-04 12:52:17 sys_log : [INFO] 		15
+2016-09-04 12:52:17 sys_log : [INFO] 				----go to the next depth:15
+2016-09-04 12:52:17 sys_log : [INFO] 	16
+2016-09-04 12:52:17 sys_log : [INFO] 		16
+2016-09-04 12:52:17 sys_log : [INFO] 		16
+2016-09-04 12:52:17 sys_log : [INFO] 		10
+2016-09-04 12:52:17 sys_log : [INFO] 20个新任务准备入栈......
+2016-09-04 12:52:17 sys_log : [INFO] 20个新任务允许入栈......
+2016-09-04 12:52:17 sys_log : [INFO] 任务栈已更新, 20个新任务允许入栈, 现在还有22个任务待运行......
+2016-09-04 12:52:17 sys_log : [INFO] 任务栈已更新,现在还有21个任务待运行......
+2016-09-04 12:52:17 sys_log : [INFO] [android.widget.ImageView,,,com.alibaba.aliyun:id/common_right_button,18], 6a4a1160061d84ef4d87aada5a6d969 >> 开始执行节点任务......
+2016-09-04 12:52:18 sys_log : [INFO] click -> [info = android.widget.ImageView,,,com.alibaba.aliyun:id/common_right_button,18], [depth = 18]6a4a1160061d84ef4d87aada5a6d969-960,111-1032,183-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[2]/android.widget.ImageView[1]
+2016-09-04 12:52:28 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有20个任务待运行, [android.widget.ImageView,,,com.alibaba.aliyun:id/message_button,15], 6a4a1160061d84ef4d87aada5a6d969-966,114-1032,180-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ImageView[1]
+2016-09-04 12:52:29 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:52:29 sys_log : [INFO] 6a4a1160061d84ef4d87aada5a6d969 >> a3925efbff389f3b3b5c5b2b9eeebfdd, 窗口迁移至新窗口......
+2016-09-04 12:52:29 sys_log : [INFO] 相同窗口执行次数 -> 0
+2016-09-04 12:52:29 sys_log : [INFO] [android.widget.ImageView,,,com.alibaba.aliyun:id/message_button,15], 6a4a1160061d84ef4d87aada5a6d969 >> a3925efbff389f3b3b5c5b2b9eeebfdd, 窗口虽然发生迁移,但已达到最大遍历深度 -> 15, 点击返回......
+2016-09-04 12:52:41 sys_log : [INFO] [android.widget.ImageView,,,com.alibaba.aliyun:id/message_button,15], 6a4a1160061d84ef4d87aada5a6d969 >> 开始执行节点任务......
+2016-09-04 12:52:41 sys_log : [INFO] click -> [info = android.widget.ImageView,,,com.alibaba.aliyun:id/message_button,15], [depth = 15]6a4a1160061d84ef4d87aada5a6d969-966,114-1032,180-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ImageView[1]
+2016-09-04 12:52:52 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有19个任务待运行, [android.widget.LinearLayout,,,,18], 6a4a1160061d84ef4d87aada5a6d969-0,219-360,568-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.GridView[1]/android.widget.LinearLayout[1]
+2016-09-04 12:52:53 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:52:53 sys_log : [INFO] 6a4a1160061d84ef4d87aada5a6d969 >> a3925efbff389f3b3b5c5b2b9eeebfdd, 窗口迁移至新窗口......
+2016-09-04 12:52:53 sys_log : [INFO] 相同窗口执行次数 -> 1
+2016-09-04 12:52:53 sys_log : [INFO] [android.widget.LinearLayout,,,,18], 6a4a1160061d84ef4d87aada5a6d969 >> a3925efbff389f3b3b5c5b2b9eeebfdd, 窗口虽然发生迁移,但已达到最大遍历深度 -> 18, 点击返回......
+2016-09-04 12:53:05 sys_log : [INFO] [android.widget.LinearLayout,,,,18], 6a4a1160061d84ef4d87aada5a6d969 >> 开始执行节点任务......
+2016-09-04 12:53:05 sys_log : [INFO] click -> [info = android.widget.LinearLayout,,,,18], [depth = 18]6a4a1160061d84ef4d87aada5a6d969-0,219-360,568-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.GridView[1]/android.widget.LinearLayout[1]
+2016-09-04 12:53:15 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有18个任务待运行, [android.widget.LinearLayout,,,,18], 6a4a1160061d84ef4d87aada5a6d969-360,219-720,568-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.GridView[1]/android.widget.LinearLayout[2]
+2016-09-04 12:53:16 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:53:16 sys_log : [INFO] 6a4a1160061d84ef4d87aada5a6d969 >> a3925efbff389f3b3b5c5b2b9eeebfdd, 窗口迁移至新窗口......
+2016-09-04 12:53:16 sys_log : [INFO] 相同窗口执行次数 -> 2
+2016-09-04 12:53:16 sys_log : [INFO] [android.widget.LinearLayout,,,,18], 6a4a1160061d84ef4d87aada5a6d969 >> a3925efbff389f3b3b5c5b2b9eeebfdd, 窗口虽然发生迁移,但已达到最大遍历深度 -> 18, 点击返回......
+2016-09-04 12:53:28 sys_log : [INFO] [android.widget.LinearLayout,,,,18], 6a4a1160061d84ef4d87aada5a6d969 >> 开始执行节点任务......
+2016-09-04 12:53:28 sys_log : [INFO] click -> [info = android.widget.LinearLayout,,,,18], [depth = 18]6a4a1160061d84ef4d87aada5a6d969-360,219-720,568-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.GridView[1]/android.widget.LinearLayout[2]
+2016-09-04 12:53:39 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有17个任务待运行, [android.widget.LinearLayout,,,,18], 6a4a1160061d84ef4d87aada5a6d969-720,219-1080,568-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.GridView[1]/android.widget.LinearLayout[3]
+2016-09-04 12:53:40 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:53:40 sys_log : [INFO] 6a4a1160061d84ef4d87aada5a6d969 >> 599b9bbb96a22f93fb54710191ad9c7a, 窗口迁移至新窗口......
+2016-09-04 12:53:40 sys_log : [INFO] 相同窗口执行次数 -> 0
+2016-09-04 12:53:40 sys_log : [INFO] [android.widget.LinearLayout,,,,18], 6a4a1160061d84ef4d87aada5a6d969 >> 599b9bbb96a22f93fb54710191ad9c7a, 窗口虽然发生迁移,但已达到最大遍历深度 -> 18, 点击返回......
+2016-09-04 12:53:51 sys_log : [INFO] [android.widget.LinearLayout,,,,18], 6a4a1160061d84ef4d87aada5a6d969 >> 开始执行节点任务......
+2016-09-04 12:53:52 sys_log : [INFO] click -> [info = android.widget.LinearLayout,,,,18], [depth = 18]6a4a1160061d84ef4d87aada5a6d969-720,219-1080,568-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.GridView[1]/android.widget.LinearLayout[3]
+2016-09-04 12:54:02 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有16个任务待运行, [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], 6a4a1160061d84ef4d87aada5a6d969-0,592-358,934-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[1]
+2016-09-04 12:54:03 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:54:03 sys_log : [INFO] 6a4a1160061d84ef4d87aada5a6d969 >> a3925efbff389f3b3b5c5b2b9eeebfdd, 窗口迁移至新窗口......
+2016-09-04 12:54:03 sys_log : [INFO] 相同窗口执行次数 -> 0
+2016-09-04 12:54:03 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], 6a4a1160061d84ef4d87aada5a6d969 >> a3925efbff389f3b3b5c5b2b9eeebfdd, 窗口虽然发生迁移,但已达到最大遍历深度 -> 18, 点击返回......
+2016-09-04 12:54:15 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], 6a4a1160061d84ef4d87aada5a6d969 >> 开始执行节点任务......
+2016-09-04 12:54:15 sys_log : [INFO] click -> [info = android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], [depth = 18]6a4a1160061d84ef4d87aada5a6d969-0,592-358,934-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[1]
+2016-09-04 12:54:26 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有15个任务待运行, [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], 6a4a1160061d84ef4d87aada5a6d969-360,592-718,934-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[2]
+2016-09-04 12:54:27 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:54:27 sys_log : [INFO] 6a4a1160061d84ef4d87aada5a6d969 >> 9712894fba2f4aa471a43d95069e49a8, 窗口迁移至新窗口......
+2016-09-04 12:54:27 sys_log : [INFO] 相同窗口执行次数 -> 0
+2016-09-04 12:54:27 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], 6a4a1160061d84ef4d87aada5a6d969 >> 9712894fba2f4aa471a43d95069e49a8, 窗口虽然发生迁移,但已达到最大遍历深度 -> 18, 点击返回......
+2016-09-04 12:54:39 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], 6a4a1160061d84ef4d87aada5a6d969 >> 开始执行节点任务......
+2016-09-04 12:54:39 sys_log : [INFO] click -> [info = android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], [depth = 18]6a4a1160061d84ef4d87aada5a6d969-360,592-718,934-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[2]
+2016-09-04 12:54:49 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有14个任务待运行, [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], 6a4a1160061d84ef4d87aada5a6d969-720,592-1080,934-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[3]
+2016-09-04 12:54:50 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:54:50 sys_log : [INFO] 6a4a1160061d84ef4d87aada5a6d969 >> 374144b2e81dbd00a9286a3955e12a2e, 窗口迁移至新窗口......
+2016-09-04 12:54:50 sys_log : [INFO] 相同窗口执行次数 -> 0
+2016-09-04 12:54:50 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], 6a4a1160061d84ef4d87aada5a6d969 >> 374144b2e81dbd00a9286a3955e12a2e, 窗口虽然发生迁移,但已达到最大遍历深度 -> 18, 点击返回......
+2016-09-04 12:55:02 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], 6a4a1160061d84ef4d87aada5a6d969 >> 开始执行节点任务......
+2016-09-04 12:55:02 sys_log : [INFO] click -> [info = android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], [depth = 18]6a4a1160061d84ef4d87aada5a6d969-720,592-1080,934-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[3]
+2016-09-04 12:55:13 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有13个任务待运行, [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], 6a4a1160061d84ef4d87aada5a6d969-0,936-358,1278-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[4]
+2016-09-04 12:55:14 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:55:14 sys_log : [INFO] 6a4a1160061d84ef4d87aada5a6d969 >> 374144b2e81dbd00a9286a3955e12a2e, 窗口迁移至新窗口......
+2016-09-04 12:55:14 sys_log : [INFO] 相同窗口执行次数 -> 1
+2016-09-04 12:55:14 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], 6a4a1160061d84ef4d87aada5a6d969 >> 374144b2e81dbd00a9286a3955e12a2e, 窗口虽然发生迁移,但已达到最大遍历深度 -> 18, 点击返回......
+2016-09-04 12:55:25 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], 6a4a1160061d84ef4d87aada5a6d969 >> 开始执行节点任务......
+2016-09-04 12:55:26 sys_log : [INFO] click -> [info = android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], [depth = 18]6a4a1160061d84ef4d87aada5a6d969-0,936-358,1278-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[4]
+2016-09-04 12:55:36 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有12个任务待运行, [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], 6a4a1160061d84ef4d87aada5a6d969-360,936-718,1278-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[5]
+2016-09-04 12:55:37 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:55:37 sys_log : [INFO] 6a4a1160061d84ef4d87aada5a6d969 >> af4392eb996a5a0dad2165f45c323f97, 窗口迁移至新窗口......
+2016-09-04 12:55:37 sys_log : [INFO] 相同窗口执行次数 -> 0
+2016-09-04 12:55:37 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], 6a4a1160061d84ef4d87aada5a6d969 >> af4392eb996a5a0dad2165f45c323f97, 窗口虽然发生迁移,但已达到最大遍历深度 -> 18, 点击返回......
+2016-09-04 12:55:49 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], 6a4a1160061d84ef4d87aada5a6d969 >> 开始执行节点任务......
+2016-09-04 12:55:49 sys_log : [INFO] click -> [info = android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], [depth = 18]6a4a1160061d84ef4d87aada5a6d969-360,936-718,1278-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[5]
+2016-09-04 12:56:00 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有11个任务待运行, [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], 6a4a1160061d84ef4d87aada5a6d969-720,936-1080,1278-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[6]
+2016-09-04 12:56:01 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:56:01 sys_log : [INFO] 6a4a1160061d84ef4d87aada5a6d969 >> 374144b2e81dbd00a9286a3955e12a2e, 窗口迁移至新窗口......
+2016-09-04 12:56:01 sys_log : [INFO] 相同窗口执行次数 -> 0
+2016-09-04 12:56:01 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], 6a4a1160061d84ef4d87aada5a6d969 >> 374144b2e81dbd00a9286a3955e12a2e, 窗口虽然发生迁移,但已达到最大遍历深度 -> 18, 点击返回......
+2016-09-04 12:56:13 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], 6a4a1160061d84ef4d87aada5a6d969 >> 开始执行节点任务......
+2016-09-04 12:56:13 sys_log : [INFO] click -> [info = android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], [depth = 18]6a4a1160061d84ef4d87aada5a6d969-720,936-1080,1278-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[6]
+2016-09-04 12:56:24 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有10个任务待运行, [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], 6a4a1160061d84ef4d87aada5a6d969-0,1280-358,1622-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[7]
+2016-09-04 12:56:25 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:56:25 sys_log : [INFO] 6a4a1160061d84ef4d87aada5a6d969 >> 374144b2e81dbd00a9286a3955e12a2e, 窗口迁移至新窗口......
+2016-09-04 12:56:25 sys_log : [INFO] 相同窗口执行次数 -> 1
+2016-09-04 12:56:25 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], 6a4a1160061d84ef4d87aada5a6d969 >> 374144b2e81dbd00a9286a3955e12a2e, 窗口虽然发生迁移,但已达到最大遍历深度 -> 18, 点击返回......
+2016-09-04 12:56:36 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], 6a4a1160061d84ef4d87aada5a6d969 >> 开始执行节点任务......
+2016-09-04 12:56:36 sys_log : [INFO] click -> [info = android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], [depth = 18]6a4a1160061d84ef4d87aada5a6d969-0,1280-358,1622-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[7]
+2016-09-04 12:56:47 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有9个任务待运行, [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], 6a4a1160061d84ef4d87aada5a6d969-360,1280-718,1622-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[8]
+2016-09-04 12:56:50 sys_log : [INFO] 当前节点任务所属窗口是否就是当前窗口 -> false
+2016-09-04 12:56:50 sys_log : [INFO] 6a4a1160061d84ef4d87aada5a6d969 >> 374144b2e81dbd00a9286a3955e12a2e, 窗口迁移至新窗口......
+2016-09-04 12:56:50 sys_log : [INFO] 相同窗口执行次数 -> 2
+2016-09-04 12:56:50 sys_log : [INFO] [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], 6a4a1160061d84ef4d87aada5a6d969 >> 374144b2e81dbd00a9286a3955e12a2e, 窗口虽然发生迁移,但已达到最大遍历深度 -> 18, 点击返回......
+2016-09-04 12:56:55 org.apache.http.impl.execchain.RetryExec : I/O exception (java.net.SocketException) caught when processing request to {}->http://127.0.0.1:4723: Connection reset
+2016-09-04 12:56:55 org.apache.http.impl.execchain.RetryExec : Retrying request to {}->http://127.0.0.1:4723
+2016-09-04 12:56:56 sys_log : [ERROR]   节点任务 -> [info = android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], 发生未知异常, 弹出下一个节点任务, 6a4a1160061d84ef4d87aada5a6d969-360,1280-718,1622-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[8]
+2016-09-04 12:56:56 sys_log : [ERROR]   org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'PC-201504191139', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
+Driver info: driver.version: unknown
+Capabilities [{app=E:\\app\\aliyun\\701287@alicloud_app.apk, appPackage=com.alibaba.aliyun, networkConnectionEnabled=true, noSign=true, warnings={}, appiumVersion=1.5.3, databaseEnabled=false, deviceName=71MBBLE25GLV, platform=LINUX, deviceUDID=71MBBLE25GLV, appActivity=com.alibaba.aliyun.biz.login.WelcomeActivity, desired={app=E:\\app\\aliyun\\701287@alicloud_app.apk, appPackage=com.alibaba.aliyun, appActivity=com.alibaba.aliyun.biz.login.WelcomeActivity, noSign=true, newCommandTimeout=7200, appiumVersion=1.5.3, platformVersion=5.1, unicodeKeyboard=true, udid=71MBBLE25GLV, platformName=Android, deviceName=note1, resetKeyboard=true}, newCommandTimeout=7200, platformVersion=5.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, unicodeKeyboard=true, udid=71MBBLE25GLV, platformName=Android, resetKeyboard=true}]
+Session ID: 4781a7de-3a40-49b2-b1dc-6eef77c14fb0
+2016-09-04 12:56:56 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有8个任务待运行, [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], 6a4a1160061d84ef4d87aada5a6d969-720,1280-1080,1622-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[9]
+2016-09-04 12:56:58 sys_log : [ERROR]   节点任务 -> [info = android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], 发生未知异常, 弹出下一个节点任务, 6a4a1160061d84ef4d87aada5a6d969-720,1280-1080,1622-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[9]
+2016-09-04 12:56:58 sys_log : [ERROR]   org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'PC-201504191139', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
+Driver info: driver.version: unknown
+Capabilities [{app=E:\\app\\aliyun\\701287@alicloud_app.apk, appPackage=com.alibaba.aliyun, networkConnectionEnabled=true, noSign=true, warnings={}, appiumVersion=1.5.3, databaseEnabled=false, deviceName=71MBBLE25GLV, platform=LINUX, deviceUDID=71MBBLE25GLV, appActivity=com.alibaba.aliyun.biz.login.WelcomeActivity, desired={app=E:\\app\\aliyun\\701287@alicloud_app.apk, appPackage=com.alibaba.aliyun, appActivity=com.alibaba.aliyun.biz.login.WelcomeActivity, noSign=true, newCommandTimeout=7200, appiumVersion=1.5.3, platformVersion=5.1, unicodeKeyboard=true, udid=71MBBLE25GLV, platformName=Android, deviceName=note1, resetKeyboard=true}, newCommandTimeout=7200, platformVersion=5.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, unicodeKeyboard=true, udid=71MBBLE25GLV, platformName=Android, resetKeyboard=true}]
+Session ID: 4781a7de-3a40-49b2-b1dc-6eef77c14fb0
+2016-09-04 12:56:58 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有7个任务待运行, [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], 6a4a1160061d84ef4d87aada5a6d969-0,1624-358,1770-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[10]
+2016-09-04 12:57:00 sys_log : [ERROR]   节点任务 -> [info = android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], 发生未知异常, 弹出下一个节点任务, 6a4a1160061d84ef4d87aada5a6d969-0,1624-358,1770-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[10]
+2016-09-04 12:57:00 sys_log : [ERROR]   org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'PC-201504191139', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
+Driver info: driver.version: unknown
+Capabilities [{app=E:\\app\\aliyun\\701287@alicloud_app.apk, appPackage=com.alibaba.aliyun, networkConnectionEnabled=true, noSign=true, warnings={}, appiumVersion=1.5.3, databaseEnabled=false, deviceName=71MBBLE25GLV, platform=LINUX, deviceUDID=71MBBLE25GLV, appActivity=com.alibaba.aliyun.biz.login.WelcomeActivity, desired={app=E:\\app\\aliyun\\701287@alicloud_app.apk, appPackage=com.alibaba.aliyun, appActivity=com.alibaba.aliyun.biz.login.WelcomeActivity, noSign=true, newCommandTimeout=7200, appiumVersion=1.5.3, platformVersion=5.1, unicodeKeyboard=true, udid=71MBBLE25GLV, platformName=Android, deviceName=note1, resetKeyboard=true}, newCommandTimeout=7200, platformVersion=5.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, unicodeKeyboard=true, udid=71MBBLE25GLV, platformName=Android, resetKeyboard=true}]
+Session ID: 4781a7de-3a40-49b2-b1dc-6eef77c14fb0
+2016-09-04 12:57:00 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有6个任务待运行, [android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], 6a4a1160061d84ef4d87aada5a6d969-360,1624-718,1770-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[11]
+2016-09-04 12:57:02 sys_log : [ERROR]   节点任务 -> [info = android.widget.RelativeLayout,,,com.alibaba.aliyun:id/pluginLayout,18], 发生未知异常, 弹出下一个节点任务, 6a4a1160061d84ef4d87aada5a6d969-360,1624-718,1770-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[11]
+2016-09-04 12:57:02 sys_log : [ERROR]   org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'PC-201504191139', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
+Driver info: driver.version: unknown
+Capabilities [{app=E:\\app\\aliyun\\701287@alicloud_app.apk, appPackage=com.alibaba.aliyun, networkConnectionEnabled=true, noSign=true, warnings={}, appiumVersion=1.5.3, databaseEnabled=false, deviceName=71MBBLE25GLV, platform=LINUX, deviceUDID=71MBBLE25GLV, appActivity=com.alibaba.aliyun.biz.login.WelcomeActivity, desired={app=E:\\app\\aliyun\\701287@alicloud_app.apk, appPackage=com.alibaba.aliyun, appActivity=com.alibaba.aliyun.biz.login.WelcomeActivity, noSign=true, newCommandTimeout=7200, appiumVersion=1.5.3, platformVersion=5.1, unicodeKeyboard=true, udid=71MBBLE25GLV, platformName=Android, deviceName=note1, resetKeyboard=true}, newCommandTimeout=7200, platformVersion=5.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, unicodeKeyboard=true, udid=71MBBLE25GLV, platformName=Android, resetKeyboard=true}]
+Session ID: 4781a7de-3a40-49b2-b1dc-6eef77c14fb0
+2016-09-04 12:57:02 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有5个任务待运行, [android.widget.RelativeLayout,,,,14], 6a4a1160061d84ef4d87aada5a6d969-0,1770-270,1920-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]
+2016-09-04 12:57:04 sys_log : [ERROR]   节点任务 -> [info = android.widget.RelativeLayout,,,,14], 发生未知异常, 弹出下一个节点任务, 6a4a1160061d84ef4d87aada5a6d969-0,1770-270,1920-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]
+2016-09-04 12:57:04 sys_log : [ERROR]   org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'PC-201504191139', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
+Driver info: driver.version: unknown
+Capabilities [{app=E:\\app\\aliyun\\701287@alicloud_app.apk, appPackage=com.alibaba.aliyun, networkConnectionEnabled=true, noSign=true, warnings={}, appiumVersion=1.5.3, databaseEnabled=false, deviceName=71MBBLE25GLV, platform=LINUX, deviceUDID=71MBBLE25GLV, appActivity=com.alibaba.aliyun.biz.login.WelcomeActivity, desired={app=E:\\app\\aliyun\\701287@alicloud_app.apk, appPackage=com.alibaba.aliyun, appActivity=com.alibaba.aliyun.biz.login.WelcomeActivity, noSign=true, newCommandTimeout=7200, appiumVersion=1.5.3, platformVersion=5.1, unicodeKeyboard=true, udid=71MBBLE25GLV, platformName=Android, deviceName=note1, resetKeyboard=true}, newCommandTimeout=7200, platformVersion=5.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, unicodeKeyboard=true, udid=71MBBLE25GLV, platformName=Android, resetKeyboard=true}]
+Session ID: 4781a7de-3a40-49b2-b1dc-6eef77c14fb0
+2016-09-04 12:57:04 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有4个任务待运行, [android.widget.RelativeLayout,,,,14], 6a4a1160061d84ef4d87aada5a6d969-270,1770-540,1920-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[2]
+2016-09-04 12:57:05 sys_log : [ERROR]   节点任务 -> [info = android.widget.RelativeLayout,,,,14], 发生未知异常, 弹出下一个节点任务, 6a4a1160061d84ef4d87aada5a6d969-270,1770-540,1920-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[2]
+2016-09-04 12:57:05 sys_log : [ERROR]   org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'PC-201504191139', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_25'
+Driver info: driver.version: unknown
+Capabilities [{app=E:\\app\\aliyun\\701287@alicloud_app.apk, appPackage=com.alibaba.aliyun, networkConnectionEnabled=true, noSign=true, warnings={}, appiumVersion=1.5.3, databaseEnabled=false, deviceName=71MBBLE25GLV, platform=LINUX, deviceUDID=71MBBLE25GLV, appActivity=com.alibaba.aliyun.biz.login.WelcomeActivity, desired={app=E:\\app\\aliyun\\701287@alicloud_app.apk, appPackage=com.alibaba.aliyun, appActivity=com.alibaba.aliyun.biz.login.WelcomeActivity, noSign=true, newCommandTimeout=7200, appiumVersion=1.5.3, platformVersion=5.1, unicodeKeyboard=true, udid=71MBBLE25GLV, platformName=Android, deviceName=note1, resetKeyboard=true}, newCommandTimeout=7200, platformVersion=5.1, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, unicodeKeyboard=true, udid=71MBBLE25GLV, platformName=Android, resetKeyboard=true}]
+Session ID: 4781a7de-3a40-49b2-b1dc-6eef77c14fb0
+2016-09-04 12:57:05 sys_log : [INFO] 报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有3个任务待运行, [android.widget.RelativeLayout,,,,14], 6a4a1160061d84ef4d87aada5a6d969-540,1770-810,1920-//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[3]
