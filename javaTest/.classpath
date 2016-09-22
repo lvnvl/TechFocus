@@ -27,5 +27,6 @@
 	<classpathentry kind="lib" path="E:/GitRepo/AutoTraveler/lib/jmf.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/org.eclipse.swt"/>
 	<classpathentry kind="lib" path="E:/plugins/uiauto/org-eclipse-jface-3.6.2.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/cn.appstest.exception"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
