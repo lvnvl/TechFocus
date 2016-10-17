@@ -16,6 +16,7 @@ import pers.traveler.parser.ConfigProvider;
 import pers.traveler.parser.XmlParser;
 
 import java.io.IOException;
+import java.sql.Timestamp;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
@@ -61,6 +62,13 @@ public abstract class Engine {
      * @param depth
      */
     public void dfsSearch(Stack<UiNode> taskStack, int depth) {
+    	/**
+    	 * debug for time consuming
+    	 */
+    	Long lastMills = System.currentTimeMillis();
+		System.out.println("================dfs 遍历开始时间:" + new Timestamp(lastMills));
+		lastMills = System.currentTimeMillis();
+    	
         int thisDepth, newTaskCount, repeatCount = 0;
         UiNode thisNode;
         WebElement element;
@@ -78,7 +86,9 @@ public abstract class Engine {
 
 //        Log.logInfo(" -> " + "[ ] 初始窗口ID" + thisWindow);
 //        Log.logInfo(" -> " + "[ ] 初始窗口source" + thisPageSource);
-        
+        System.out.println("================dfs 初始化数据花费时间:" + (System.currentTimeMillis() - lastMills));
+		lastMills = System.currentTimeMillis();
+    	
         while (!taskStack.isEmpty()) {
             if (repeatCount > config.getAllowSameWinTimes())
                 break;
@@ -86,10 +96,15 @@ public abstract class Engine {
             blackList.add(thisNode);
             Log.logInfo("报告主人,有1个节点任务出栈并加入黑名单 -> 现在还有" + taskStack.size() + "个任务待运行, [" + thisNode.getInfo() + "], " + thisNode.getId());
 
+            System.out.println("================dfs 一个任务出栈花费时间:" + (System.currentTimeMillis() - lastMills));
+    		lastMills = System.currentTimeMillis();
+    		
             try {
                 // 截图
                 screenShot();
 
+                System.out.println("================dfs 截图花费时间:" + (System.currentTimeMillis() - lastMills));
+        		lastMills = System.currentTimeMillis();
                 // 触发器预处理
                 if (triggerProcessing(driver.getPageSource(), triggerList)) {
                     screenShot();
@@ -99,17 +114,24 @@ public abstract class Engine {
 
                 Log.logInfo("当前节点任务所属窗口是否就是当前窗口 -> " + thisNode.getWindowID().equals(thisWindow));
 
+                System.out.println("================dfs 触发器预处理花费时间:" + (System.currentTimeMillis() - lastMills));
+        		lastMills = System.currentTimeMillis();
+        		
                 if (!thisWindow.equals(thisNode.getWindowID())) {
                     // 在任务栈中搜索当前窗口,如果存在,则获取该窗口下所有任务节点
                     existsTaskStack = searchByWindowID(thisWindow, taskStack);
 
+                    System.out.println("================dfs 任务栈遍历查询花费时间:" + (System.currentTimeMillis() - lastMills));
+            		lastMills = System.currentTimeMillis();
                     // 如果当前窗口已存在任务栈中
                     if (null != existsTaskStack) {
                         repeatCount = 0;
                         Log.logInfo(thisNode.getWindowID() + " >> " + thisWindow + ", 窗口迁移至老窗口,获取到窗口任务列表 -> " + existsTaskStack.size());
                         resetTaskStack(taskStack, existsTaskStack);
-                        existsTaskStack = null;
                         Log.logInfo("任务栈已更新,现在还有" + taskStack.size() + "个任务待运行......");
+                        
+                        System.out.println("================dfs 任务栈更新花费时间:" + (System.currentTimeMillis() - lastMills));
+                		lastMills = System.currentTimeMillis();
                     } else {
                         Log.logInfo(thisNode.getWindowID() + " >> " + thisWindow + ", 窗口迁移至新窗口......");
                         if (preWindow.equals(thisWindow)) {
@@ -149,6 +171,8 @@ public abstract class Engine {
 
                             }
 
+                            System.out.println("================dfs 任务栈更新花费时间:" + (System.currentTimeMillis() - lastMills));
+                    		lastMills = System.currentTimeMillis();
                             if (newTaskCount == 0 || children.size() == 0 && needBack(thisWindow, taskStack)) {
                                 Log.logInfo(thisNode.getWindowID() + " >> " + thisWindow + ", 窗口虽然发生迁移,但没有新任务加入, 并且本窗口节点任务已遍历完毕,点击返回......");
                                 doBack();
@@ -163,22 +187,29 @@ public abstract class Engine {
                 children = null;
                 Log.logInfo("[" + thisNode.getInfo() + "], " + thisNode.getWindowID() + " >> 开始执行节点任务......");
 
+                System.out.println("================dfs 任务栈更新后准备执行节点任务花费时间:" + (System.currentTimeMillis() - lastMills));
+        		lastMills = System.currentTimeMillis();
                 // 每次迭代懒加载元素对象
                 xpath = thisNode.getId().split("-")[3];
                 element = driver.findElement(By.xpath(xpath));
+                
                 if (thisNode.getAction().equals(Action.CLICK)) {
                     Log.logInfo(Action.CLICK + " -> " + "[info = " + thisNode.getInfo() + "], [depth = " + thisNode.getDepth() + "]" + thisNode.getId());
                     element.click();
                 } else if (thisNode.getAction().equals(Action.INPUT)) {
                     Log.logInfo(Action.INPUT + " -> " + "[info = " + thisNode.getInfo() + "], [depth = " + thisNode.getDepth() + "], sendKeys -> 8888, " + thisNode.getId());
                 }
-
+                
+                System.out.println("================dfs 节点任务执行花费时间:" + (System.currentTimeMillis() - lastMills));
+        		lastMills = System.currentTimeMillis();
                 // 任务执行后获取窗口内容和窗口标识
                 TimeUnit.SECONDS.sleep(config.getInterval());
                 thisPageSource = driver.getPageSource();
                 thisWindow = parser.getCurrentWindowID(thisPageSource);
 //                Log.logInfo(" -> " + "[ ] 当前窗口ID" + thisWindow);
 //                Log.logInfo(" -> " + "[ ] 当前窗口source" + thisPageSource);
+                System.out.println("================dfs 页面更新获取花费时间:" + (System.currentTimeMillis() - lastMills));
+        		lastMills = System.currentTimeMillis();
                 // 如果同窗口的任务栈已处理完毕,并且还停留在该窗口,返回至上一个窗口
                 if (thisNode.getWindowID().equals(thisWindow) && needBack(thisNode.getWindowID(), taskStack)) {
                     Log.logInfo(thisNode.getWindowID() + " == " + thisWindow + ", 窗口未发生迁移,并且本窗口节点任务已遍历完毕,点击返回......");
@@ -187,10 +218,12 @@ public abstract class Engine {
                     thisPageSource = null == doBackWin ? thisPageSource : doBackWin;
                     thisWindow = parser.getCurrentWindowID(thisPageSource);
                 }
+                System.out.println("================dfs 同窗口任务栈检查处理花费时间:" + (System.currentTimeMillis() - lastMills));
+        		lastMills = System.currentTimeMillis();
             } catch (NoSuchElementException e) {
                 Log.logError("节点任务 -> [info = " + thisNode.getInfo() + "], NoSuchElementException, 弹出下一个节点任务, " + thisNode.getId());
                 try {
-					TimeUnit.SECONDS.sleep(2*config.getInterval());
+					TimeUnit.SECONDS.sleep(config.getInterval());
 				} catch (InterruptedException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
@@ -199,7 +232,7 @@ public abstract class Engine {
             } catch (org.openqa.selenium.ElementNotVisibleException e) {
                 Log.logError("节点任务 -> [info = " + thisNode.getInfo() + "], ElementNotVisibleException, 弹出下一个节点任务, " + thisNode.getId());
                 try {
-					TimeUnit.SECONDS.sleep(2*config.getInterval());
+					TimeUnit.SECONDS.sleep(config.getInterval());
 				} catch (InterruptedException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
@@ -208,24 +241,24 @@ public abstract class Engine {
             } catch (org.openqa.selenium.NoSuchSessionException e) {
                 Log.logError("会话丢失,退出 >> 节点任务 -> [info = " + thisNode.getInfo() + "], NoSuchSessionException, 弹出下一个节点任务, " + thisNode.getId());
                 try {
-					TimeUnit.SECONDS.sleep(2*config.getInterval());
+					TimeUnit.SECONDS.sleep(config.getInterval());
 				} catch (InterruptedException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
-                continue;
+                break;
             } catch (org.openqa.selenium.SessionNotCreatedException e) {
                 Log.logError("会话未创建,退出 >> 节点任务 -> [info = " + thisNode.getInfo() + "], SessionNotCreatedException, 弹出下一个节点任务, " + thisNode.getId());
                 try {
-					TimeUnit.SECONDS.sleep(2*config.getInterval());
+					TimeUnit.SECONDS.sleep(config.getInterval());
 				} catch (InterruptedException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
-                continue;
+                break;
             } catch (org.openqa.selenium.NotFoundException e) {
                 Log.logError("节点任务 -> [info = " + thisNode.getInfo() + "], NotFoundException, 弹出下一个节点任务, " + thisNode.getId());
-                continue;
+                break;
             } catch (Exception e) {
                 Log.logError("节点任务 -> [info = " + thisNode.getInfo() + "], 发生未知异常, 弹出下一个节点任务, " + thisNode.getId());
                 Log.logError(e.fillInStackTrace());
@@ -296,6 +329,7 @@ public abstract class Engine {
     protected void resetTaskStack(Stack<UiNode> taskStack, Stack<UiNode> existsTaskStack) {
         taskStack.removeAll(existsTaskStack);
         taskStack.addAll(existsTaskStack);
+        existsTaskStack = null;
     }
 
     /**

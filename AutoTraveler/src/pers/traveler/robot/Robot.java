@@ -235,7 +235,7 @@ public abstract class Robot {
 
             if (config.getMode() == PlatformName.ANDROID || config.getMode() == PlatformName.IOS) {
                 driver.closeApp();
-                driver.removeApp(removeApp);
+//                driver.removeApp(removeApp);
             }
             driver.quit();
 

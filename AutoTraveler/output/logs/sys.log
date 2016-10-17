@@ -1,861 +1,165 @@
-2016-09-19 09:10:36 sys_log : [INFO] ############################ Config parameters ############################
-2016-09-19 09:10:36 sys_log : [INFO] mode=1
-2016-09-19 09:10:36 sys_log : [INFO] runMode=0
-2016-09-19 09:10:36 sys_log : [INFO] depth=2
-2016-09-19 09:10:36 sys_log : [INFO] port=4723
-2016-09-19 09:10:36 sys_log : [INFO] reverse=1
-2016-09-19 09:10:36 sys_log : [INFO] filter=2
-2016-09-19 09:10:36 sys_log : [INFO] port=4723
-2016-09-19 09:10:36 sys_log : [INFO] duration=0
-2016-09-19 09:10:36 sys_log : [INFO] interval=5
-2016-09-19 09:10:36 sys_log : [INFO] timeout=30
-2016-09-19 09:10:36 sys_log : [INFO] host=127.0.0.1
-2016-09-19 09:10:36 sys_log : [INFO] app=C:\Users\Administrator\Desktop\AndroidTest.apk
-2016-09-19 09:10:36 sys_log : [INFO] udid=71MBBLE25GLV
-2016-09-19 09:10:36 sys_log : [INFO] tips=拒绝|允许>>//android.widget.Button[@resource-id='android:id/button1']
-2016-09-19 09:10:36 sys_log : [INFO] screenshot=png\\\\20160919091036\\\\
-2016-09-19 09:10:36 sys_log : [INFO] appPackage=com.myandroid.test
-2016-09-19 09:10:36 sys_log : [INFO] identifyDefault=8
-2016-09-19 09:10:36 sys_log : [INFO] guideFlow=[]
-2016-09-19 09:10:36 sys_log : [INFO] clickList=[UIAImage, UIAButton, UIASwitch, UIATableCell, UIAStaticText, UIAPickerWheel, UIACollectionCell, android.widget.Button, android.widget.ImageButton, android.widget.TextView, android.widget.ImageView, android.widget.FrameLayout, android.widget.LinearLayout, android.widget.RelativeLayout]
-2016-09-19 09:10:36 sys_log : [INFO] inputList=[UIATextField, UIASearchBar, UIASecureTextField, android.widget.EditText]
-2016-09-19 09:10:36 sys_log : [INFO] backList=null
-2016-09-19 09:10:36 sys_log : [INFO] notbackList=[首页, 财经快讯,我,我的订单,活期,定期]
-2016-09-19 09:10:36 sys_log : [INFO] blackList=[exit, relogin]
-2016-09-19 09:10:36 sys_log : [INFO] triggerList=[picture>>back]
-2016-09-19 09:10:36 sys_log : [INFO] identifySpecialList=[阿里云,控制台,云栖,我的>>24]
-2016-09-19 09:10:36 sys_log : [INFO] #########################################################################
-2016-09-19 09:10:36 sys_log : [INFO] date = 20160919
-2016-09-19 09:10:36 sys_log : [INFO] time = 91036
-2016-09-19 09:10:36 sys_log : [INFO] start appium >> node --gc_global --max_old_space_size=4196 /home/gmcc/Downloads/node-v5.10.1-linux-x64/bin/appium -p 4723 --session-override --command-timeout 7200
-2016-09-19 09:11:06 sys_log : [INFO] ########################### DesiredCapabilities ###########################
-2016-09-19 09:11:06 sys_log : [INFO] app = C:\Users\Administrator\Desktop\AndroidTest.apk
-2016-09-19 09:11:06 sys_log : [INFO] appPackage = com.myandroid.test
-2016-09-19 09:11:06 sys_log : [INFO] appActivity = com.myandroid.test.activity.MainActivity
-2016-09-19 09:11:06 sys_log : [INFO] noSign = true
-2016-09-19 09:11:06 sys_log : [INFO] appiumVersion = 1.5.3
-2016-09-19 09:11:06 sys_log : [INFO] platformVersion = 5.1
-2016-09-19 09:11:06 sys_log : [INFO] unicodeKeyboard = true
-2016-09-19 09:11:06 sys_log : [INFO] udid = 71MBBLE25GLV
-2016-09-19 09:11:06 sys_log : [INFO] platformName = Android
-2016-09-19 09:11:06 sys_log : [INFO] deviceName = note1
-2016-09-19 09:11:06 sys_log : [INFO] resetKeyboard = true
-2016-09-19 09:11:06 sys_log : [INFO] ###########################################################################
-2016-09-19 09:11:06 sys_log : [INFO] Appium Server -> http://127.0.0.1:4723/wd/hub
-2016-09-19 09:20:17 sys_log : [INFO] ############################ Config parameters ############################
-2016-09-19 09:20:17 sys_log : [INFO] mode=1
-2016-09-19 09:20:17 sys_log : [INFO] runMode=0
-2016-09-19 09:20:17 sys_log : [INFO] depth=2
-2016-09-19 09:20:17 sys_log : [INFO] port=4723
-2016-09-19 09:20:17 sys_log : [INFO] reverse=1
-2016-09-19 09:20:17 sys_log : [INFO] filter=2
-2016-09-19 09:20:17 sys_log : [INFO] port=4723
-2016-09-19 09:20:17 sys_log : [INFO] duration=0
-2016-09-19 09:20:17 sys_log : [INFO] interval=5
-2016-09-19 09:20:17 sys_log : [INFO] timeout=30
-2016-09-19 09:20:17 sys_log : [INFO] host=127.0.0.1
-2016-09-19 09:20:17 sys_log : [INFO] app=C:\Users\Administrator\Desktop\AndroidTest.apk
-2016-09-19 09:20:17 sys_log : [INFO] udid=71MBBLE25GLV
-2016-09-19 09:20:17 sys_log : [INFO] tips=拒绝|允许>>//android.widget.Button[@resource-id='android:id/button1']
-2016-09-19 09:20:17 sys_log : [INFO] screenshot=png\\\\20160919092016\\\\
-2016-09-19 09:20:17 sys_log : [INFO] appPackage=com.myandroid.test
-2016-09-19 09:20:17 sys_log : [INFO] identifyDefault=8
-2016-09-19 09:20:17 sys_log : [INFO] guideFlow=[]
-2016-09-19 09:20:17 sys_log : [INFO] clickList=[UIAImage, UIAButton, UIASwitch, UIATableCell, UIAStaticText, UIAPickerWheel, UIACollectionCell, android.widget.Button, android.widget.ImageButton, android.widget.TextView, android.widget.ImageView, android.widget.FrameLayout, android.widget.LinearLayout, android.widget.RelativeLayout]
-2016-09-19 09:20:17 sys_log : [INFO] inputList=[UIATextField, UIASearchBar, UIASecureTextField, android.widget.EditText]
-2016-09-19 09:20:17 sys_log : [INFO] backList=null
-2016-09-19 09:20:17 sys_log : [INFO] notbackList=[首页, 财经快讯,我,我的订单,活期,定期]
-2016-09-19 09:20:17 sys_log : [INFO] blackList=[exit, relogin]
-2016-09-19 09:20:17 sys_log : [INFO] triggerList=[picture>>back]
-2016-09-19 09:20:17 sys_log : [INFO] identifySpecialList=[阿里云,控制台,云栖,我的>>24]
-2016-09-19 09:20:17 sys_log : [INFO] #########################################################################
-2016-09-19 09:20:17 sys_log : [INFO] date = 20160919
-2016-09-19 09:20:17 sys_log : [INFO] time = 92017
-2016-09-19 09:20:17 sys_log : [INFO] start appium >> appium -p 4723 --session-override --command-timeout 7200
-2016-09-19 09:20:47 sys_log : [INFO] ########################### DesiredCapabilities ###########################
-2016-09-19 09:20:47 sys_log : [INFO] app = C:\Users\Administrator\Desktop\AndroidTest.apk
-2016-09-19 09:20:47 sys_log : [INFO] appPackage = com.myandroid.test
-2016-09-19 09:20:47 sys_log : [INFO] appActivity = com.myandroid.test.activity.MainActivity
-2016-09-19 09:20:47 sys_log : [INFO] noSign = true
-2016-09-19 09:20:47 sys_log : [INFO] appiumVersion = 1.5.3
-2016-09-19 09:20:47 sys_log : [INFO] platformVersion = 5.1
-2016-09-19 09:20:47 sys_log : [INFO] unicodeKeyboard = true
-2016-09-19 09:20:47 sys_log : [INFO] udid = 71MBBLE25GLV
-2016-09-19 09:20:47 sys_log : [INFO] platformName = Android
-2016-09-19 09:20:47 sys_log : [INFO] deviceName = note1
-2016-09-19 09:20:47 sys_log : [INFO] resetKeyboard = true
-2016-09-19 09:20:47 sys_log : [INFO] ###########################################################################
-2016-09-19 09:20:47 sys_log : [INFO] Appium Server -> http://127.0.0.1:4723/wd/hub
-2016-09-19 09:52:27 sys_log : [INFO] ############################ Config parameters ############################
-2016-09-19 09:52:27 sys_log : [INFO] mode=1
-2016-09-19 09:52:27 sys_log : [INFO] runMode=0
-2016-09-19 09:52:27 sys_log : [INFO] depth=2
-2016-09-19 09:52:27 sys_log : [INFO] port=4723
-2016-09-19 09:52:27 sys_log : [INFO] reverse=1
-2016-09-19 09:52:27 sys_log : [INFO] filter=2
-2016-09-19 09:52:27 sys_log : [INFO] port=4723
-2016-09-19 09:52:27 sys_log : [INFO] duration=0
-2016-09-19 09:52:27 sys_log : [INFO] interval=5
-2016-09-19 09:52:27 sys_log : [INFO] timeout=30
-2016-09-19 09:52:27 sys_log : [INFO] host=127.0.0.1
-2016-09-19 09:52:27 sys_log : [INFO] app=C:\Users\Administrator\Desktop\AndroidTest.apk
-2016-09-19 09:52:27 sys_log : [INFO] udid=71MBBLE25GLV
-2016-09-19 09:52:27 sys_log : [INFO] tips=拒绝|允许>>//android.widget.Button[@resource-id='android:id/button1']
-2016-09-19 09:52:27 sys_log : [INFO] screenshot=png\\\\20160919095227\\\\
-2016-09-19 09:52:27 sys_log : [INFO] appPackage=com.myandroid.test
-2016-09-19 09:52:27 sys_log : [INFO] identifyDefault=8
-2016-09-19 09:52:27 sys_log : [INFO] guideFlow=[]
-2016-09-19 09:52:27 sys_log : [INFO] clickList=[UIAImage, UIAButton, UIASwitch, UIATableCell, UIAStaticText, UIAPickerWheel, UIACollectionCell, android.widget.Button, android.widget.ImageButton, android.widget.TextView, android.widget.ImageView, android.widget.FrameLayout, android.widget.LinearLayout, android.widget.RelativeLayout]
-2016-09-19 09:52:27 sys_log : [INFO] inputList=[UIATextField, UIASearchBar, UIASecureTextField, android.widget.EditText]
-2016-09-19 09:52:27 sys_log : [INFO] backList=null
-2016-09-19 09:52:27 sys_log : [INFO] notbackList=[首页, 财经快讯,我,我的订单,活期,定期]
-2016-09-19 09:52:27 sys_log : [INFO] blackList=[exit, relogin]
-2016-09-19 09:52:27 sys_log : [INFO] triggerList=[picture>>back]
-2016-09-19 09:52:27 sys_log : [INFO] identifySpecialList=[阿里云,控制台,云栖,我的>>24]
-2016-09-19 09:52:27 sys_log : [INFO] #########################################################################
-2016-09-19 09:52:27 sys_log : [INFO] date = 20160919
-2016-09-19 09:52:27 sys_log : [INFO] time = 95227
-2016-09-19 09:52:27 sys_log : [INFO] start appium >> appium -p 4723 --session-override --command-timeout 7200
-2016-09-19 09:52:37 sys_log : [INFO] ########################### DesiredCapabilities ###########################
-2016-09-19 09:52:37 sys_log : [INFO] app = C:\Users\Administrator\Desktop\AndroidTest.apk
-2016-09-19 09:52:37 sys_log : [INFO] appPackage = com.myandroid.test
-2016-09-19 09:52:37 sys_log : [INFO] appActivity = com.myandroid.test.activity.MainActivity
-2016-09-19 09:52:37 sys_log : [INFO] noSign = true
-2016-09-19 09:52:37 sys_log : [INFO] appiumVersion = 1.5.3
-2016-09-19 09:52:37 sys_log : [INFO] platformVersion = 5.1
-2016-09-19 09:52:37 sys_log : [INFO] unicodeKeyboard = true
-2016-09-19 09:52:37 sys_log : [INFO] udid = 71MBBLE25GLV
-2016-09-19 09:52:37 sys_log : [INFO] platformName = Android
-2016-09-19 09:52:37 sys_log : [INFO] deviceName = note1
-2016-09-19 09:52:37 sys_log : [INFO] resetKeyboard = true
-2016-09-19 09:52:37 sys_log : [INFO] ###########################################################################
-2016-09-19 09:52:37 sys_log : [INFO] Appium Server -> http://127.0.0.1:4723/wd/hub
-2016-09-19 09:54:54 sys_log : [INFO] ############################ Config parameters ############################
-2016-09-19 09:54:54 sys_log : [INFO] mode=1
-2016-09-19 09:54:54 sys_log : [INFO] runMode=0
-2016-09-19 09:54:54 sys_log : [INFO] depth=2
-2016-09-19 09:54:54 sys_log : [INFO] port=4723
-2016-09-19 09:54:54 sys_log : [INFO] reverse=1
-2016-09-19 09:54:54 sys_log : [INFO] filter=2
-2016-09-19 09:54:54 sys_log : [INFO] port=4723
-2016-09-19 09:54:54 sys_log : [INFO] duration=0
-2016-09-19 09:54:54 sys_log : [INFO] interval=5
-2016-09-19 09:54:54 sys_log : [INFO] timeout=30
-2016-09-19 09:54:54 sys_log : [INFO] host=127.0.0.1
-2016-09-19 09:54:54 sys_log : [INFO] app=C:\Users\Administrator\Desktop\AndroidTest.apk
-2016-09-19 09:54:54 sys_log : [INFO] udid=71MBBLE25GLV
-2016-09-19 09:54:54 sys_log : [INFO] tips=拒绝|允许>>//android.widget.Button[@resource-id='android:id/button1']
-2016-09-19 09:54:54 sys_log : [INFO] screenshot=png\\\\20160919095454\\\\
-2016-09-19 09:54:54 sys_log : [INFO] appPackage=com.myandroid.test
-2016-09-19 09:54:54 sys_log : [INFO] identifyDefault=8
-2016-09-19 09:54:54 sys_log : [INFO] guideFlow=[]
-2016-09-19 09:54:54 sys_log : [INFO] clickList=[UIAImage, UIAButton, UIASwitch, UIATableCell, UIAStaticText, UIAPickerWheel, UIACollectionCell, android.widget.Button, android.widget.ImageButton, android.widget.TextView, android.widget.ImageView, android.widget.FrameLayout, android.widget.LinearLayout, android.widget.RelativeLayout]
-2016-09-19 09:54:54 sys_log : [INFO] inputList=[UIATextField, UIASearchBar, UIASecureTextField, android.widget.EditText]
-2016-09-19 09:54:54 sys_log : [INFO] backList=null
-2016-09-19 09:54:54 sys_log : [INFO] notbackList=[首页, 财经快讯,我,我的订单,活期,定期]
-2016-09-19 09:54:54 sys_log : [INFO] blackList=[exit, relogin]
-2016-09-19 09:54:54 sys_log : [INFO] triggerList=[picture>>back]
-2016-09-19 09:54:54 sys_log : [INFO] identifySpecialList=[阿里云,控制台,云栖,我的>>24]
-2016-09-19 09:54:54 sys_log : [INFO] #########################################################################
-2016-09-19 09:54:54 sys_log : [INFO] date = 20160919
-2016-09-19 09:54:54 sys_log : [INFO] time = 95454
-2016-09-19 09:54:54 sys_log : [INFO] start appium >> appium -p 4723 --session-override --command-timeout 7200
-2016-09-19 09:55:04 sys_log : [INFO] ########################### DesiredCapabilities ###########################
-2016-09-19 09:55:04 sys_log : [INFO] app = C:\Users\Administrator\Desktop\AndroidTest.apk
-2016-09-19 09:55:04 sys_log : [INFO] appPackage = com.myandroid.test
-2016-09-19 09:55:04 sys_log : [INFO] appActivity = com.myandroid.test.activity.MainActivity
-2016-09-19 09:55:04 sys_log : [INFO] noSign = true
-2016-09-19 09:55:04 sys_log : [INFO] appiumVersion = 1.5.3
-2016-09-19 09:55:04 sys_log : [INFO] platformVersion = 5.1
-2016-09-19 09:55:04 sys_log : [INFO] unicodeKeyboard = true
-2016-09-19 09:55:04 sys_log : [INFO] udid = 71MBBLE25GLV
-2016-09-19 09:55:04 sys_log : [INFO] platformName = Android
-2016-09-19 09:55:04 sys_log : [INFO] deviceName = note1
-2016-09-19 09:55:04 sys_log : [INFO] resetKeyboard = true
-2016-09-19 09:55:04 sys_log : [INFO] ###########################################################################
-2016-09-19 09:55:04 sys_log : [INFO] Appium Server -> http://127.0.0.1:4723/wd/hub
-2016-09-19 09:55:40 sys_log : [INFO] ############################ Config parameters ############################
-2016-09-19 09:55:40 sys_log : [INFO] mode=1
-2016-09-19 09:55:40 sys_log : [INFO] runMode=0
-2016-09-19 09:55:40 sys_log : [INFO] depth=2
-2016-09-19 09:55:40 sys_log : [INFO] port=4723
-2016-09-19 09:55:40 sys_log : [INFO] reverse=1
-2016-09-19 09:55:40 sys_log : [INFO] filter=2
-2016-09-19 09:55:40 sys_log : [INFO] port=4723
-2016-09-19 09:55:40 sys_log : [INFO] duration=0
-2016-09-19 09:55:40 sys_log : [INFO] interval=5
-2016-09-19 09:55:40 sys_log : [INFO] timeout=30
-2016-09-19 09:55:40 sys_log : [INFO] host=127.0.0.1
-2016-09-19 09:55:40 sys_log : [INFO] app=C:\Users\Administrator\Desktop\AndroidTest.apk
-2016-09-19 09:55:40 sys_log : [INFO] udid=71MBBLE25GLV
-2016-09-19 09:55:40 sys_log : [INFO] tips=拒绝|允许>>//android.widget.Button[@resource-id='android:id/button1']
-2016-09-19 09:55:40 sys_log : [INFO] screenshot=png\\\\20160919095540\\\\
-2016-09-19 09:55:40 sys_log : [INFO] appPackage=com.myandroid.test
-2016-09-19 09:55:40 sys_log : [INFO] identifyDefault=8
-2016-09-19 09:55:40 sys_log : [INFO] guideFlow=[]
-2016-09-19 09:55:40 sys_log : [INFO] clickList=[UIAImage, UIAButton, UIASwitch, UIATableCell, UIAStaticText, UIAPickerWheel, UIACollectionCell, android.widget.Button, android.widget.ImageButton, android.widget.TextView, android.widget.ImageView, android.widget.FrameLayout, android.widget.LinearLayout, android.widget.RelativeLayout]
-2016-09-19 09:55:40 sys_log : [INFO] inputList=[UIATextField, UIASearchBar, UIASecureTextField, android.widget.EditText]
-2016-09-19 09:55:40 sys_log : [INFO] backList=null
-2016-09-19 09:55:40 sys_log : [INFO] notbackList=[首页, 财经快讯,我,我的订单,活期,定期]
-2016-09-19 09:55:40 sys_log : [INFO] blackList=[exit, relogin]
-2016-09-19 09:55:40 sys_log : [INFO] triggerList=[picture>>back]
-2016-09-19 09:55:40 sys_log : [INFO] identifySpecialList=[阿里云,控制台,云栖,我的>>24]
-2016-09-19 09:55:40 sys_log : [INFO] #########################################################################
-2016-09-19 09:55:40 sys_log : [INFO] date = 20160919
-2016-09-19 09:55:40 sys_log : [INFO] time = 95540
-2016-09-19 09:55:40 sys_log : [INFO] start appium >> appium -p 4723 --session-override --command-timeout 7200
-2016-09-19 09:55:50 sys_log : [INFO] ########################### DesiredCapabilities ###########################
-2016-09-19 09:55:50 sys_log : [INFO] app = C:\Users\Administrator\Desktop\AndroidTest.apk
-2016-09-19 09:55:50 sys_log : [INFO] appPackage = com.myandroid.test
-2016-09-19 09:55:50 sys_log : [INFO] appActivity = com.myandroid.test.activity.MainActivity
-2016-09-19 09:55:50 sys_log : [INFO] noSign = true
-2016-09-19 09:55:50 sys_log : [INFO] appiumVersion = 1.5.3
-2016-09-19 09:55:50 sys_log : [INFO] platformVersion = 5.1
-2016-09-19 09:55:50 sys_log : [INFO] unicodeKeyboard = true
-2016-09-19 09:55:50 sys_log : [INFO] udid = 71MBBLE25GLV
-2016-09-19 09:55:50 sys_log : [INFO] platformName = Android
-2016-09-19 09:55:50 sys_log : [INFO] deviceName = note1
-2016-09-19 09:55:50 sys_log : [INFO] resetKeyboard = true
-2016-09-19 09:55:50 sys_log : [INFO] ###########################################################################
-2016-09-19 09:55:50 sys_log : [INFO] Appium Server -> http://127.0.0.1:4723/wd/hub
-2016-09-19 09:56:09 sys_log : [INFO] ########################### app environment ###########################
-2016-09-19 09:56:09 sys_log : [INFO] product = m1note
-2016-09-19 09:56:09 sys_log : [INFO] api level = 22
-2016-09-19 09:56:09 sys_log : [INFO] platform version = 5.1
-2016-09-19 09:56:09 sys_log : [INFO] core version = 3.10.65-user
-2016-09-19 09:56:10 sys_log : [INFO] system version = 
-2016-09-19 09:56:10 sys_log : [INFO] version = Flyme 5.1.9.0A
-2016-09-19 09:56:10 sys_log : [INFO] app = com.myandroid.test
-2016-09-19 10:06:57 sys_log : [INFO] ############################ Config parameters ############################
-2016-09-19 10:06:57 sys_log : [INFO] mode=1
-2016-09-19 10:06:57 sys_log : [INFO] runMode=0
-2016-09-19 10:06:57 sys_log : [INFO] depth=2
-2016-09-19 10:06:57 sys_log : [INFO] port=4723
-2016-09-19 10:06:57 sys_log : [INFO] reverse=1
-2016-09-19 10:06:57 sys_log : [INFO] filter=2
-2016-09-19 10:06:57 sys_log : [INFO] port=4723
-2016-09-19 10:06:57 sys_log : [INFO] duration=0
-2016-09-19 10:06:57 sys_log : [INFO] interval=5
-2016-09-19 10:06:57 sys_log : [INFO] timeout=30
-2016-09-19 10:06:57 sys_log : [INFO] host=127.0.0.1
-2016-09-19 10:06:57 sys_log : [INFO] app=C:\Users\Administrator\Desktop\AndroidTest.apk
-2016-09-19 10:06:57 sys_log : [INFO] udid=71MBBLE25GLV
-2016-09-19 10:06:57 sys_log : [INFO] tips=拒绝|允许>>//android.widget.Button[@resource-id='android:id/button1']
-2016-09-19 10:06:57 sys_log : [INFO] screenshot=png\\\\20160919100657\\\\
-2016-09-19 10:06:57 sys_log : [INFO] appPackage=com.myandroid.test
-2016-09-19 10:06:57 sys_log : [INFO] identifyDefault=8
-2016-09-19 10:06:57 sys_log : [INFO] guideFlow=[]
-2016-09-19 10:06:57 sys_log : [INFO] clickList=[UIAImage, UIAButton, UIASwitch, UIATableCell, UIAStaticText, UIAPickerWheel, UIACollectionCell, android.widget.Button, android.widget.ImageButton, android.widget.TextView, android.widget.ImageView, android.widget.FrameLayout, android.widget.LinearLayout, android.widget.RelativeLayout]
-2016-09-19 10:06:57 sys_log : [INFO] inputList=[UIATextField, UIASearchBar, UIASecureTextField, android.widget.EditText]
-2016-09-19 10:06:57 sys_log : [INFO] backList=null
-2016-09-19 10:06:57 sys_log : [INFO] notbackList=[首页, 财经快讯,我,我的订单,活期,定期]
-2016-09-19 10:06:57 sys_log : [INFO] blackList=[exit, relogin]
-2016-09-19 10:06:57 sys_log : [INFO] triggerList=[picture>>back]
-2016-09-19 10:06:57 sys_log : [INFO] identifySpecialList=[阿里云,控制台,云栖,我的>>24]
-2016-09-19 10:06:57 sys_log : [INFO] #########################################################################
-2016-09-19 10:06:57 sys_log : [INFO] date = 20160919
-2016-09-19 10:06:57 sys_log : [INFO] time = 100657
-2016-09-19 10:06:57 sys_log : [INFO] start appium >> appium -p 4723 --session-override --command-timeout 7200
-2016-09-19 10:07:07 sys_log : [INFO] ########################### DesiredCapabilities ###########################
-2016-09-19 10:07:07 sys_log : [INFO] app = C:\Users\Administrator\Desktop\AndroidTest.apk
-2016-09-19 10:07:07 sys_log : [INFO] appPackage = com.myandroid.test
-2016-09-19 10:07:07 sys_log : [INFO] appActivity = com.myandroid.test.activity.MainActivity
-2016-09-19 10:07:07 sys_log : [INFO] noSign = true
-2016-09-19 10:07:07 sys_log : [INFO] appiumVersion = 1.5.3
-2016-09-19 10:07:07 sys_log : [INFO] platformVersion = 5.1
-2016-09-19 10:07:07 sys_log : [INFO] unicodeKeyboard = true
-2016-09-19 10:07:07 sys_log : [INFO] udid = 71MBBLE25GLV
-2016-09-19 10:07:07 sys_log : [INFO] platformName = Android
-2016-09-19 10:07:07 sys_log : [INFO] deviceName = note1
-2016-09-19 10:07:07 sys_log : [INFO] resetKeyboard = true
-2016-09-19 10:07:07 sys_log : [INFO] ###########################################################################
-2016-09-19 10:07:07 sys_log : [INFO] Appium Server -> http://127.0.0.1:4723/wd/hub
-2016-09-19 10:09:56 sys_log : [INFO] ############################ Config parameters ############################
-2016-09-19 10:09:56 sys_log : [INFO] mode=1
-2016-09-19 10:09:56 sys_log : [INFO] runMode=0
-2016-09-19 10:09:56 sys_log : [INFO] depth=2
-2016-09-19 10:09:56 sys_log : [INFO] port=4723
-2016-09-19 10:09:56 sys_log : [INFO] reverse=1
-2016-09-19 10:09:56 sys_log : [INFO] filter=2
-2016-09-19 10:09:56 sys_log : [INFO] port=4723
-2016-09-19 10:09:56 sys_log : [INFO] duration=0
-2016-09-19 10:09:56 sys_log : [INFO] interval=5
-2016-09-19 10:09:56 sys_log : [INFO] timeout=30
-2016-09-19 10:09:56 sys_log : [INFO] host=127.0.0.1
-2016-09-19 10:09:56 sys_log : [INFO] app=apps/AndroidTest.apk
-2016-09-19 10:09:56 sys_log : [INFO] udid=71MBBLE25GLV
-2016-09-19 10:09:56 sys_log : [INFO] tips=拒绝|允许>>//android.widget.Button[@resource-id='android:id/button1']
-2016-09-19 10:09:56 sys_log : [INFO] screenshot=png\\\\20160919100955\\\\
-2016-09-19 10:09:56 sys_log : [INFO] appPackage=com.myandroid.test
-2016-09-19 10:09:56 sys_log : [INFO] identifyDefault=8
-2016-09-19 10:09:56 sys_log : [INFO] guideFlow=[]
-2016-09-19 10:09:56 sys_log : [INFO] clickList=[UIAImage, UIAButton, UIASwitch, UIATableCell, UIAStaticText, UIAPickerWheel, UIACollectionCell, android.widget.Button, android.widget.ImageButton, android.widget.TextView, android.widget.ImageView, android.widget.FrameLayout, android.widget.LinearLayout, android.widget.RelativeLayout]
-2016-09-19 10:09:56 sys_log : [INFO] inputList=[UIATextField, UIASearchBar, UIASecureTextField, android.widget.EditText]
-2016-09-19 10:09:56 sys_log : [INFO] backList=null
-2016-09-19 10:09:56 sys_log : [INFO] notbackList=[首页, 财经快讯,我,我的订单,活期,定期]
-2016-09-19 10:09:56 sys_log : [INFO] blackList=[exit, relogin]
-2016-09-19 10:09:56 sys_log : [INFO] triggerList=[picture>>back]
-2016-09-19 10:09:56 sys_log : [INFO] identifySpecialList=[阿里云,控制台,云栖,我的>>24]
-2016-09-19 10:09:56 sys_log : [INFO] #########################################################################
-2016-09-19 10:09:56 sys_log : [INFO] date = 20160919
-2016-09-19 10:09:56 sys_log : [INFO] time = 100956
-2016-09-19 10:09:56 sys_log : [INFO] start appium >> appium -p 4723 --session-override --command-timeout 7200
-2016-09-19 10:10:06 sys_log : [INFO] ########################### DesiredCapabilities ###########################
-2016-09-19 10:10:06 sys_log : [INFO] app = apps/AndroidTest.apk
-2016-09-19 10:10:06 sys_log : [INFO] appPackage = com.myandroid.test
-2016-09-19 10:10:06 sys_log : [INFO] appActivity = com.myandroid.test.activity.MainActivity
-2016-09-19 10:10:06 sys_log : [INFO] noSign = true
-2016-09-19 10:10:06 sys_log : [INFO] appiumVersion = 1.5.3
-2016-09-19 10:10:06 sys_log : [INFO] platformVersion = 5.1
-2016-09-19 10:10:06 sys_log : [INFO] unicodeKeyboard = true
-2016-09-19 10:10:06 sys_log : [INFO] udid = 71MBBLE25GLV
-2016-09-19 10:10:06 sys_log : [INFO] platformName = Android
-2016-09-19 10:10:06 sys_log : [INFO] deviceName = note1
-2016-09-19 10:10:06 sys_log : [INFO] resetKeyboard = true
-2016-09-19 10:10:06 sys_log : [INFO] ###########################################################################
-2016-09-19 10:10:06 sys_log : [INFO] Appium Server -> http://127.0.0.1:4723/wd/hub
-2016-09-19 10:10:42 sys_log : [INFO] ############################ Config parameters ############################
-2016-09-19 10:10:42 sys_log : [INFO] mode=1
-2016-09-19 10:10:42 sys_log : [INFO] runMode=0
-2016-09-19 10:10:42 sys_log : [INFO] depth=2
-2016-09-19 10:10:42 sys_log : [INFO] port=4723
-2016-09-19 10:10:42 sys_log : [INFO] reverse=1
-2016-09-19 10:10:42 sys_log : [INFO] filter=2
-2016-09-19 10:10:42 sys_log : [INFO] port=4723
-2016-09-19 10:10:42 sys_log : [INFO] duration=0
-2016-09-19 10:10:42 sys_log : [INFO] interval=5
-2016-09-19 10:10:42 sys_log : [INFO] timeout=30
-2016-09-19 10:10:42 sys_log : [INFO] host=127.0.0.1
-2016-09-19 10:10:42 sys_log : [INFO] app=apps/AndroidTest.apk
-2016-09-19 10:10:42 sys_log : [INFO] udid=71MBBLE25GLV
-2016-09-19 10:10:42 sys_log : [INFO] tips=拒绝|允许>>//android.widget.Button[@resource-id='android:id/button1']
-2016-09-19 10:10:42 sys_log : [INFO] screenshot=png\\\\20160919101041\\\\
-2016-09-19 10:10:42 sys_log : [INFO] appPackage=com.myandroid.test
-2016-09-19 10:10:42 sys_log : [INFO] identifyDefault=8
-2016-09-19 10:10:42 sys_log : [INFO] guideFlow=[]
-2016-09-19 10:10:42 sys_log : [INFO] clickList=[UIAImage, UIAButton, UIASwitch, UIATableCell, UIAStaticText, UIAPickerWheel, UIACollectionCell, android.widget.Button, android.widget.ImageButton, android.widget.TextView, android.widget.ImageView, android.widget.FrameLayout, android.widget.LinearLayout, android.widget.RelativeLayout]
-2016-09-19 10:10:42 sys_log : [INFO] inputList=[UIATextField, UIASearchBar, UIASecureTextField, android.widget.EditText]
-2016-09-19 10:10:42 sys_log : [INFO] backList=null
-2016-09-19 10:10:42 sys_log : [INFO] notbackList=[首页, 财经快讯,我,我的订单,活期,定期]
-2016-09-19 10:10:42 sys_log : [INFO] blackList=[exit, relogin]
-2016-09-19 10:10:42 sys_log : [INFO] triggerList=[picture>>back]
-2016-09-19 10:10:42 sys_log : [INFO] identifySpecialList=[阿里云,控制台,云栖,我的>>24]
-2016-09-19 10:10:42 sys_log : [INFO] #########################################################################
-2016-09-19 10:10:42 sys_log : [INFO] date = 20160919
-2016-09-19 10:10:42 sys_log : [INFO] time = 101042
-2016-09-19 10:10:42 sys_log : [INFO] start appium >> appium -p 4723 --session-override --command-timeout 7200
-2016-09-19 10:10:52 sys_log : [INFO] ########################### DesiredCapabilities ###########################
-2016-09-19 10:10:52 sys_log : [INFO] app = apps/AndroidTest.apk
-2016-09-19 10:10:52 sys_log : [INFO] appPackage = com.myandroid.test
-2016-09-19 10:10:52 sys_log : [INFO] appActivity = com.myandroid.test.activity.MainActivity
-2016-09-19 10:10:52 sys_log : [INFO] noSign = true
-2016-09-19 10:10:52 sys_log : [INFO] appiumVersion = 1.5.3
-2016-09-19 10:10:52 sys_log : [INFO] platformVersion = 5.1
-2016-09-19 10:10:52 sys_log : [INFO] unicodeKeyboard = true
-2016-09-19 10:10:52 sys_log : [INFO] udid = 71MBBLE25GLV
-2016-09-19 10:10:52 sys_log : [INFO] platformName = Android
-2016-09-19 10:10:52 sys_log : [INFO] deviceName = note1
-2016-09-19 10:10:52 sys_log : [INFO] resetKeyboard = true
-2016-09-19 10:10:52 sys_log : [INFO] ###########################################################################
-2016-09-19 10:10:52 sys_log : [INFO] Appium Server -> http://127.0.0.1:4723/wd/hub
-2016-09-19 10:11:01 sys_log : [INFO] ########################### app environment ###########################
-2016-09-19 10:11:01 sys_log : [INFO] product = m1note
-2016-09-19 10:11:01 sys_log : [INFO] api level = 22
-2016-09-19 10:11:01 sys_log : [INFO] platform version = 5.1
-2016-09-19 10:11:01 sys_log : [INFO] core version = 3.10.65-user
-2016-09-19 10:11:01 sys_log : [INFO] system version = 
-2016-09-19 10:11:01 sys_log : [INFO] version = Flyme 5.1.9.0A
-2016-09-19 10:11:01 sys_log : [INFO] app = com.myandroid.test
-2016-09-19 10:11:01 sys_log : [INFO] app activity = com.myandroid.test.activity.MainActivity
-2016-09-19 10:11:02 sys_log : [INFO] app current activity = .activity.MainActivity t832
-2016-09-19 10:11:02 sys_log : [INFO] app is alive = false
-2016-09-19 10:11:02 sys_log : [INFO] language = zh
-2016-09-19 10:11:02 sys_log : [INFO] resolution = 
-2016-09-19 10:11:02 sys_log : [INFO] uiautomator pid = 18859
-2016-09-19 10:11:02 sys_log : [INFO] ########################################################################
-2016-09-19 10:21:42 sys_log : [INFO] ############################ Config parameters ############################
-2016-09-19 10:21:42 sys_log : [INFO] mode=1
-2016-09-19 10:21:42 sys_log : [INFO] runMode=0
-2016-09-19 10:21:42 sys_log : [INFO] depth=2
-2016-09-19 10:21:42 sys_log : [INFO] port=4723
-2016-09-19 10:21:42 sys_log : [INFO] reverse=1
-2016-09-19 10:21:42 sys_log : [INFO] filter=2
-2016-09-19 10:21:42 sys_log : [INFO] port=4723
-2016-09-19 10:21:42 sys_log : [INFO] duration=0
-2016-09-19 10:21:42 sys_log : [INFO] interval=5
-2016-09-19 10:21:42 sys_log : [INFO] timeout=30
-2016-09-19 10:21:42 sys_log : [INFO] host=127.0.0.1
-2016-09-19 10:21:42 sys_log : [INFO] app=apps/AndroidTest.apk
-2016-09-19 10:21:42 sys_log : [INFO] udid=71MBBLE25GLV
-2016-09-19 10:21:42 sys_log : [INFO] tips=拒绝|允许>>//android.widget.Button[@resource-id='android:id/button1']
-2016-09-19 10:21:42 sys_log : [INFO] screenshot=png\\\\20160919102142\\\\
-2016-09-19 10:21:42 sys_log : [INFO] appPackage=com.myandroid.test
-2016-09-19 10:21:42 sys_log : [INFO] identifyDefault=8
-2016-09-19 10:21:42 sys_log : [INFO] guideFlow=[]
-2016-09-19 10:21:42 sys_log : [INFO] clickList=[UIAImage, UIAButton, UIASwitch, UIATableCell, UIAStaticText, UIAPickerWheel, UIACollectionCell, android.widget.Button, android.widget.ImageButton, android.widget.TextView, android.widget.ImageView, android.widget.FrameLayout, android.widget.LinearLayout, android.widget.RelativeLayout]
-2016-09-19 10:21:42 sys_log : [INFO] inputList=[UIATextField, UIASearchBar, UIASecureTextField, android.widget.EditText]
-2016-09-19 10:21:42 sys_log : [INFO] backList=null
-2016-09-19 10:21:42 sys_log : [INFO] notbackList=[首页, 财经快讯,我,我的订单,活期,定期]
-2016-09-19 10:21:42 sys_log : [INFO] blackList=[exit, relogin]
-2016-09-19 10:21:42 sys_log : [INFO] triggerList=[picture>>back]
-2016-09-19 10:21:42 sys_log : [INFO] identifySpecialList=[阿里云,控制台,云栖,我的>>24]
-2016-09-19 10:21:42 sys_log : [INFO] #########################################################################
-2016-09-19 10:21:42 sys_log : [INFO] date = 20160919
-2016-09-19 10:21:42 sys_log : [INFO] time = 102142
-2016-09-19 10:21:42 sys_log : [INFO] start appium >> appium -p 4723 --session-override --command-timeout 7200
-2016-09-19 10:21:52 sys_log : [INFO] ########################### DesiredCapabilities ###########################
-2016-09-19 10:21:52 sys_log : [INFO] app = apps/AndroidTest.apk
-2016-09-19 10:21:52 sys_log : [INFO] appPackage = com.myandroid.test
-2016-09-19 10:21:52 sys_log : [INFO] appActivity = com.myandroid.test.activity.MainActivity
-2016-09-19 10:21:52 sys_log : [INFO] noSign = true
-2016-09-19 10:21:52 sys_log : [INFO] appiumVersion = 1.5.3
-2016-09-19 10:21:52 sys_log : [INFO] platformVersion = 5.1
-2016-09-19 10:21:52 sys_log : [INFO] unicodeKeyboard = true
-2016-09-19 10:21:52 sys_log : [INFO] udid = 71MBBLE25GLV
-2016-09-19 10:21:52 sys_log : [INFO] platformName = Android
-2016-09-19 10:21:52 sys_log : [INFO] deviceName = note1
-2016-09-19 10:21:52 sys_log : [INFO] resetKeyboard = true
-2016-09-19 10:21:52 sys_log : [INFO] ###########################################################################
-2016-09-19 10:21:52 sys_log : [INFO] Appium Server -> http://127.0.0.1:4723/wd/hub
-2016-09-19 10:22:02 sys_log : [INFO] ########################### app environment ###########################
-2016-09-19 10:22:02 sys_log : [INFO] product = m1note
-2016-09-19 10:22:02 sys_log : [INFO] api level = 22
-2016-09-19 10:22:02 sys_log : [INFO] platform version = 5.1
-2016-09-19 10:22:02 sys_log : [INFO] core version = 3.10.65-user
-2016-09-19 10:22:02 sys_log : [INFO] system version = 
-2016-09-19 10:22:02 sys_log : [INFO] version = Flyme 5.1.9.0A
-2016-09-19 10:22:02 sys_log : [INFO] app = com.myandroid.test
-2016-09-19 10:22:02 sys_log : [INFO] app activity = com.myandroid.test.activity.MainActivity
-2016-09-19 10:22:02 sys_log : [INFO] app current activity = .activity.MainActivity t833
-2016-09-19 10:22:02 sys_log : [INFO] app is alive = false
-2016-09-19 10:22:02 sys_log : [INFO] language = zh
-2016-09-19 10:22:02 sys_log : [INFO] resolution = 
-2016-09-19 10:22:02 sys_log : [INFO] uiautomator pid = 19892
-2016-09-19 10:22:02 sys_log : [INFO] ########################################################################
-2016-09-19 10:33:02 sys_log : [INFO] ############################ Config parameters ############################
-2016-09-19 10:33:02 sys_log : [INFO] mode=1
-2016-09-19 10:33:02 sys_log : [INFO] runMode=0
-2016-09-19 10:33:02 sys_log : [INFO] depth=2
-2016-09-19 10:33:02 sys_log : [INFO] port=4723
-2016-09-19 10:33:02 sys_log : [INFO] reverse=1
-2016-09-19 10:33:02 sys_log : [INFO] filter=2
-2016-09-19 10:33:02 sys_log : [INFO] port=4723
-2016-09-19 10:33:02 sys_log : [INFO] duration=0
-2016-09-19 10:33:02 sys_log : [INFO] interval=5
-2016-09-19 10:33:02 sys_log : [INFO] timeout=30
-2016-09-19 10:33:02 sys_log : [INFO] host=127.0.0.1
-2016-09-19 10:33:02 sys_log : [INFO] app=apps/AndroidTest.apk
-2016-09-19 10:33:02 sys_log : [INFO] udid=71MBBLE25GLV
-2016-09-19 10:33:02 sys_log : [INFO] tips=拒绝|允许>>//android.widget.Button[@resource-id='android:id/button1']
-2016-09-19 10:33:02 sys_log : [INFO] screenshot=png\\\\20160919103302\\\\
-2016-09-19 10:33:02 sys_log : [INFO] appPackage=com.myandroid.test
-2016-09-19 10:33:02 sys_log : [INFO] identifyDefault=8
-2016-09-19 10:33:02 sys_log : [INFO] guideFlow=[]
-2016-09-19 10:33:02 sys_log : [INFO] clickList=[UIAImage, UIAButton, UIASwitch, UIATableCell, UIAStaticText, UIAPickerWheel, UIACollectionCell, android.widget.Button, android.widget.ImageButton, android.widget.TextView, android.widget.ImageView, android.widget.FrameLayout, android.widget.LinearLayout, android.widget.RelativeLayout]
-2016-09-19 10:33:02 sys_log : [INFO] inputList=[UIATextField, UIASearchBar, UIASecureTextField, android.widget.EditText]
-2016-09-19 10:33:02 sys_log : [INFO] backList=null
-2016-09-19 10:33:02 sys_log : [INFO] notbackList=[首页, 财经快讯,我,我的订单,活期,定期]
-2016-09-19 10:33:02 sys_log : [INFO] blackList=[exit, relogin]
-2016-09-19 10:33:02 sys_log : [INFO] triggerList=[picture>>back]
-2016-09-19 10:33:02 sys_log : [INFO] identifySpecialList=[阿里云,控制台,云栖,我的>>24]
-2016-09-19 10:33:02 sys_log : [INFO] #########################################################################
-2016-09-19 10:33:02 sys_log : [INFO] date = 20160919
-2016-09-19 10:33:02 sys_log : [INFO] time = 103302
-2016-09-19 10:33:02 sys_log : [INFO] start appium >> appium -p 4723 --session-override --command-timeout 7200
-2016-09-19 10:33:12 sys_log : [INFO] ########################### DesiredCapabilities ###########################
-2016-09-19 10:33:12 sys_log : [INFO] app = apps/AndroidTest.apk
-2016-09-19 10:33:12 sys_log : [INFO] appPackage = com.myandroid.test
-2016-09-19 10:33:12 sys_log : [INFO] appActivity = com.myandroid.test.activity.MainActivity
-2016-09-19 10:33:12 sys_log : [INFO] noSign = true
-2016-09-19 10:33:12 sys_log : [INFO] appiumVersion = 1.5.3
-2016-09-19 10:33:12 sys_log : [INFO] platformVersion = 5.1
-2016-09-19 10:33:12 sys_log : [INFO] unicodeKeyboard = true
-2016-09-19 10:33:12 sys_log : [INFO] udid = 71MBBLE25GLV
-2016-09-19 10:33:12 sys_log : [INFO] platformName = Android
-2016-09-19 10:33:12 sys_log : [INFO] deviceName = note1
-2016-09-19 10:33:12 sys_log : [INFO] resetKeyboard = true
-2016-09-19 10:33:12 sys_log : [INFO] ###########################################################################
-2016-09-19 10:33:12 sys_log : [INFO] Appium Server -> http://127.0.0.1:4723/wd/hub
-2016-09-19 10:33:23 sys_log : [INFO] ########################### app environment ###########################
-2016-09-19 10:33:23 sys_log : [INFO] product = m1note
-2016-09-19 10:33:23 sys_log : [INFO] api level = 22
-2016-09-19 10:33:23 sys_log : [INFO] platform version = 5.1
-2016-09-19 10:33:23 sys_log : [INFO] core version = 3.10.65-user
-2016-09-19 10:33:23 sys_log : [INFO] system version = 
-2016-09-19 10:33:23 sys_log : [INFO] version = Flyme 5.1.9.0A
-2016-09-19 10:33:23 sys_log : [INFO] app = com.myandroid.test
-2016-09-19 10:33:23 sys_log : [INFO] app activity = com.myandroid.test.activity.MainActivity
-2016-09-19 10:33:23 sys_log : [INFO] app current activity = .activity.MainActivity t841
-2016-09-19 10:33:23 sys_log : [INFO] app is alive = false
-2016-09-19 10:33:23 sys_log : [INFO] language = zh
-2016-09-19 10:33:23 sys_log : [INFO] resolution = 
-2016-09-19 10:33:24 sys_log : [INFO] uiautomator pid = 22834
-2016-09-19 10:33:24 sys_log : [INFO] ########################################################################
-2016-09-19 11:42:25 sys_log : [INFO] ############################ Config parameters ############################
-2016-09-19 11:42:25 sys_log : [INFO] mode=1
-2016-09-19 11:42:25 sys_log : [INFO] runMode=0
-2016-09-19 11:42:25 sys_log : [INFO] depth=2
-2016-09-19 11:42:25 sys_log : [INFO] port=4723
-2016-09-19 11:42:25 sys_log : [INFO] reverse=1
-2016-09-19 11:42:25 sys_log : [INFO] filter=2
-2016-09-19 11:42:25 sys_log : [INFO] port=4723
-2016-09-19 11:42:25 sys_log : [INFO] duration=0
-2016-09-19 11:42:25 sys_log : [INFO] interval=5
-2016-09-19 11:42:25 sys_log : [INFO] timeout=30
-2016-09-19 11:42:25 sys_log : [INFO] host=127.0.0.1
-2016-09-19 11:42:25 sys_log : [INFO] app=apps/AndroidTest.apk
-2016-09-19 11:42:25 sys_log : [INFO] udid=71MBBLE25GLV
-2016-09-19 11:42:25 sys_log : [INFO] tips=拒绝|允许>>//android.widget.Button[@resource-id='android:id/button1']
-2016-09-19 11:42:25 sys_log : [INFO] screenshot=png\\\\20160919114225\\\\
-2016-09-19 11:42:25 sys_log : [INFO] appPackage=com.myandroid.test
-2016-09-19 11:42:25 sys_log : [INFO] identifyDefault=8
-2016-09-19 11:42:25 sys_log : [INFO] guideFlow=[]
-2016-09-19 11:42:25 sys_log : [INFO] clickList=[UIAImage, UIAButton, UIASwitch, UIATableCell, UIAStaticText, UIAPickerWheel, UIACollectionCell, android.widget.Button, android.widget.ImageButton, android.widget.TextView, android.widget.ImageView, android.widget.FrameLayout, android.widget.LinearLayout, android.widget.RelativeLayout]
-2016-09-19 11:42:25 sys_log : [INFO] inputList=[UIATextField, UIASearchBar, UIASecureTextField, android.widget.EditText]
-2016-09-19 11:42:25 sys_log : [INFO] backList=null
-2016-09-19 11:42:25 sys_log : [INFO] notbackList=[首页, 财经快讯,我,我的订单,活期,定期]
-2016-09-19 11:42:25 sys_log : [INFO] blackList=[exit, relogin]
-2016-09-19 11:42:25 sys_log : [INFO] triggerList=[picture>>back]
-2016-09-19 11:42:25 sys_log : [INFO] identifySpecialList=[阿里云,控制台,云栖,我的>>24]
-2016-09-19 11:42:25 sys_log : [INFO] #########################################################################
-2016-09-19 11:42:25 sys_log : [INFO] date = 20160919
-2016-09-19 11:42:25 sys_log : [INFO] time = 114225
-2016-09-19 11:42:25 sys_log : [INFO] start appium >> appium -p 4723 --session-override --command-timeout 7200
-2016-09-19 11:42:35 sys_log : [INFO] ########################### DesiredCapabilities ###########################
-2016-09-19 11:42:35 sys_log : [INFO] app = apps/AndroidTest.apk
-2016-09-19 11:42:35 sys_log : [INFO] appPackage = com.myandroid.test
-2016-09-19 11:42:35 sys_log : [INFO] appActivity = com.myandroid.test.activity.MainActivity
-2016-09-19 11:42:35 sys_log : [INFO] noSign = true
-2016-09-19 11:42:35 sys_log : [INFO] appiumVersion = 1.5.3
-2016-09-19 11:42:35 sys_log : [INFO] platformVersion = 5.1
-2016-09-19 11:42:35 sys_log : [INFO] unicodeKeyboard = true
-2016-09-19 11:42:35 sys_log : [INFO] udid = 71MBBLE25GLV
-2016-09-19 11:42:35 sys_log : [INFO] platformName = Android
-2016-09-19 11:42:35 sys_log : [INFO] deviceName = note1
-2016-09-19 11:42:35 sys_log : [INFO] resetKeyboard = true
-2016-09-19 11:42:35 sys_log : [INFO] ###########################################################################
-2016-09-19 11:42:35 sys_log : [INFO] Appium Server -> http://127.0.0.1:4723/wd/hub
-2016-09-19 11:42:58 sys_log : [INFO] ########################### app environment ###########################
-2016-09-19 11:42:58 sys_log : [INFO] product = m1note
-2016-09-19 11:42:58 sys_log : [INFO] api level = 22
-2016-09-19 11:42:58 sys_log : [INFO] platform version = 5.1
-2016-09-19 11:42:58 sys_log : [INFO] core version = 3.10.65-user
-2016-09-19 11:42:58 sys_log : [INFO] system version = 
-2016-09-19 11:42:58 sys_log : [INFO] version = Flyme 5.1.9.0A
-2016-09-19 11:42:58 sys_log : [INFO] app = com.myandroid.test
-2016-09-19 11:42:58 sys_log : [INFO] app activity = com.myandroid.test.activity.MainActivity
-2016-09-19 11:42:58 sys_log : [INFO] app current activity = .activity.MainActivity t851
-2016-09-19 11:42:58 sys_log : [INFO] app is alive = false
-2016-09-19 11:42:58 sys_log : [INFO] language = zh
-2016-09-19 11:42:58 sys_log : [INFO] resolution = 
-2016-09-19 11:42:58 sys_log : [INFO] uiautomator pid = 29093
-2016-09-19 11:42:58 sys_log : [INFO] ########################################################################
-2016-09-19 14:26:59 sys_log : [INFO] ############################ Config parameters ############################
-2016-09-19 14:26:59 sys_log : [INFO] mode=1
-2016-09-19 14:26:59 sys_log : [INFO] runMode=0
-2016-09-19 14:26:59 sys_log : [INFO] depth=2
-2016-09-19 14:26:59 sys_log : [INFO] port=4723
-2016-09-19 14:26:59 sys_log : [INFO] reverse=1
-2016-09-19 14:26:59 sys_log : [INFO] filter=2
-2016-09-19 14:26:59 sys_log : [INFO] port=4723
-2016-09-19 14:26:59 sys_log : [INFO] duration=0
-2016-09-19 14:26:59 sys_log : [INFO] interval=5
-2016-09-19 14:26:59 sys_log : [INFO] timeout=30
-2016-09-19 14:26:59 sys_log : [INFO] host=127.0.0.1
-2016-09-19 14:26:59 sys_log : [INFO] app=apps/AndroidTest.apk
-2016-09-19 14:26:59 sys_log : [INFO] udid=71MBBLE25GLV
-2016-09-19 14:26:59 sys_log : [INFO] tips=拒绝|允许>>//android.widget.Button[@resource-id='android:id/button1']
-2016-09-19 14:26:59 sys_log : [INFO] screenshot=png\\\\20160919142659\\\\
-2016-09-19 14:26:59 sys_log : [INFO] appPackage=com.myandroid.test
-2016-09-19 14:26:59 sys_log : [INFO] identifyDefault=8
-2016-09-19 14:26:59 sys_log : [INFO] guideFlow=[]
-2016-09-19 14:26:59 sys_log : [INFO] clickList=[UIAImage, UIAButton, UIASwitch, UIATableCell, UIAStaticText, UIAPickerWheel, UIACollectionCell, android.widget.Button, android.widget.ImageButton, android.widget.TextView, android.widget.ImageView, android.widget.FrameLayout, android.widget.LinearLayout, android.widget.RelativeLayout]
-2016-09-19 14:26:59 sys_log : [INFO] inputList=[UIATextField, UIASearchBar, UIASecureTextField, android.widget.EditText]
-2016-09-19 14:26:59 sys_log : [INFO] backList=null
-2016-09-19 14:26:59 sys_log : [INFO] notbackList=[首页, 财经快讯,我,我的订单,活期,定期]
-2016-09-19 14:26:59 sys_log : [INFO] blackList=[exit, relogin]
-2016-09-19 14:26:59 sys_log : [INFO] triggerList=[picture>>back]
-2016-09-19 14:26:59 sys_log : [INFO] identifySpecialList=[阿里云,控制台,云栖,我的>>24]
-2016-09-19 14:26:59 sys_log : [INFO] #########################################################################
-2016-09-19 14:26:59 sys_log : [INFO] date = 20160919
-2016-09-19 14:26:59 sys_log : [INFO] time = 142659
-2016-09-19 14:26:59 sys_log : [INFO] start appium >> appium -p 4723 --session-override --command-timeout 7200
-2016-09-19 14:27:09 sys_log : [INFO] ########################### DesiredCapabilities ###########################
-2016-09-19 14:27:09 sys_log : [INFO] app = apps/AndroidTest.apk
-2016-09-19 14:27:09 sys_log : [INFO] appPackage = com.myandroid.test
-2016-09-19 14:27:09 sys_log : [INFO] appActivity = com.myandroid.test.activity.MainActivity
-2016-09-19 14:27:09 sys_log : [INFO] noSign = true
-2016-09-19 14:27:09 sys_log : [INFO] appiumVersion = 1.5.3
-2016-09-19 14:27:09 sys_log : [INFO] platformVersion = 5.1
-2016-09-19 14:27:09 sys_log : [INFO] unicodeKeyboard = true
-2016-09-19 14:27:09 sys_log : [INFO] udid = 71MBBLE25GLV
-2016-09-19 14:27:09 sys_log : [INFO] platformName = Android
-2016-09-19 14:27:09 sys_log : [INFO] deviceName = note1
-2016-09-19 14:27:09 sys_log : [INFO] resetKeyboard = true
-2016-09-19 14:27:09 sys_log : [INFO] ###########################################################################
-2016-09-19 14:27:09 sys_log : [INFO] Appium Server -> http://127.0.0.1:4723/wd/hub
-2016-09-19 14:28:15 sys_log : [INFO] ############################ Config parameters ############################
-2016-09-19 14:28:15 sys_log : [INFO] mode=1
-2016-09-19 14:28:15 sys_log : [INFO] runMode=0
-2016-09-19 14:28:15 sys_log : [INFO] depth=2
-2016-09-19 14:28:15 sys_log : [INFO] port=4723
-2016-09-19 14:28:15 sys_log : [INFO] reverse=1
-2016-09-19 14:28:15 sys_log : [INFO] filter=2
-2016-09-19 14:28:15 sys_log : [INFO] port=4723
-2016-09-19 14:28:15 sys_log : [INFO] duration=0
-2016-09-19 14:28:15 sys_log : [INFO] interval=5
-2016-09-19 14:28:15 sys_log : [INFO] timeout=30
-2016-09-19 14:28:15 sys_log : [INFO] host=127.0.0.1
-2016-09-19 14:28:15 sys_log : [INFO] app=apps/AndroidTest.apk
-2016-09-19 14:28:15 sys_log : [INFO] udid=71MBBLE25GLV
-2016-09-19 14:28:15 sys_log : [INFO] tips=拒绝|允许>>//android.widget.Button[@resource-id='android:id/button1']
-2016-09-19 14:28:15 sys_log : [INFO] screenshot=png\\\\20160919142815\\\\
-2016-09-19 14:28:15 sys_log : [INFO] appPackage=com.myandroid.test
-2016-09-19 14:28:15 sys_log : [INFO] identifyDefault=8
-2016-09-19 14:28:15 sys_log : [INFO] guideFlow=[]
-2016-09-19 14:28:15 sys_log : [INFO] clickList=[UIAImage, UIAButton, UIASwitch, UIATableCell, UIAStaticText, UIAPickerWheel, UIACollectionCell, android.widget.Button, android.widget.ImageButton, android.widget.TextView, android.widget.ImageView, android.widget.FrameLayout, android.widget.LinearLayout, android.widget.RelativeLayout]
-2016-09-19 14:28:15 sys_log : [INFO] inputList=[UIATextField, UIASearchBar, UIASecureTextField, android.widget.EditText]
-2016-09-19 14:28:15 sys_log : [INFO] backList=null
-2016-09-19 14:28:15 sys_log : [INFO] notbackList=[首页, 财经快讯,我,我的订单,活期,定期]
-2016-09-19 14:28:15 sys_log : [INFO] blackList=[exit, relogin]
-2016-09-19 14:28:15 sys_log : [INFO] triggerList=[picture>>back]
-2016-09-19 14:28:15 sys_log : [INFO] identifySpecialList=[阿里云,控制台,云栖,我的>>24]
-2016-09-19 14:28:15 sys_log : [INFO] #########################################################################
-2016-09-19 14:28:15 sys_log : [INFO] date = 20160919
-2016-09-19 14:28:15 sys_log : [INFO] time = 142815
-2016-09-19 14:28:15 sys_log : [INFO] start appium >> appium -p 4723 --session-override --command-timeout 7200
-2016-09-19 14:28:25 sys_log : [INFO] ########################### DesiredCapabilities ###########################
-2016-09-19 14:28:25 sys_log : [INFO] app = apps/AndroidTest.apk
-2016-09-19 14:28:25 sys_log : [INFO] appPackage = com.myandroid.test
-2016-09-19 14:28:25 sys_log : [INFO] appActivity = com.myandroid.test.activity.MainActivity
-2016-09-19 14:28:25 sys_log : [INFO] noSign = true
-2016-09-19 14:28:25 sys_log : [INFO] appiumVersion = 1.5.3
-2016-09-19 14:28:25 sys_log : [INFO] platformVersion = 5.1
-2016-09-19 14:28:25 sys_log : [INFO] unicodeKeyboard = true
-2016-09-19 14:28:25 sys_log : [INFO] udid = 71MBBLE25GLV
-2016-09-19 14:28:25 sys_log : [INFO] platformName = Android
-2016-09-19 14:28:25 sys_log : [INFO] deviceName = note1
-2016-09-19 14:28:25 sys_log : [INFO] resetKeyboard = true
-2016-09-19 14:28:25 sys_log : [INFO] ###########################################################################
-2016-09-19 14:28:25 sys_log : [INFO] Appium Server -> http://127.0.0.1:4723/wd/hub
-2016-09-19 14:29:43 sys_log : [INFO] ############################ Config parameters ############################
-2016-09-19 14:29:43 sys_log : [INFO] mode=1
-2016-09-19 14:29:43 sys_log : [INFO] runMode=0
-2016-09-19 14:29:43 sys_log : [INFO] depth=2
-2016-09-19 14:29:43 sys_log : [INFO] port=4723
-2016-09-19 14:29:43 sys_log : [INFO] reverse=1
-2016-09-19 14:29:43 sys_log : [INFO] filter=2
-2016-09-19 14:29:43 sys_log : [INFO] port=4723
-2016-09-19 14:29:43 sys_log : [INFO] duration=0
-2016-09-19 14:29:43 sys_log : [INFO] interval=5
-2016-09-19 14:29:43 sys_log : [INFO] timeout=30
-2016-09-19 14:29:43 sys_log : [INFO] host=127.0.0.1
-2016-09-19 14:29:43 sys_log : [INFO] app=apps/AndroidTest.apk
-2016-09-19 14:29:43 sys_log : [INFO] udid=71MBBLE25GLV
-2016-09-19 14:29:43 sys_log : [INFO] tips=拒绝|允许>>//android.widget.Button[@resource-id='android:id/button1']
-2016-09-19 14:29:43 sys_log : [INFO] screenshot=png\\\\20160919142943\\\\
-2016-09-19 14:29:43 sys_log : [INFO] appPackage=com.myandroid.test
-2016-09-19 14:29:43 sys_log : [INFO] identifyDefault=8
-2016-09-19 14:29:43 sys_log : [INFO] guideFlow=[]
-2016-09-19 14:29:43 sys_log : [INFO] clickList=[UIAImage, UIAButton, UIASwitch, UIATableCell, UIAStaticText, UIAPickerWheel, UIACollectionCell, android.widget.Button, android.widget.ImageButton, android.widget.TextView, android.widget.ImageView, android.widget.FrameLayout, android.widget.LinearLayout, android.widget.RelativeLayout]
-2016-09-19 14:29:43 sys_log : [INFO] inputList=[UIATextField, UIASearchBar, UIASecureTextField, android.widget.EditText]
-2016-09-19 14:29:43 sys_log : [INFO] backList=null
-2016-09-19 14:29:43 sys_log : [INFO] notbackList=[首页, 财经快讯,我,我的订单,活期,定期]
-2016-09-19 14:29:43 sys_log : [INFO] blackList=[exit, relogin]
-2016-09-19 14:29:43 sys_log : [INFO] triggerList=[picture>>back]
-2016-09-19 14:29:43 sys_log : [INFO] identifySpecialList=[阿里云,控制台,云栖,我的>>24]
-2016-09-19 14:29:43 sys_log : [INFO] #########################################################################
-2016-09-19 14:29:43 sys_log : [INFO] date = 20160919
-2016-09-19 14:29:43 sys_log : [INFO] time = 142943
-2016-09-19 14:29:43 sys_log : [INFO] start appium >> appium -p 4723 --session-override --command-timeout 7200
-2016-09-19 14:29:53 sys_log : [INFO] ########################### DesiredCapabilities ###########################
-2016-09-19 14:29:53 sys_log : [INFO] app = apps/AndroidTest.apk
-2016-09-19 14:29:53 sys_log : [INFO] appPackage = com.myandroid.test
-2016-09-19 14:29:53 sys_log : [INFO] appActivity = com.myandroid.test.activity.MainActivity
-2016-09-19 14:29:53 sys_log : [INFO] noSign = true
-2016-09-19 14:29:53 sys_log : [INFO] appiumVersion = 1.5.3
-2016-09-19 14:29:53 sys_log : [INFO] platformVersion = 5.1
-2016-09-19 14:29:53 sys_log : [INFO] unicodeKeyboard = true
-2016-09-19 14:29:53 sys_log : [INFO] udid = 71MBBLE25GLV
-2016-09-19 14:29:53 sys_log : [INFO] platformName = Android
-2016-09-19 14:29:53 sys_log : [INFO] deviceName = note1
-2016-09-19 14:29:53 sys_log : [INFO] resetKeyboard = true
-2016-09-19 14:29:53 sys_log : [INFO] ###########################################################################
-2016-09-19 14:29:53 sys_log : [INFO] Appium Server -> http://127.0.0.1:4723/wd/hub
-2016-09-19 14:31:07 sys_log : [INFO] ############################ Config parameters ############################
-2016-09-19 14:31:07 sys_log : [INFO] mode=1
-2016-09-19 14:31:07 sys_log : [INFO] runMode=0
-2016-09-19 14:31:07 sys_log : [INFO] depth=2
-2016-09-19 14:31:07 sys_log : [INFO] port=4723
-2016-09-19 14:31:07 sys_log : [INFO] reverse=1
-2016-09-19 14:31:07 sys_log : [INFO] filter=2
-2016-09-19 14:31:07 sys_log : [INFO] port=4723
-2016-09-19 14:31:07 sys_log : [INFO] duration=0
-2016-09-19 14:31:07 sys_log : [INFO] interval=5
-2016-09-19 14:31:07 sys_log : [INFO] timeout=30
-2016-09-19 14:31:07 sys_log : [INFO] host=127.0.0.1
-2016-09-19 14:31:07 sys_log : [INFO] app=apps/AndroidTest.apk
-2016-09-19 14:31:07 sys_log : [INFO] udid=71MBBLE25GLV
-2016-09-19 14:31:07 sys_log : [INFO] tips=拒绝|允许>>//android.widget.Button[@resource-id='android:id/button1']
-2016-09-19 14:31:07 sys_log : [INFO] screenshot=png\\\\20160919143107\\\\
-2016-09-19 14:31:07 sys_log : [INFO] appPackage=com.myandroid.test
-2016-09-19 14:31:07 sys_log : [INFO] identifyDefault=8
-2016-09-19 14:31:07 sys_log : [INFO] guideFlow=[]
-2016-09-19 14:31:07 sys_log : [INFO] clickList=[UIAImage, UIAButton, UIASwitch, UIATableCell, UIAStaticText, UIAPickerWheel, UIACollectionCell, android.widget.Button, android.widget.ImageButton, android.widget.TextView, android.widget.ImageView, android.widget.FrameLayout, android.widget.LinearLayout, android.widget.RelativeLayout]
-2016-09-19 14:31:07 sys_log : [INFO] inputList=[UIATextField, UIASearchBar, UIASecureTextField, android.widget.EditText]
-2016-09-19 14:31:07 sys_log : [INFO] backList=null
-2016-09-19 14:31:07 sys_log : [INFO] notbackList=[首页, 财经快讯,我,我的订单,活期,定期]
-2016-09-19 14:31:07 sys_log : [INFO] blackList=[exit, relogin]
-2016-09-19 14:31:07 sys_log : [INFO] triggerList=[picture>>back]
-2016-09-19 14:31:07 sys_log : [INFO] identifySpecialList=[阿里云,控制台,云栖,我的>>24]
-2016-09-19 14:31:07 sys_log : [INFO] #########################################################################
-2016-09-19 14:31:07 sys_log : [INFO] date = 20160919
-2016-09-19 14:31:07 sys_log : [INFO] time = 143107
-2016-09-19 14:31:07 sys_log : [INFO] start appium >> appium -p 4723 --session-override --command-timeout 7200
-2016-09-19 14:31:17 sys_log : [INFO] ########################### DesiredCapabilities ###########################
-2016-09-19 14:31:17 sys_log : [INFO] app = apps/AndroidTest.apk
-2016-09-19 14:31:17 sys_log : [INFO] appPackage = com.myandroid.test
-2016-09-19 14:31:17 sys_log : [INFO] appActivity = com.myandroid.test.activity.MainActivity
-2016-09-19 14:31:17 sys_log : [INFO] noSign = true
-2016-09-19 14:31:17 sys_log : [INFO] appiumVersion = 1.5.3
-2016-09-19 14:31:17 sys_log : [INFO] platformVersion = 5.1
-2016-09-19 14:31:17 sys_log : [INFO] unicodeKeyboard = true
-2016-09-19 14:31:17 sys_log : [INFO] udid = 71MBBLE25GLV
-2016-09-19 14:31:17 sys_log : [INFO] platformName = Android
-2016-09-19 14:31:17 sys_log : [INFO] deviceName = note1
-2016-09-19 14:31:17 sys_log : [INFO] resetKeyboard = true
-2016-09-19 14:31:17 sys_log : [INFO] ###########################################################################
-2016-09-19 14:31:17 sys_log : [INFO] Appium Server -> http://127.0.0.1:4723/wd/hub
-2016-09-19 14:31:29 sys_log : [INFO] ########################### app environment ###########################
-2016-09-19 14:31:29 sys_log : [INFO] product = m1note
-2016-09-19 14:31:29 sys_log : [INFO] api level = 22
-2016-09-19 14:31:29 sys_log : [INFO] platform version = 5.1
-2016-09-19 14:31:29 sys_log : [INFO] core version = 3.10.65-user
-2016-09-19 14:31:29 sys_log : [INFO] system version = 
-2016-09-19 14:31:29 sys_log : [INFO] version = Flyme 5.1.9.0A
-2016-09-19 14:31:29 sys_log : [INFO] app = com.myandroid.test
-2016-09-19 14:31:29 sys_log : [INFO] app activity = com.myandroid.test.activity.MainActivity
-2016-09-19 14:31:29 sys_log : [INFO] app current activity = .activity.MainActivity t869
-2016-09-19 14:31:29 sys_log : [INFO] app is alive = false
-2016-09-19 14:31:29 sys_log : [INFO] language = zh
-2016-09-19 14:31:29 sys_log : [INFO] resolution = 
-2016-09-19 14:31:30 sys_log : [INFO] uiautomator pid = 9037
-2016-09-19 14:31:30 sys_log : [INFO] ########################################################################
-2016-09-19 14:58:26 sys_log : [INFO] ############################ Config parameters ############################
-2016-09-19 14:58:26 sys_log : [INFO] mode=1
-2016-09-19 14:58:26 sys_log : [INFO] runMode=0
-2016-09-19 14:58:26 sys_log : [INFO] depth=2
-2016-09-19 14:58:26 sys_log : [INFO] port=4723
-2016-09-19 14:58:26 sys_log : [INFO] reverse=1
-2016-09-19 14:58:26 sys_log : [INFO] filter=2
-2016-09-19 14:58:26 sys_log : [INFO] port=4723
-2016-09-19 14:58:26 sys_log : [INFO] duration=0
-2016-09-19 14:58:26 sys_log : [INFO] interval=5
-2016-09-19 14:58:26 sys_log : [INFO] timeout=30
-2016-09-19 14:58:26 sys_log : [INFO] host=127.0.0.1
-2016-09-19 14:58:26 sys_log : [INFO] app=apps/AndroidTest.apk
-2016-09-19 14:58:26 sys_log : [INFO] udid=71MBBLE25GLV
-2016-09-19 14:58:26 sys_log : [INFO] tips=拒绝|允许>>//android.widget.Button[@resource-id='android:id/button1']
-2016-09-19 14:58:26 sys_log : [INFO] screenshot=png\\\\20160919145826\\\\
-2016-09-19 14:58:26 sys_log : [INFO] appPackage=com.myandroid.test
-2016-09-19 14:58:26 sys_log : [INFO] identifyDefault=8
-2016-09-19 14:58:26 sys_log : [INFO] guideFlow=[]
-2016-09-19 14:58:26 sys_log : [INFO] clickList=[UIAImage, UIAButton, UIASwitch, UIATableCell, UIAStaticText, UIAPickerWheel, UIACollectionCell, android.widget.Button, android.widget.ImageButton, android.widget.TextView, android.widget.ImageView, android.widget.FrameLayout, android.widget.LinearLayout, android.widget.RelativeLayout]
-2016-09-19 14:58:26 sys_log : [INFO] inputList=[UIATextField, UIASearchBar, UIASecureTextField, android.widget.EditText]
-2016-09-19 14:58:26 sys_log : [INFO] backList=null
-2016-09-19 14:58:26 sys_log : [INFO] notbackList=[首页, 财经快讯,我,我的订单,活期,定期]
-2016-09-19 14:58:26 sys_log : [INFO] blackList=[exit, relogin]
-2016-09-19 14:58:26 sys_log : [INFO] triggerList=[picture>>back]
-2016-09-19 14:58:26 sys_log : [INFO] identifySpecialList=[阿里云,控制台,云栖,我的>>24]
-2016-09-19 14:58:26 sys_log : [INFO] #########################################################################
-2016-09-19 14:58:26 sys_log : [INFO] date = 20160919
-2016-09-19 14:58:26 sys_log : [INFO] time = 145826
-2016-09-19 14:58:26 sys_log : [INFO] start appium >> appium -p 4723 --session-override --command-timeout 7200
-2016-09-19 14:58:36 sys_log : [INFO] ########################### DesiredCapabilities ###########################
-2016-09-19 14:58:36 sys_log : [INFO] app = apps/AndroidTest.apk
-2016-09-19 14:58:36 sys_log : [INFO] appPackage = com.myandroid.test
-2016-09-19 14:58:36 sys_log : [INFO] appActivity = com.myandroid.test.activity.MainActivity
-2016-09-19 14:58:36 sys_log : [INFO] noSign = true
-2016-09-19 14:58:36 sys_log : [INFO] appiumVersion = 1.5.3
-2016-09-19 14:58:36 sys_log : [INFO] platformVersion = 5.1
-2016-09-19 14:58:36 sys_log : [INFO] unicodeKeyboard = true
-2016-09-19 14:58:36 sys_log : [INFO] udid = 71MBBLE25GLV
-2016-09-19 14:58:36 sys_log : [INFO] platformName = Android
-2016-09-19 14:58:36 sys_log : [INFO] deviceName = note1
-2016-09-19 14:58:36 sys_log : [INFO] resetKeyboard = true
-2016-09-19 14:58:36 sys_log : [INFO] ###########################################################################
-2016-09-19 14:58:36 sys_log : [INFO] Appium Server -> http://127.0.0.1:4723/wd/hub
-2016-09-19 14:58:47 sys_log : [INFO] ########################### app environment ###########################
-2016-09-19 14:58:47 sys_log : [INFO] product = m1note
-2016-09-19 14:58:47 sys_log : [INFO] api level = 22
-2016-09-19 14:58:47 sys_log : [INFO] platform version = 5.1
-2016-09-19 14:58:47 sys_log : [INFO] core version = 3.10.65-user
-2016-09-19 14:58:47 sys_log : [INFO] system version = 
-2016-09-19 14:58:47 sys_log : [INFO] version = Flyme 5.1.9.0A
-2016-09-19 14:58:47 sys_log : [INFO] app = com.myandroid.test
-2016-09-19 14:58:47 sys_log : [INFO] app activity = com.myandroid.test.activity.MainActivity
-2016-09-19 14:58:48 sys_log : [INFO] app current activity = .activity.MainActivity t881
-2016-09-19 14:58:48 sys_log : [INFO] app is alive = false
-2016-09-19 14:58:48 sys_log : [INFO] language = zh
-2016-09-19 14:58:48 sys_log : [INFO] resolution = 
-2016-09-19 14:58:48 sys_log : [INFO] uiautomator pid = 13768
-2016-09-19 14:58:48 sys_log : [INFO] ########################################################################
-2016-09-19 15:09:38 sys_log : [INFO] ############################ Config parameters ############################
-2016-09-19 15:09:38 sys_log : [INFO] mode=1
-2016-09-19 15:09:38 sys_log : [INFO] runMode=0
-2016-09-19 15:09:38 sys_log : [INFO] depth=2
-2016-09-19 15:09:38 sys_log : [INFO] port=4723
-2016-09-19 15:09:38 sys_log : [INFO] reverse=1
-2016-09-19 15:09:38 sys_log : [INFO] filter=2
-2016-09-19 15:09:38 sys_log : [INFO] port=4723
-2016-09-19 15:09:38 sys_log : [INFO] duration=0
-2016-09-19 15:09:38 sys_log : [INFO] interval=5
-2016-09-19 15:09:38 sys_log : [INFO] timeout=30
-2016-09-19 15:09:38 sys_log : [INFO] host=127.0.0.1
-2016-09-19 15:09:38 sys_log : [INFO] app=apps/AndroidTest.apk
-2016-09-19 15:09:38 sys_log : [INFO] udid=71MBBLE25GLV
-2016-09-19 15:09:38 sys_log : [INFO] tips=拒绝|允许>>//android.widget.Button[@resource-id='android:id/button1']
-2016-09-19 15:09:38 sys_log : [INFO] screenshot=png\\\\20160919150938\\\\
-2016-09-19 15:09:38 sys_log : [INFO] appPackage=com.myandroid.test
-2016-09-19 15:09:38 sys_log : [INFO] identifyDefault=15
-2016-09-19 15:09:38 sys_log : [INFO] guideFlow=[]
-2016-09-19 15:09:38 sys_log : [INFO] clickList=[UIAImage, UIAButton, UIASwitch, UIATableCell, UIAStaticText, UIAPickerWheel, UIACollectionCell, android.widget.Button, android.widget.ImageButton, android.widget.TextView, android.widget.ImageView, android.widget.FrameLayout, android.widget.LinearLayout, android.widget.RelativeLayout]
-2016-09-19 15:09:38 sys_log : [INFO] inputList=[UIATextField, UIASearchBar, UIASecureTextField, android.widget.EditText]
-2016-09-19 15:09:38 sys_log : [INFO] backList=null
-2016-09-19 15:09:38 sys_log : [INFO] notbackList=[首页, 财经快讯,我,我的订单,活期,定期]
-2016-09-19 15:09:38 sys_log : [INFO] blackList=[exit, relogin]
-2016-09-19 15:09:38 sys_log : [INFO] triggerList=[picture>>back]
-2016-09-19 15:09:38 sys_log : [INFO] identifySpecialList=[阿里云,控制台,云栖,我的>>24]
-2016-09-19 15:09:38 sys_log : [INFO] #########################################################################
-2016-09-19 15:09:38 sys_log : [INFO] date = 20160919
-2016-09-19 15:09:38 sys_log : [INFO] time = 150938
-2016-09-19 15:09:38 sys_log : [INFO] start appium >> appium -p 4723 --session-override --command-timeout 7200
-2016-09-19 15:09:48 sys_log : [INFO] ########################### DesiredCapabilities ###########################
-2016-09-19 15:09:48 sys_log : [INFO] app = apps/AndroidTest.apk
-2016-09-19 15:09:48 sys_log : [INFO] appPackage = com.myandroid.test
-2016-09-19 15:09:48 sys_log : [INFO] appActivity = com.myandroid.test.activity.MainActivity
-2016-09-19 15:09:48 sys_log : [INFO] noSign = true
-2016-09-19 15:09:48 sys_log : [INFO] appiumVersion = 1.5.3
-2016-09-19 15:09:48 sys_log : [INFO] platformVersion = 5.1
-2016-09-19 15:09:48 sys_log : [INFO] unicodeKeyboard = true
-2016-09-19 15:09:48 sys_log : [INFO] udid = 71MBBLE25GLV
-2016-09-19 15:09:48 sys_log : [INFO] platformName = Android
-2016-09-19 15:09:48 sys_log : [INFO] deviceName = note1
-2016-09-19 15:09:48 sys_log : [INFO] resetKeyboard = true
-2016-09-19 15:09:48 sys_log : [INFO] ###########################################################################
-2016-09-19 15:09:48 sys_log : [INFO] Appium Server -> http://127.0.0.1:4723/wd/hub
-2016-09-19 15:10:04 sys_log : [INFO] ########################### app environment ###########################
-2016-09-19 15:10:04 sys_log : [INFO] product = m1note
-2016-09-19 15:10:04 sys_log : [INFO] api level = 22
-2016-09-19 15:10:04 sys_log : [INFO] platform version = 5.1
-2016-09-19 15:10:04 sys_log : [INFO] core version = 3.10.65-user
-2016-09-19 15:10:04 sys_log : [INFO] system version = 
-2016-09-19 15:10:04 sys_log : [INFO] version = Flyme 5.1.9.0A
-2016-09-19 15:10:04 sys_log : [INFO] app = com.myandroid.test
-2016-09-19 15:10:04 sys_log : [INFO] app activity = com.myandroid.test.activity.MainActivity
-2016-09-19 15:10:05 sys_log : [INFO] app current activity = .activity.MainActivity t882
-2016-09-19 15:10:05 sys_log : [INFO] app is alive = false
-2016-09-19 15:10:05 sys_log : [INFO] language = zh
-2016-09-19 15:10:05 sys_log : [INFO] resolution = 
-2016-09-19 15:10:05 sys_log : [INFO] uiautomator pid = 15352
-2016-09-19 15:10:05 sys_log : [INFO] ########################################################################
+2016-09-23 11:44:46 sys_log : [INFO] ############################ Config parameters ############################
+2016-09-23 11:44:46 sys_log : [INFO] mode=1
+2016-09-23 11:44:46 sys_log : [INFO] runMode=0
+2016-09-23 11:44:46 sys_log : [INFO] depth=2
+2016-09-23 11:44:46 sys_log : [INFO] port=4723
+2016-09-23 11:44:46 sys_log : [INFO] reverse=1
+2016-09-23 11:44:46 sys_log : [INFO] filter=2
+2016-09-23 11:44:46 sys_log : [INFO] port=4723
+2016-09-23 11:44:46 sys_log : [INFO] duration=0
+2016-09-23 11:44:46 sys_log : [INFO] interval=3
+2016-09-23 11:44:46 sys_log : [INFO] timeout=30
+2016-09-23 11:44:46 sys_log : [INFO] host=127.0.0.1
+2016-09-23 11:44:46 sys_log : [INFO] app=apps/com.alibaba.aliyun_3.8.1_16092012.apk
+2016-09-23 11:44:46 sys_log : [INFO] udid=71MBBLE25GLV
+2016-09-23 11:44:46 sys_log : [INFO] tips=拒绝|允许>>//android.widget.Button[@resource-id='android:id/button1']
+2016-09-23 11:44:46 sys_log : [INFO] screenshot=png\\\\20160923114446\\\\
+2016-09-23 11:44:46 sys_log : [INFO] appPackage=com.alibaba.aliyun
+2016-09-23 11:44:46 sys_log : [INFO] identifyDefault=15
+2016-09-23 11:44:46 sys_log : [INFO] guideFlow=[tips>>拒绝|允许>>//android.widget.Button[@resource-id='android:id/button1']]
+2016-09-23 11:44:46 sys_log : [INFO] clickList=[android.widget.Button, android.widget.ImageButton, android.widget.TextView, android.widget.ImageView, android.widget.FrameLayout, android.widget.LinearLayout, android.widget.RelativeLayout]
+2016-09-23 11:44:46 sys_log : [INFO] inputList=[android.widget.EditText]
+2016-09-23 11:44:46 sys_log : [INFO] backList=null
+2016-09-23 11:44:46 sys_log : [INFO] notbackList=[首页]
+2016-09-23 11:44:46 sys_log : [INFO] blackList=[exit, relogin]
+2016-09-23 11:44:46 sys_log : [INFO] triggerList=[picture>>back]
+2016-09-23 11:44:46 sys_log : [INFO] identifySpecialList=[阿里云,控制台,云栖,我的>>24]
+2016-09-23 11:44:46 sys_log : [INFO] #########################################################################
+2016-09-23 11:44:46 sys_log : [INFO] date = 20160923
+2016-09-23 11:44:46 sys_log : [INFO] time = 114446
+2016-09-23 11:44:46 sys_log : [INFO] start appium >> appium -p 4723 --session-override --command-timeout 7200
+2016-09-23 11:44:56 sys_log : [INFO] ########################### DesiredCapabilities ###########################
+2016-09-23 11:44:56 sys_log : [INFO] app = apps/com.alibaba.aliyun_3.8.1_16092012.apk
+2016-09-23 11:44:56 sys_log : [INFO] appPackage = com.alibaba.aliyun
+2016-09-23 11:44:56 sys_log : [INFO] appActivity = com.alibaba.aliyun.biz.login.WelcomeActivity
+2016-09-23 11:44:56 sys_log : [INFO] noReset = true
+2016-09-23 11:44:56 sys_log : [INFO] noSign = true
+2016-09-23 11:44:56 sys_log : [INFO] appiumVersion = 1.5.3
+2016-09-23 11:44:56 sys_log : [INFO] platformVersion = 5.1
+2016-09-23 11:44:56 sys_log : [INFO] unicodeKeyboard = true
+2016-09-23 11:44:56 sys_log : [INFO] udid = 71MBBLE25GLV
+2016-09-23 11:44:56 sys_log : [INFO] platformName = Android
+2016-09-23 11:44:56 sys_log : [INFO] deviceName = note1
+2016-09-23 11:44:56 sys_log : [INFO] resetKeyboard = true
+2016-09-23 11:44:56 sys_log : [INFO] ###########################################################################
+2016-09-23 11:44:56 sys_log : [INFO] Appium Server -> http://127.0.0.1:4723/wd/hub
+2016-09-23 11:49:21 sys_log : [INFO] ############################ Config parameters ############################
+2016-09-23 11:49:21 sys_log : [INFO] mode=1
+2016-09-23 11:49:21 sys_log : [INFO] runMode=0
+2016-09-23 11:49:21 sys_log : [INFO] depth=2
+2016-09-23 11:49:21 sys_log : [INFO] port=4723
+2016-09-23 11:49:21 sys_log : [INFO] reverse=1
+2016-09-23 11:49:21 sys_log : [INFO] filter=2
+2016-09-23 11:49:21 sys_log : [INFO] port=4723
+2016-09-23 11:49:21 sys_log : [INFO] duration=0
+2016-09-23 11:49:21 sys_log : [INFO] interval=3
+2016-09-23 11:49:21 sys_log : [INFO] timeout=30
+2016-09-23 11:49:21 sys_log : [INFO] host=127.0.0.1
+2016-09-23 11:49:21 sys_log : [INFO] app=apps/com.alibaba.aliyun_3.8.1_16092012.apk
+2016-09-23 11:49:21 sys_log : [INFO] udid=71MBBLE25GLV
+2016-09-23 11:49:21 sys_log : [INFO] tips=拒绝|允许>>//android.widget.Button[@resource-id='android:id/button1']
+2016-09-23 11:49:21 sys_log : [INFO] screenshot=png\\\\20160923114921\\\\
+2016-09-23 11:49:21 sys_log : [INFO] appPackage=com.alibaba.aliyun
+2016-09-23 11:49:21 sys_log : [INFO] identifyDefault=15
+2016-09-23 11:49:21 sys_log : [INFO] guideFlow=[tips>>拒绝|允许>>//android.widget.Button[@resource-id='android:id/button1']]
+2016-09-23 11:49:21 sys_log : [INFO] clickList=[android.widget.Button, android.widget.ImageButton, android.widget.TextView, android.widget.ImageView, android.widget.FrameLayout, android.widget.LinearLayout, android.widget.RelativeLayout]
+2016-09-23 11:49:21 sys_log : [INFO] inputList=[android.widget.EditText]
+2016-09-23 11:49:21 sys_log : [INFO] backList=null
+2016-09-23 11:49:21 sys_log : [INFO] notbackList=[首页]
+2016-09-23 11:49:21 sys_log : [INFO] blackList=[exit, relogin]
+2016-09-23 11:49:21 sys_log : [INFO] triggerList=[picture>>back]
+2016-09-23 11:49:21 sys_log : [INFO] identifySpecialList=[阿里云,控制台,云栖,我的>>24]
+2016-09-23 11:49:21 sys_log : [INFO] #########################################################################
+2016-09-23 11:49:21 sys_log : [INFO] date = 20160923
+2016-09-23 11:49:21 sys_log : [INFO] time = 114921
+2016-09-23 11:49:21 sys_log : [INFO] start appium >> appium -p 4723 --session-override --command-timeout 7200
+2016-09-23 11:49:31 sys_log : [INFO] ########################### DesiredCapabilities ###########################
+2016-09-23 11:49:31 sys_log : [INFO] app = apps/com.alibaba.aliyun_3.8.1_16092012.apk
+2016-09-23 11:49:31 sys_log : [INFO] appPackage = com.alibaba.aliyun
+2016-09-23 11:49:31 sys_log : [INFO] appActivity = com.alibaba.aliyun.biz.login.WelcomeActivity
+2016-09-23 11:49:31 sys_log : [INFO] noReset = true
+2016-09-23 11:49:31 sys_log : [INFO] noSign = true
+2016-09-23 11:49:31 sys_log : [INFO] appiumVersion = 1.5.3
+2016-09-23 11:49:31 sys_log : [INFO] platformVersion = 5.1
+2016-09-23 11:49:31 sys_log : [INFO] unicodeKeyboard = true
+2016-09-23 11:49:31 sys_log : [INFO] udid = 71MBBLE25GLV
+2016-09-23 11:49:31 sys_log : [INFO] platformName = Android
+2016-09-23 11:49:31 sys_log : [INFO] deviceName = note1
+2016-09-23 11:49:31 sys_log : [INFO] resetKeyboard = true
+2016-09-23 11:49:31 sys_log : [INFO] ###########################################################################
+2016-09-23 11:49:31 sys_log : [INFO] Appium Server -> http://127.0.0.1:4723/wd/hub
+2016-09-23 11:50:11 sys_log : [INFO] ########################### app environment ###########################
+2016-09-23 11:50:11 sys_log : [INFO] product = m1note
+2016-09-23 11:50:11 sys_log : [INFO] api level = 22
+2016-09-23 11:50:11 sys_log : [INFO] platform version = 5.1
+2016-09-23 11:50:11 sys_log : [INFO] core version = 3.10.65-user
+2016-09-23 11:50:11 sys_log : [INFO] system version = 
+2016-09-23 11:50:11 sys_log : [INFO] version = Flyme 5.1.9.0A
+2016-09-23 11:50:11 sys_log : [INFO] app = com.alibaba.aliyun
+2016-09-23 11:50:11 sys_log : [INFO] app activity = com.alibaba.aliyun.biz.login.WelcomeActivity
+2016-09-23 11:50:11 sys_log : [INFO] app current activity = .biz.login.WelcomeActivity t305
+2016-09-23 11:50:11 sys_log : [INFO] app is alive = false
+2016-09-23 11:50:11 sys_log : [INFO] language = zh
+2016-09-23 11:50:11 sys_log : [INFO] resolution = 
+2016-09-23 11:50:11 sys_log : [INFO] uiautomator pid = 19868
+2016-09-23 11:50:11 sys_log : [INFO] ########################################################################
+2016-09-23 14:55:02 sys_log : [INFO] ############################ Config parameters ############################
+2016-09-23 14:55:02 sys_log : [INFO] mode=1
+2016-09-23 14:55:02 sys_log : [INFO] runMode=0
+2016-09-23 14:55:02 sys_log : [INFO] depth=2
+2016-09-23 14:55:02 sys_log : [INFO] port=4723
+2016-09-23 14:55:02 sys_log : [INFO] reverse=1
+2016-09-23 14:55:02 sys_log : [INFO] filter=2
+2016-09-23 14:55:02 sys_log : [INFO] port=4723
+2016-09-23 14:55:02 sys_log : [INFO] duration=0
+2016-09-23 14:55:02 sys_log : [INFO] interval=3
+2016-09-23 14:55:02 sys_log : [INFO] timeout=30
+2016-09-23 14:55:02 sys_log : [INFO] host=127.0.0.1
+2016-09-23 14:55:02 sys_log : [INFO] app=apps/com.alibaba.aliyun_3.8.1_16092012.apk
+2016-09-23 14:55:02 sys_log : [INFO] udid=71MBBLE25GLV
+2016-09-23 14:55:02 sys_log : [INFO] tips=拒绝|允许>>//android.widget.Button[@resource-id='android:id/button1']
+2016-09-23 14:55:02 sys_log : [INFO] screenshot=png\\\\20160923145502\\\\
+2016-09-23 14:55:02 sys_log : [INFO] appPackage=com.alibaba.aliyun
+2016-09-23 14:55:02 sys_log : [INFO] identifyDefault=15
+2016-09-23 14:55:02 sys_log : [INFO] guideFlow=[tips>>拒绝|允许>>//android.widget.Button[@resource-id='android:id/button1']]
+2016-09-23 14:55:02 sys_log : [INFO] clickList=[android.widget.Button, android.widget.ImageButton, android.widget.TextView, android.widget.ImageView, android.widget.FrameLayout, android.widget.LinearLayout, android.widget.RelativeLayout]
+2016-09-23 14:55:02 sys_log : [INFO] inputList=[android.widget.EditText]
+2016-09-23 14:55:02 sys_log : [INFO] backList=null
+2016-09-23 14:55:02 sys_log : [INFO] notbackList=[首页]
+2016-09-23 14:55:02 sys_log : [INFO] blackList=[exit, relogin]
+2016-09-23 14:55:02 sys_log : [INFO] triggerList=[picture>>back]
+2016-09-23 14:55:02 sys_log : [INFO] identifySpecialList=[阿里云,控制台,云栖,我的>>24]
+2016-09-23 14:55:02 sys_log : [INFO] #########################################################################
+2016-09-23 14:55:02 sys_log : [INFO] date = 20160923
+2016-09-23 14:55:02 sys_log : [INFO] time = 145502
+2016-09-23 14:55:02 sys_log : [INFO] start appium >> appium -p 4723 --session-override --command-timeout 7200
+2016-09-23 14:55:12 sys_log : [INFO] ########################### DesiredCapabilities ###########################
+2016-09-23 14:55:12 sys_log : [INFO] app = apps/com.alibaba.aliyun_3.8.1_16092012.apk
+2016-09-23 14:55:12 sys_log : [INFO] appPackage = com.alibaba.aliyun
+2016-09-23 14:55:12 sys_log : [INFO] appActivity = com.alibaba.aliyun.biz.login.WelcomeActivity
+2016-09-23 14:55:12 sys_log : [INFO] noReset = true
+2016-09-23 14:55:12 sys_log : [INFO] noSign = true
+2016-09-23 14:55:12 sys_log : [INFO] appiumVersion = 1.5.3
+2016-09-23 14:55:12 sys_log : [INFO] platformVersion = 5.1
+2016-09-23 14:55:12 sys_log : [INFO] unicodeKeyboard = true
+2016-09-23 14:55:12 sys_log : [INFO] udid = 71MBBLE25GLV
+2016-09-23 14:55:12 sys_log : [INFO] platformName = Android
+2016-09-23 14:55:12 sys_log : [INFO] deviceName = note1
+2016-09-23 14:55:12 sys_log : [INFO] resetKeyboard = true
+2016-09-23 14:55:12 sys_log : [INFO] ###########################################################################
+2016-09-23 14:55:12 sys_log : [INFO] Appium Server -> http://127.0.0.1:4723/wd/hub
+2016-09-23 14:55:25 sys_log : [INFO] ########################### app environment ###########################
+2016-09-23 14:55:25 sys_log : [INFO] product = m1note
+2016-09-23 14:55:25 sys_log : [INFO] api level = 22
+2016-09-23 14:55:25 sys_log : [INFO] platform version = 5.1
+2016-09-23 14:55:25 sys_log : [INFO] core version = 3.10.65-user
+2016-09-23 14:55:25 sys_log : [INFO] system version = 
+2016-09-23 14:55:25 sys_log : [INFO] version = Flyme 5.1.9.0A
+2016-09-23 14:55:25 sys_log : [INFO] app = com.alibaba.aliyun
+2016-09-23 14:55:25 sys_log : [INFO] app activity = com.alibaba.aliyun.biz.login.WelcomeActivity
+2016-09-23 14:55:25 sys_log : [INFO] app current activity = .biz.login.WelcomeActivity t323
+2016-09-23 14:55:25 sys_log : [INFO] app is alive = false
+2016-09-23 14:55:25 sys_log : [INFO] language = zh
+2016-09-23 14:55:25 sys_log : [INFO] resolution = 
+2016-09-23 14:55:26 sys_log : [INFO] uiautomator pid = 6065
+2016-09-23 14:55:26 sys_log : [INFO] ########################################################################

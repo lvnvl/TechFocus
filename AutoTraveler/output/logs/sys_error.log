@@ -1,0 +1,1 @@
+2016-09-22 10:36:42 sys_log : [ERROR]   org.xml.sax.SAXParseException; systemId: file:///C:/Users/Administrator/Desktop/android.xml; lineNumber: 86; columnNumber: 31; 注释中不允许出现字符串 "--"。

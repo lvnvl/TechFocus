@@ -145,10 +145,15 @@ public class AutoDetector {
                 if(System.currentTimeMillis() - lastExecute > 1000){
                     lastExecute = System.currentTimeMillis();
                     if(path.endsWith(".apk") 
-                    		&& ("ENTRY_MODIFY".equals(kind.name()) 
-                    				|| "ENTRY_CREATE".equals(kind.name()))){
+                    		&& "ENTRY_MODIFY".equals(kind.name())){
                     	//监测到有变化的 APK文件，执行测试
                     	LOGGER.info("-------------------auto test.."+ path+ ".......");
+                    	try {
+							Runtime.getRuntime().exec("sh -c java -jar Main.jar android standard.xml " + path);
+						} catch (IOException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
                     	LOGGER.info("事件："+kind.name()+" ,路径："+path);
                     }
                     synchronized(AutoDetector.class){
@@ -268,6 +273,6 @@ public class AutoDetector {
             public void remove(String line) {
                 System.out.println("remove："+line);
             }
-        }, "E:\\1\\config.txt");
+        }, "watchDir.txt");
     }
 }
