@@ -5,10 +5,13 @@ public class stringSplitTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String oper = "input:://android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.EditText[1]|528437847@qq.com"; 
-		for(String s : oper.split("[|]")){
-			System.out.println(s);
-		}
+		String oper = "E:\\GitRepo\\TechFocus\\UiautomatorTest\\bin\\AutoInstaller.jar";
+		System.out.println(oper.substring(oper.lastIndexOf("\\")+1));
+		
+//		String oper = "input:://android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.EditText[1]|528437847@qq.com"; 
+//		for(String s : oper.split("[|]")){
+//			System.out.println(s);
+//		}
 		//		int a = 1;
 //		int b = 15;
 //		System.out.println(String.valueOf(a*100/b)+"%");
