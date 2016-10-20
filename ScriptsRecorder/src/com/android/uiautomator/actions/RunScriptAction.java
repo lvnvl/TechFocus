@@ -62,6 +62,11 @@ public class RunScriptAction extends Action {
             return;
         }
 
+        if(RunScriptDialog.getsIDevices().size() < 1){
+        	showError("no devices selected", new Exception("please select at lease one device"));
+        	return;
+        }
+        
         /**
          * run script and show the steps
          */
@@ -78,7 +83,7 @@ public class RunScriptAction extends Action {
                 InterruptedException {         
                 	monitor.subTask("Initating appium ...");
                 	new AppiumConfig(new File(sc.getApkPath()), 
-                			RunScriptDialog.getsIDevice(),
+                			RunScriptDialog.getsIDevices().get(0),
                 			sc.getPackageName(),
                 			sc.getActivity(),
                 			Integer.parseInt(sc.getPort()));

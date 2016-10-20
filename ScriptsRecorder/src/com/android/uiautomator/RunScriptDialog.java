@@ -1,16 +1,18 @@
 package com.android.uiautomator;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.eclipse.jface.dialogs.Dialog;
 import org.eclipse.swt.SWT;
-import org.eclipse.swt.events.SelectionAdapter;
-import org.eclipse.swt.events.SelectionEvent;
+import org.eclipse.swt.events.DisposeEvent;
+import org.eclipse.swt.events.DisposeListener;
+import org.eclipse.swt.events.MouseEvent;
+import org.eclipse.swt.events.MouseListener;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Button;
-import org.eclipse.swt.widgets.Combo;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Event;
@@ -28,10 +30,13 @@ public class RunScriptDialog extends Dialog {
 	private Text mScriptSaveText;
     private Text mDeviceText;
 	private static File sScriptFile;
-    private static IDevice sIDevice;
-	private int sSelectedDeviceIndex = 0;
+    private static ArrayList<IDevice> sIDevices = null;
+//	private int sSelectedDeviceIndex = 0;
 	public RunScriptDialog(Shell shell) {
 		super(shell);
+		if(sIDevices!=null && !sIDevices.isEmpty()){
+			sIDevices.clear();
+		}
 		setShellStyle(SWT.DIALOG_TRIM | SWT.APPLICATION_MODAL);
 	}
 
@@ -70,32 +75,82 @@ public class RunScriptDialog extends Dialog {
         });
       
         //Devices choose composite
+        List<IDevice> devices = DebugBridge.getDevices();
         Group chooseDeviceGroup = new Group(container, SWT.NONE);
-        chooseDeviceGroup.setLayout(new GridLayout(1, false));
+        chooseDeviceGroup.setLayout(new GridLayout((int)Math.ceil((double)devices.size()/2), true));
         chooseDeviceGroup.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
         chooseDeviceGroup.setText("select device");
-        List<IDevice> devices = DebugBridge.getDevices();
-        String[] mDeviceNames;
+        String[] mDeviceNames = null;
+        final Button[] mDeviceBtns = new Button[devices.size()];
         mDeviceNames = new String[devices.size()];
+//        mDeviceBtns = new Button[devices.size()];
         for (int i = 0; i < devices.size(); i++) {
-            mDeviceNames[i] = devices.get(i).getName();
+        	mDeviceNames[i] = devices.get(i).getName();
+        	mDeviceBtns[i] = new Button(chooseDeviceGroup, SWT.CHECK);
+        	mDeviceBtns[i].setText(mDeviceNames[i]);
         }
-        final Combo combo = new Combo(chooseDeviceGroup, SWT.BORDER | SWT.READ_ONLY);
-        combo.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
-        combo.setItems(mDeviceNames);
-        int defaultSelection =
-                sSelectedDeviceIndex < devices.size() ? sSelectedDeviceIndex : 0;
-        combo.select(defaultSelection);
-        sSelectedDeviceIndex = defaultSelection;
-        sIDevice = devices.get(sSelectedDeviceIndex);
+//        mDeviceBtns[1].getSelection();
+        Button checkAll = new Button(chooseDeviceGroup, SWT.BUTTON1);
+        checkAll.setText("select all");
+        checkAll.addMouseListener(new MouseListener(){
 
-        combo.addSelectionListener(new SelectionAdapter() {
-            @Override
-            public void widgetSelected(SelectionEvent arg0) {
-                sSelectedDeviceIndex = combo.getSelectionIndex();
-                sIDevice = devices.get(sSelectedDeviceIndex);
-            }
+			@Override
+			public void mouseDown(MouseEvent e) {
+				// TODO Auto-generated method stub
+				for(int btn = 0; btn < mDeviceBtns.length; btn ++){
+					mDeviceBtns[btn].setSelection(true);
+				}
+			}
+
+			@Override
+			public void mouseDoubleClick(MouseEvent e) {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void mouseUp(MouseEvent e) {
+				// TODO Auto-generated method stub
+				
+			}
         });
+        checkAll.addDisposeListener(new DisposeListener(){
+
+			@Override
+			public void widgetDisposed(DisposeEvent e) {
+				// TODO Auto-generated method stub
+				for(int btn = 0; btn < mDeviceBtns.length; btn ++){
+					if(mDeviceBtns[btn].getSelection()){
+						sIDevices.add(devices.get(btn));
+					}
+				}
+		}});
+//        Group chooseDeviceGroup = new Group(container, SWT.NONE);
+//        chooseDeviceGroup.setLayout(new GridLayout(1, false));
+//        chooseDeviceGroup.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
+//        chooseDeviceGroup.setText("select device");
+//        List<IDevice> devices = DebugBridge.getDevices();
+//        String[] mDeviceNames;
+//        mDeviceNames = new String[devices.size()];
+//        for (int i = 0; i < devices.size(); i++) {
+//            mDeviceNames[i] = devices.get(i).getName();
+//        }
+//        final Combo combo = new Combo(chooseDeviceGroup, SWT.BORDER | SWT.READ_ONLY);
+//        combo.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
+//        combo.setItems(mDeviceNames);
+//        int defaultSelection =
+//                sSelectedDeviceIndex < devices.size() ? sSelectedDeviceIndex : 0;
+//        combo.select(defaultSelection);
+//        sSelectedDeviceIndex = defaultSelection;
+//        sIDevice = devices.get(sSelectedDeviceIndex);
+//
+//        combo.addSelectionListener(new SelectionAdapter() {
+//            @Override
+//            public void widgetSelected(SelectionEvent arg0) {
+//                sSelectedDeviceIndex = combo.getSelectionIndex();
+//                sIDevice = devices.get(sSelectedDeviceIndex);
+//            }
+//        });
 
 		return container;
 	}
@@ -121,13 +176,6 @@ public class RunScriptDialog extends Dialog {
         }
     }
 
-    /**
-	 * @return the sAPKFile
-	 */
-	public static IDevice getsIDevice() {
-		return sIDevice;
-	}
-
 	/**
 	 * @return the mDeviceText
 	 */
@@ -148,5 +196,11 @@ public class RunScriptDialog extends Dialog {
 	public static void setsScriptFile(File sScriptFile) {
 		RunScriptDialog.sScriptFile = sScriptFile;
 	}
-	
+
+	/**
+	 * @return the sIDevices
+	 */
+	public static ArrayList<IDevice> getsIDevices() {
+		return sIDevices;
+	}
 }
