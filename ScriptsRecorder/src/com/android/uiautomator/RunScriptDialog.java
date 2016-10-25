@@ -6,8 +6,6 @@ import java.util.List;
 
 import org.eclipse.jface.dialogs.Dialog;
 import org.eclipse.swt.SWT;
-import org.eclipse.swt.events.DisposeEvent;
-import org.eclipse.swt.events.DisposeListener;
 import org.eclipse.swt.events.MouseEvent;
 import org.eclipse.swt.events.MouseListener;
 import org.eclipse.swt.layout.GridData;
@@ -34,9 +32,7 @@ public class RunScriptDialog extends Dialog {
 //	private int sSelectedDeviceIndex = 0;
 	public RunScriptDialog(Shell shell) {
 		super(shell);
-		if(sIDevices!=null && !sIDevices.isEmpty()){
-			sIDevices.clear();
-		}
+		sIDevices = new ArrayList<IDevice>();
 		setShellStyle(SWT.DIALOG_TRIM | SWT.APPLICATION_MODAL);
 	}
 
@@ -75,21 +71,24 @@ public class RunScriptDialog extends Dialog {
         });
       
         //Devices choose composite
-        List<IDevice> devices = DebugBridge.getDevices();
+        final List<IDevice> devices = DebugBridge.getDevices();
         Group chooseDeviceGroup = new Group(container, SWT.NONE);
         chooseDeviceGroup.setLayout(new GridLayout((int)Math.ceil((double)devices.size()/2), true));
         chooseDeviceGroup.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
         chooseDeviceGroup.setText("select device");
         String[] mDeviceNames = null;
         final Button[] mDeviceBtns = new Button[devices.size()];
+        final boolean[] mDeviceSelected = new boolean[devices.size()];
         mDeviceNames = new String[devices.size()];
 //        mDeviceBtns = new Button[devices.size()];
         for (int i = 0; i < devices.size(); i++) {
         	mDeviceNames[i] = devices.get(i).getName();
         	mDeviceBtns[i] = new Button(chooseDeviceGroup, SWT.CHECK);
         	mDeviceBtns[i].setText(mDeviceNames[i]);
+        	mDeviceBtns[i].setData("index", i);
+//        	System.out.println("\tdevice :"+ mDeviceNames[i] +";index:"+mDeviceBtns[i].getData("index"));
+        	mDeviceSelected[i] = false;
         }
-//        mDeviceBtns[1].getSelection();
         Button checkAll = new Button(chooseDeviceGroup, SWT.BUTTON1);
         checkAll.setText("select all");
         checkAll.addMouseListener(new MouseListener(){
@@ -99,6 +98,7 @@ public class RunScriptDialog extends Dialog {
 				// TODO Auto-generated method stub
 				for(int btn = 0; btn < mDeviceBtns.length; btn ++){
 					mDeviceBtns[btn].setSelection(true);
+					mDeviceSelected[btn] = true;
 				}
 			}
 
@@ -114,44 +114,30 @@ public class RunScriptDialog extends Dialog {
 				
 			}
         });
-        checkAll.addDisposeListener(new DisposeListener(){
+        for(int j = 0;j < devices.size();j ++){
+        	mDeviceBtns[j].addListener(SWT.Selection, new Listener(){
+
+    			@Override
+    			public void handleEvent(Event event) {
+    				// TODO Auto-generated method stub
+//    				System.out.println("detected selection event, and item index:" + event.widget.getData("index"));
+    				int index = (int)event.widget.getData("index");
+    				mDeviceSelected[index] = ! mDeviceSelected[index];
+    			}});
+        }
+        container.addListener(SWT.Dispose, new Listener(){
 
 			@Override
-			public void widgetDisposed(DisposeEvent e) {
+			public void handleEvent(Event event) {
 				// TODO Auto-generated method stub
-				for(int btn = 0; btn < mDeviceBtns.length; btn ++){
-					if(mDeviceBtns[btn].getSelection()){
+				for(int btn = 0; btn < devices.size(); btn ++){
+					if(mDeviceSelected[btn]){
+//						devices.get(btn);
 						sIDevices.add(devices.get(btn));
+						System.out.println("device test: " + devices.get(btn).getSerialNumber());
 					}
 				}
-		}});
-//        Group chooseDeviceGroup = new Group(container, SWT.NONE);
-//        chooseDeviceGroup.setLayout(new GridLayout(1, false));
-//        chooseDeviceGroup.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
-//        chooseDeviceGroup.setText("select device");
-//        List<IDevice> devices = DebugBridge.getDevices();
-//        String[] mDeviceNames;
-//        mDeviceNames = new String[devices.size()];
-//        for (int i = 0; i < devices.size(); i++) {
-//            mDeviceNames[i] = devices.get(i).getName();
-//        }
-//        final Combo combo = new Combo(chooseDeviceGroup, SWT.BORDER | SWT.READ_ONLY);
-//        combo.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));
-//        combo.setItems(mDeviceNames);
-//        int defaultSelection =
-//                sSelectedDeviceIndex < devices.size() ? sSelectedDeviceIndex : 0;
-//        combo.select(defaultSelection);
-//        sSelectedDeviceIndex = defaultSelection;
-//        sIDevice = devices.get(sSelectedDeviceIndex);
-//
-//        combo.addSelectionListener(new SelectionAdapter() {
-//            @Override
-//            public void widgetSelected(SelectionEvent arg0) {
-//                sSelectedDeviceIndex = combo.getSelectionIndex();
-//                sIDevice = devices.get(sSelectedDeviceIndex);
-//            }
-//        });
-
+			}});
 		return container;
 	}
 

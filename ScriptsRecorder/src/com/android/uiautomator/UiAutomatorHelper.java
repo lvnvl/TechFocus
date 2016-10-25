@@ -22,6 +22,8 @@ import com.android.ddmlib.RawImage;
 import com.android.ddmlib.SyncService;
 import com.jack.model.AppiumConfig;
 
+import io.appium.java_client.android.AndroidDriver;
+
 import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.core.runtime.NullProgressMonitor;
 import org.eclipse.swt.SWT;
@@ -32,6 +34,7 @@ import org.eclipse.swt.graphics.PaletteData;
 import org.eclipse.swt.graphics.RGB;
 import org.eclipse.swt.widgets.Display;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.WebElement;
 
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
@@ -98,16 +101,16 @@ public class UiAutomatorHelper {
 		}
 	}
 
-	public static UiAutomatorResult takeSnapshot(IProgressMonitor monitor) throws UiAutomatorException {
+	public static UiAutomatorResult takeSnapshot(IProgressMonitor monitor, AndroidDriver<WebElement> driver) throws UiAutomatorException {
 		if (monitor == null) {
 			monitor = new NullProgressMonitor();
 		}
 		monitor.subTask("Obtaining UI hierarcy");
-		String uiHierarcy = AppiumConfig.getDriver().getPageSource();
+		String uiHierarcy = driver.getPageSource();
 		UiAutomatorModel model = new UiAutomatorModel(uiHierarcy);
 
 		monitor.subTask("Obtaining device screenshot");
-		byte[] imageBytes = AppiumConfig.getDriver().getScreenshotAs(OutputType.BYTES);
+		byte[] imageBytes = driver.getScreenshotAs(OutputType.BYTES);
 		BufferedImage bi = null;
 		try {
 			bi = ImageIO.read(new ByteArrayInputStream(imageBytes));

@@ -19,6 +19,7 @@ package com.android.uiautomator.actions;
 import com.android.ddmlib.IDevice;
 import com.android.uiautomator.DebugBridge;
 import com.android.uiautomator.UiAutomatorHelper;
+import com.android.uiautomator.UiAutomatorView;
 import com.android.uiautomator.UiAutomatorHelper.UiAutomatorException;
 import com.android.uiautomator.UiAutomatorHelper.UiAutomatorResult;
 import com.android.uiautomator.UiAutomatorViewer;
@@ -74,6 +75,7 @@ public class ScreenshotAction extends Action {
             return;
         }
 
+        UiAutomatorView mView = mViewer.getView();
         ProgressMonitorDialog dialog = new ProgressMonitorDialog(mViewer.getShell());
         try {
             dialog.run(true, false, new IRunnableWithProgress() {
@@ -82,7 +84,7 @@ public class ScreenshotAction extends Action {
                                                                         InterruptedException {
                     UiAutomatorResult result = null;
                     try {
-                        result = UiAutomatorHelper.takeSnapshot(monitor);
+                        result = UiAutomatorHelper.takeSnapshot(monitor, mView.getAppiumConfig().getDriver());
                     } catch (UiAutomatorException e) {
                         monitor.done();
                         showError(e.getMessage(), e);

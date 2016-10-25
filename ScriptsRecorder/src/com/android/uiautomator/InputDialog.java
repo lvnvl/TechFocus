@@ -37,7 +37,7 @@ public class InputDialog extends Dialog{
         gl_container.marginHeight = DEFAULT_LAYOUT_SPACING;
         container.setLayout(gl_container);
       
-        //Save script composite
+        //send keys composite
         Group inputGroup = new Group(container, SWT.NONE);
         inputGroup.setLayout(new GridLayout(1, true));
         inputGroup.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1));

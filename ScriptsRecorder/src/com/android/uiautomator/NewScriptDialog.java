@@ -39,8 +39,8 @@ public class NewScriptDialog extends Dialog {
 
     private static String sScriptFilePath;
     private static File sAPKFile;
-    private static String mPackage;
-    private static String mActivity;
+//    private static String mPackage;
+//    private static String mActivity;
     private static int mPort;
     private static IDevice sIDevice;
 	private int sSelectedDeviceIndex = 0;
@@ -95,7 +95,7 @@ public class NewScriptDialog extends Dialog {
         apkLabel.setText("apk:");
         mAPKText = new Text(setAppInfoGroup, SWT.BORDER | SWT.READ_ONLY);
         //test for aliyun app
-        sAPKFile = new File("E:\\app\\aliyun\\701287@alicloud_app.apk");
+        sAPKFile = new File("E:\\app\\aliyun\\com.alibaba.aliyun_3.9.0_16101016.apk");
         if (sAPKFile != null) {
             mAPKText.setText(sAPKFile.getAbsolutePath());
         }
@@ -109,36 +109,36 @@ public class NewScriptDialog extends Dialog {
                 handleOpenSetAPKFile();
             }
         });
-        
-        Label packageLabel = new Label(setAppInfoGroup,SWT.NONE);
-        packageLabel.setText("Package:");
-        mPackageText = new Text(setAppInfoGroup, SWT.BORDER);
-        //test for aliyun app
-        mPackageText.setText("com.alibaba.aliyun");
-        mPackageText.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 2, 1));
-        mPackageText.addListener(SWT.Dispose, new Listener(){
-			@Override
-			public void handleEvent(Event event) {
-				// TODO Auto-generated method stub
-				mPackage = mPackageText.getText();
-			}
-        	
-        });
-        Label activityLabel = new Label(setAppInfoGroup,SWT.NONE);
-        activityLabel.setText("Activity:");
-        mActivityText = new Text(setAppInfoGroup, SWT.BORDER);
-        //test for aliyun app
-        mActivityText.setText("com.alibaba.aliyun.biz.login.WelcomeActivity");
-        mActivityText.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 2, 1));
-        mActivityText.addListener(SWT.Dispose, new Listener(){
-
-			@Override
-			public void handleEvent(Event event) {
-				// TODO Auto-generated method stub
-				mActivity = mActivityText.getText();
-			}
-        	
-        });
+//        
+//        Label packageLabel = new Label(setAppInfoGroup,SWT.NONE);
+//        packageLabel.setText("Package:");
+//        mPackageText = new Text(setAppInfoGroup, SWT.BORDER);
+//        //test for aliyun app
+//        mPackageText.setText("com.alibaba.aliyun");
+//        mPackageText.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 2, 1));
+//        mPackageText.addListener(SWT.Dispose, new Listener(){
+//			@Override
+//			public void handleEvent(Event event) {
+//				// TODO Auto-generated method stub
+//				mPackage = mPackageText.getText();
+//			}
+//        	
+//        });
+//        Label activityLabel = new Label(setAppInfoGroup,SWT.NONE);
+//        activityLabel.setText("Activity:");
+//        mActivityText = new Text(setAppInfoGroup, SWT.BORDER);
+//        //test for aliyun app
+//        mActivityText.setText("com.alibaba.aliyun.biz.login.WelcomeActivity");
+//        mActivityText.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 2, 1));
+//        mActivityText.addListener(SWT.Dispose, new Listener(){
+//
+//			@Override
+//			public void handleEvent(Event event) {
+//				// TODO Auto-generated method stub
+//				mActivity = mActivityText.getText();
+//			}
+//        	
+//        });
         //Devices choose composite
         Group chooseDeviceGroup = new Group(container, SWT.NONE);
         chooseDeviceGroup.setLayout(new GridLayout(1, false));
@@ -314,14 +314,14 @@ public class NewScriptDialog extends Dialog {
 	public static IDevice getsIDevice() {
 		return sIDevice;
 	}
-
-	public static String getmActivity() {
-		return mActivity;
-	}
-
-	public static String getmPackage() {
-		return mPackage;
-	}
+//
+//	public static String getmActivity() {
+//		return mActivity;
+//	}
+//
+//	public static String getmPackage() {
+//		return mPackage;
+//	}
 
 	public static int getmPort() {
 		return mPort;

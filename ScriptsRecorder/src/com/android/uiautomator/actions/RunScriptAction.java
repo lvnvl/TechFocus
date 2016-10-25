@@ -1,7 +1,9 @@
 package com.android.uiautomator.actions;
 
 import java.io.File;
+import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.eclipse.core.runtime.IProgressMonitor;
@@ -15,24 +17,23 @@ import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.MessageBox;
-import org.openqa.selenium.By;
-
 import com.android.ddmlib.IDevice;
 import com.android.uiautomator.DebugBridge;
 import com.android.uiautomator.RunScriptDialog;
 import com.android.uiautomator.UiAutomatorViewer;
-import com.jack.model.AppiumConfig;
-import com.jack.model.Operate;
 import com.jack.model.ScriptConfig;
+import com.jack.model.ScriptRunner;
+import com.jack.utils.FileUtil;
 import com.jack.utils.XmlUtils;
 
 public class RunScriptAction extends Action {
 
 	private UiAutomatorViewer mViewer;
-	
+	private ArrayList<Thread> threads;
 	public RunScriptAction(UiAutomatorViewer viewer) {
 		super("&Run Script");
         mViewer = viewer;
+        threads = new ArrayList<Thread>();
 	}
 
 	/* (non-Javadoc)
@@ -62,72 +63,96 @@ public class RunScriptAction extends Action {
             return;
         }
 
-        if(RunScriptDialog.getsIDevices().size() < 1){
+        if(RunScriptDialog.getsIDevices() == null || RunScriptDialog.getsIDevices().size() < 1){
         	showError("no devices selected", new Exception("please select at lease one device"));
         	return;
         }
+        System.out.println("selected device num:" + RunScriptDialog.getsIDevices().size());
         
-        /**
-         * run script and show the steps
-         */
-        ScriptConfig sc = XmlUtils.readScript(RunScriptDialog.getsScriptFile());
-        if(sc == null){
-        	showError("Unexpected error while parsing script", new Exception("script broken"));
-        	return;
-        }
         ProgressMonitorDialog dialog = new ProgressMonitorDialog(mViewer.getShell());
         try {
             dialog.run(true, false, new IRunnableWithProgress() {
                 @Override
                 public void run(IProgressMonitor monitor) throws InvocationTargetException,
-                InterruptedException {         
-                	monitor.subTask("Initating appium ...");
-                	new AppiumConfig(new File(sc.getApkPath()), 
-                			RunScriptDialog.getsIDevices().get(0),
-                			sc.getPackageName(),
-                			sc.getActivity(),
-                			Integer.parseInt(sc.getPort()));
-                	if(AppiumConfig.getDriver() == null){
-                		showError("start appium first!", new Exception("appium init error"));
+                InterruptedException {     
+                	monitor.subTask("Creating threads ...Start");
+                	/**
+                	 * use devices, pages, uiautomatorview and ScriptConfig to create thread
+                	 * */
+                	ArrayList<IDevice> devices = RunScriptDialog.getsIDevices();
+                    ArrayList<String> pages = new ArrayList<String>();
+                    String pagesPath = RunScriptDialog.getsScriptFile().getParent() + File.separator + "pages";
+                	File pagesFilePath = new File(pagesPath);
+                	if(!pagesFilePath.exists()){
+                		monitor.done();
+                    	showError("page infos not exist in " + pagesPath, new Exception("script pages not found"));
+                    	return;
                 	}
-                	monitor.subTask("perform operations ...");
-                	int i = 1;int total = sc.getOperations().size();
-                	
-                	for(String s:sc.getOperations()){
-                		Thread.sleep(2*1000);
-                		String type = s.split("::")[0];
-                		try{
-                			if(Operate.CLICK.equals(type)){
-                    			AppiumConfig.getDriver().findElement(By.xpath(s.split("::")[1])).click();
-                    		}else if(Operate.INPUT.equals(type)){
-                    			//TODO input process
-                    			AppiumConfig.getDriver().findElement(
-                            			By.xpath(s.split("::")[1].split("[|]")[0])).sendKeys(s.split("[|]")[1]);
-                    		}
-                    		monitor.subTask(String.valueOf((i++)*100/total)+"%");
-                		}catch(Exception e){
-                			e.printStackTrace();
-                			AppiumConfig.getDriver().quit();
-                            monitor.done();
-                			return;
-                		}
+                	for(int i = 0;i < pagesFilePath.list().length;i ++){
+                		try {
+							pages.add(FileUtil.readAll(pagesPath + File.separator + String.valueOf(i) + ".xml"));
+						} catch (IOException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
                 	}
-                	AppiumConfig.getDriver().quit();
+                    ScriptConfig sc = XmlUtils.readScript(RunScriptDialog.getsScriptFile());
+                    if(sc == null){
+                    	monitor.done();
+                    	showError("Unexpected error while parsing script", new Exception("script broken"));
+                    	return;
+                    }
+                	monitor.subTask("Creating threads ...Init params done, start to create thread");
+                	int count = 0;
+                	System.out.println("++++++++++++++++++++++++++++++ go to create thread");
+                	for(IDevice device:devices){
+//                		System.out.println(this.getClass()+"----"+(device==null?"device is null":device.getName()));
+                		threads.add(new ScriptRunner(device, pages, mViewer.getView(), sc, count));
+                		threads.get(count).setName(device.getName());
+                		monitor.subTask("Creating threads ...created #"+ count +" thread");
+                		System.out.println(this.getClass() + "\tCreating threads ...created #"+ count +" thread");
+                		count++;
+                	}
+                	monitor.subTask(count + " Threads Created...to run");
+                	System.out.println(this.getClass() + " " + count + " Threads Created...to run");
+                	for(Thread thread:threads){
+                    	thread.start();
+                    }
                     monitor.done();
+                	System.out.println(this.getClass() + " monitor done!!!");
                 }
             });
         } catch (Exception e) {
-            showError("Unexpected error while obtaining UI hierarchy", e);
+        	e.printStackTrace();
+            showError(this.getClass() + " Unexpected error while threads executing", e);
+            return;
         }
+        mViewer.setModel(null, null, null);
+//        for(Thread thread:threads){
+//        	try {
+//				thread.join();
+//			} catch (InterruptedException e) {
+//				// TODO Auto-generated catch block
+//				System.err.println("Thread is interrupted!name:" + thread.getName());
+//				e.printStackTrace();
+//				return;
+//			}
+//        }
+//        mViewer.getShell().getDisplay().syncExec(new Runnable() {
+//            @Override
+//            public void run() {
+//                MessageDialog.openInformation(mViewer.getShell(), "RunScriptAction Success", "RunScript Success");
+//            }
+//        });
 	}
 
     private void showError(final String msg, final Throwable t) {
         mViewer.getShell().getDisplay().syncExec(new Runnable() {
             @Override
             public void run() {
-                Status s = new Status(IStatus.ERROR, "Screenshot", msg, t);
+                Status s = new Status(IStatus.ERROR, "RunScriptAction", msg, t);
                 ErrorDialog.openError(
-                        mViewer.getShell(), "Error", "Error obtaining UI hierarchy", s);
+                        mViewer.getShell(), "Error", "Error running script", s);
             }
         });
     }

@@ -105,4 +105,7 @@ public class UiAutomatorViewer extends ApplicationWindow {
             mUiAutomatorView.setModel(model, pageSource, screenshot);
         }
     }
+    public UiAutomatorView getView(){
+    	return mUiAutomatorView;
+    }
 }

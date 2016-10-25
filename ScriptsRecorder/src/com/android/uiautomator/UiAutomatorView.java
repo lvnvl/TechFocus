@@ -18,22 +18,25 @@ package com.android.uiautomator;
 
 import com.android.uiautomator.UiAutomatorHelper.UiAutomatorException;
 import com.android.uiautomator.UiAutomatorHelper.UiAutomatorResult;
+import com.android.uiautomator.actions.AddSleepAction;
 import com.android.uiautomator.actions.FinishRecordAction;
+import com.android.uiautomator.actions.RefreshAction;
 import com.android.uiautomator.tree.AttributePair;
 import com.android.uiautomator.tree.BasicTreeNode;
 import com.android.uiautomator.tree.UiNode;
+import com.jack.appium.AppiumActUtil;
 import com.jack.model.Action;
 import com.jack.model.AppiumConfig;
 import com.jack.model.Operate;
+import com.jack.model.RunningInfo;
+import com.jack.utils.ErrorHandler;
+
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 
 import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
 import org.eclipse.jface.action.ToolBarManager;
-import org.eclipse.jface.dialogs.ErrorDialog;
 import org.eclipse.jface.dialogs.ProgressMonitorDialog;
 import org.eclipse.jface.layout.TableColumnLayout;
 import org.eclipse.jface.operation.IRunnableWithProgress;
@@ -53,6 +56,7 @@ import org.eclipse.jface.viewers.ViewerFilter;
 import org.eclipse.jface.viewers.ViewerSorter;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.SashForm;
+import org.eclipse.swt.custom.StackLayout;
 import org.eclipse.swt.events.MouseAdapter;
 import org.eclipse.swt.events.MouseEvent;
 import org.eclipse.swt.events.MouseMoveListener;
@@ -86,12 +90,14 @@ public class UiAutomatorView extends Composite {
     // a "specify screenshot" button. If a screenshot is already available, then that is displayed
     // on the canvas. If it is not availble, then the "specify screenshot" button is displayed.
     private Composite mScreenshotComposite;
-//    private StackLayout mStackLayout;
-//    private Composite mSetScreenshotComposite;
+    private Composite mRunningInfoComposite;
+    private StackLayout mStackLayout;
     private Canvas mScreenshotCanvas;
+    private ListViewer mRIListViewer;
 
     private TableViewer mTableViewer;
 
+	private AppiumConfig appiumConfig;
     private ListViewer mListViewer;
     
     private float mScale = 1.0f;
@@ -99,6 +105,8 @@ public class UiAutomatorView extends Composite {
 
     private UiAutomatorModel mModel;
     private ArrayList<Action> actions;
+    private ArrayList<RunningInfo> runningInfos;
+    private ArrayList<String> pageSources;
 //    private File mModelFile;
     private Image mScreenshot;
 
@@ -109,10 +117,12 @@ public class UiAutomatorView extends Composite {
         SashForm baseSash = new SashForm(this, SWT.HORIZONTAL);
 
         mScreenshotComposite = new Composite(baseSash, SWT.BORDER);
-        mScreenshotComposite.setLayout(new FillLayout());
+        mStackLayout = new StackLayout();
+        mScreenshotComposite.setLayout(mStackLayout);
         // draw the canvas with border, so the divider area for sash form can be highlighted
         mScreenshotCanvas = new Canvas(mScreenshotComposite, SWT.BORDER);
         mScreenshotCanvas.setMenu(createEditPopup(mScreenshotCanvas.getShell()));
+        mStackLayout.topControl = mScreenshotCanvas;
         mScreenshotComposite.layout();
         mScreenshotCanvas.addMouseListener(new MouseAdapter() {
             @Override
@@ -201,7 +211,42 @@ public class UiAutomatorView extends Composite {
                 }
             }
         });
-
+        mRunningInfoComposite = new Composite(mScreenshotComposite, SWT.NONE);
+        mRunningInfoComposite.setLayout(new GridLayout());
+        mRIListViewer = new ListViewer(mRunningInfoComposite , SWT.V_SCROLL|SWT.H_SCROLL);
+        runningInfos = new ArrayList<RunningInfo>();
+        mRIListViewer.setContentProvider(new IStructuredContentProvider(){
+        	@SuppressWarnings("unchecked")
+			public Object[] getElements(Object inputElement){
+        		ArrayList<RunningInfo> v = (ArrayList<RunningInfo>)inputElement;
+        		return v.toArray();
+        	}
+        	public void dispose(){
+        		System.out.println("running info list view disposing...");
+        	}
+        	public void inputChanged(Viewer v, Object oldO, Object newO){
+        		System.out.println("runing info list view content changed, new info:" + newO);
+        	}
+        });
+        mRIListViewer.setInput(runningInfos);
+        mRIListViewer.setLabelProvider(new LabelProvider(){
+        	public Image getImage(Object o){
+        		return null;
+        	}
+        	public String getText(Object element){
+            	return ((RunningInfo)element).getThreadName() 
+            			+ " >> " + String.valueOf(((RunningInfo)element).getPercents()) + "%"
+            			+ " >> " + ((RunningInfo)element).getState()
+            			+ " >> " + ((RunningInfo)element).getDescription();
+            }
+        });
+        mRIListViewer.setSorter(new ViewerSorter(){
+        	public int compare(Viewer v, Object o1, Object o2){
+        		return ((RunningInfo)o1).getThreadName().compareTo(((RunningInfo)o1).getThreadName());
+        	}
+        });
+        mRIListViewer.getList().setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true, 1, 1));
+        
         // right sash is split into 2 parts: upper-right and lower-right
         // both are composites with borders, so that the horizontal divider can be highlighted by
         // the borders
@@ -211,10 +256,14 @@ public class UiAutomatorView extends Composite {
         Composite upperRightBase = new Composite(rightSash, SWT.BORDER);
         upperRightBase.setLayout(new GridLayout(1, false));
         ToolBarManager toolBarManager = new ToolBarManager(SWT.FLAT);
-		toolBarManager.add(new FinishRecordAction(this));
+		toolBarManager.add(new FinishRecordAction(this));//finsh record and save the script button
+		toolBarManager.add(new RefreshAction(this));//refresh and repaint the current page
+		toolBarManager.add(new AddSleepAction(this));//when a page need some time to load, click this to add a time to wait
 		ToolBar tb = toolBarManager.createControl(upperRightBase);
 		tb.setLayoutData(new GridData(GridData.FILL_HORIZONTAL));
         actions = new ArrayList<Action>();
+        pageSources = new ArrayList<String>();
+        appiumConfig = null;
         mListViewer = new ListViewer(upperRightBase, SWT.BORDER);
         mListViewer.setContentProvider(new IStructuredContentProvider(){
         	@SuppressWarnings("unchecked")
@@ -239,8 +288,12 @@ public class UiAutomatorView extends Composite {
         			return ((Action)element).getType() + ">>" + ((Action)element).getItemName();
         		} else if(Operate.INPUT.equals(((Action)element).getType())){
         			return ((Action)element).getType() + ">>" + ((Action)element).getItemName() + "[|]" + ((Action)element).getOperation().split("[|]")[1];
+        		} else if(Operate.SWIPE.equals(((Action)element).getType())){
+        			return ((Action)element).getType() + ">>" + ((Action)element).getItemName() + "[|]" + ((Action)element).getOperation().split("[|]")[1];
+        		} else if(Operate.SLEEP.equals(((Action)element).getType())){
+        			return ((Action)element).getType() + ">>" + ((Action)element).getItemName() + "[|]" + ((Action)element).getOperation().split("[|]")[1] + " s";
         		}
-            	return ((Action)element).getType() + ">>" + ((Action)element).getItemName();
+            	return ((Action)element).getType() + ">>" + ((Action)element).getOperation();
             }	
         });
         mListViewer.addFilter(new ViewerFilter(){
@@ -255,7 +308,7 @@ public class UiAutomatorView extends Composite {
         });
         mListViewer.setSorter(new ViewerSorter(){
         	public int compare(Viewer v, Object o1, Object o2){
-        		return ((Action)o1).getItemName().compareTo(((Action)o1).getItemName());
+        		return ((Action)o1).getOperation().compareTo(((Action)o1).getOperation());
         	}
         });
         mListViewer.getList().setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true, 1, 1));
@@ -376,6 +429,11 @@ public class UiAutomatorView extends Composite {
      * retrieved from Model
      */
     public void redrawScreenshot() {
+    	if(mScreenshot == null){
+    		mStackLayout.topControl = mRunningInfoComposite;
+    	}else{
+    		mStackLayout.topControl = mScreenshotCanvas;
+    	}
         mScreenshotComposite.layout();
 
         mScreenshotCanvas.redraw();
@@ -389,18 +447,35 @@ public class UiAutomatorView extends Composite {
     public void performAction(Action action){
     	//first,use appium to perform action
     	if(Operate.CLICK.equals(action.getType())){
-    		AppiumConfig.getDriver().findElement(By.xpath(action.getxPath())).click();
+    		appiumConfig.getDriver().findElement(By.xpath(action.getxPath())).click();
         }else if(Operate.INPUT.equals(action.getType())){
         	System.out.println("\toperation:"+action.getOperation());
-        	System.out.println("\toperation:"+action.getOperation().split("[|]")[1]);
-        	AppiumConfig.getDriver().findElement(
+        	System.out.println("\toperation: input " + action.getOperation().split("[|]")[1]);
+        	appiumConfig.getDriver().findElement(
         			By.xpath(action.getxPath())).sendKeys(action.getOperation().split("[|]")[1]);
-        }
-    	try {
-			Thread.sleep(2*1000);
-		} catch (InterruptedException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
+        }else if(Operate.SWIPE.equals(action.getType())){
+        	System.out.println("\toperation:"+action.getOperation());
+        	System.out.println("\toperation: swipe to" + action.getOperation().split("[|]")[1]);
+        	switch( action.getOperation().split("[|]")[1]){
+        	case "up":
+        		AppiumActUtil.swipe(appiumConfig.getDriver(), "up");
+        		break;
+        	case "right":
+        		AppiumActUtil.swipe(appiumConfig.getDriver(), "right");
+        		break;
+        	case "left":
+        		AppiumActUtil.swipe(appiumConfig.getDriver(), "left");
+        		break;
+        	case "down":
+        		AppiumActUtil.swipe(appiumConfig.getDriver(), "down");
+        		break;
+        	default:
+        		break;
+        	}
+        }else if (Operate.SENDKC.equals(action.getType())) {
+        	System.out.println("\toperation:"+action.getOperation());
+        	System.out.println("\toperation: send key code " + action.getOperation().split("[|]")[1]);
+        	AppiumActUtil.sendKeyCode(appiumConfig.getDriver(), action.getOperation().split("[|]")[1]);
 		}
     	//then ,repaint and refresh the data
     	ProgressMonitorDialog dialog = new ProgressMonitorDialog(getShell());
@@ -411,7 +486,13 @@ public class UiAutomatorView extends Composite {
                 InterruptedException {
 //                    UiAutomatorResult result = null;
                     try {
-                    	UiAutomatorResult result = UiAutomatorHelper.takeSnapshot(monitor);
+                    	try {
+                			Thread.sleep(2*1000);
+                		} catch (InterruptedException e1) {
+                			// TODO Auto-generated catch block
+                			e1.printStackTrace();
+                		}
+                    	UiAutomatorResult result = UiAutomatorHelper.takeSnapshot(monitor, appiumConfig.getDriver());
 //                    	System.out.println("test driver init;currentActivity:" + AppiumConfig.getDriver().currentActivity());
 //                      setModel(result.model, result.uiHierarchy, result.screenshot);
                         if (Display.getDefault().getThread() != Thread.currentThread()) {
@@ -427,8 +508,8 @@ public class UiAutomatorView extends Composite {
                         System.out.println("set model done!!!");
                     } catch (UiAutomatorException e) {
                         monitor.done();
-                        AppiumConfig.getDriver().quit();
-                        showError("Appium obtain page error", e);
+                        appiumConfig.getDriver().quit();
+                        ErrorHandler.showError(getShell(), "Appium obtain page error", e);
                         return;
                     } catch (Exception e){
                     	e.printStackTrace();
@@ -442,24 +523,20 @@ public class UiAutomatorView extends Composite {
             });
         } catch (Exception e) {
         	e.printStackTrace();
-            showError("Unexpected error while obtaining UI hierarchy", e);
+            ErrorHandler.showError(getShell(), "Unexpected error while obtaining UI hierarchy", e);
         }
     }
-    private void showError(final String msg, final Throwable t) {
-        getShell().getDisplay().syncExec(new Runnable() {
-            @Override
-            public void run() {
-                Status s = new Status(IStatus.ERROR, "Screenshot", msg, t);
-                ErrorDialog.openError(
-                        getShell(), "Error", "Error obtaining UI hierarchy", s);
-            }
-        });
-    }
+    
     public Action updateAction(BasicTreeNode node, String type, String arg){
     	Action action = new Action(type, ((UiNode)node).toString(), ((UiNode)node).getxPath());
+//    	action.setArgument(arg);
     	if(Operate.INPUT.equals(type)){
-    		action.setInput(arg);
+    		action.setArgument(arg);
 //    		System.out.println("454 input is:"+arg);
+    	}else if(Operate.SWIPE.equals(type)){
+    		action.setArgument(arg);
+    	}else if(Operate.SENDKC.equals(type)){
+    		action.setArgument(arg);
     	}
     	actions.add(action);
     	System.out.println(type + action.getItemName());
@@ -469,9 +546,15 @@ public class UiAutomatorView extends Composite {
     
     public Menu createEditPopup(Shell parentShell){
     	Menu popMenu = new Menu(parentShell, SWT.POP_UP);
-    	MenuItem inputItem = new MenuItem(popMenu, SWT.PUSH);
+    	MenuItem inputItem = new MenuItem(popMenu, SWT.CASCADE);
+    	MenuItem swipeItem = new MenuItem(popMenu, SWT.CASCADE);
+    	MenuItem sendKCItem = new MenuItem(popMenu, SWT.CASCADE);
     	inputItem.setText("&input");
     	inputItem.setImage(new Image(null, "images/input.png"));
+    	swipeItem.setText("&swipe");
+    	swipeItem.setImage(new Image(null, "images/swipe.png"));
+    	sendKCItem.setText("&send key");
+    	sendKCItem.setImage(new Image(null, "images/sendKC.png"));
     	inputItem.addSelectionListener(new SelectionListener(){
 
 			@Override
@@ -479,7 +562,7 @@ public class UiAutomatorView extends Composite {
 				// TODO Auto-generated method stub
 				BasicTreeNode node = mModel.getSelectedNode();
 				if(!((UiNode)node).getAttribute("class").contains("EditText")){
-					showError("Error,not a inputable widget", new Exception("unsupport input widget"));
+					ErrorHandler.showError(getShell(),"Error,not a inputable widget", new Exception("unsupport input widget"));
 					return;
 				}
 				InputDialog idg = new InputDialog(parentShell);
@@ -499,7 +582,61 @@ public class UiAutomatorView extends Composite {
 			}
     		
     	});
+    	class SwipeSelectionListener implements SelectionListener{
+
+    		private String dire;
+			public SwipeSelectionListener(String string) {
+				// TODO Auto-generated constructor stub
+				dire = string;
+			}
+
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				// TODO Auto-generated method stub
+				performAction(updateAction(mModel.getSelectedNode(), Operate.SWIPE, dire));
+			}
+
+			@Override
+			public void widgetDefaultSelected(SelectionEvent e) {
+				// TODO Auto-generated method stub
+				
+			}
+    		
+    	}
+    	Menu swipeDirectionMenu = new Menu(parentShell, SWT.DROP_DOWN);
+    	swipeItem.setMenu(swipeDirectionMenu);
+    	MenuItem swipeUpItem = new MenuItem(swipeDirectionMenu, SWT.PUSH);
+    	swipeUpItem.setText("&Up");
+    	MenuItem swipeRightItem = new MenuItem(swipeDirectionMenu, SWT.PUSH);
+    	swipeRightItem.setText("&Right");
+    	MenuItem swipeLeftItem = new MenuItem(swipeDirectionMenu, SWT.PUSH);
+    	swipeLeftItem.setText("&Left");
+    	MenuItem swipeDownItem = new MenuItem(swipeDirectionMenu, SWT.PUSH);
+    	swipeDownItem.setText("&Down");
+    	swipeUpItem.addSelectionListener(new SwipeSelectionListener("up"));
+    	swipeRightItem.addSelectionListener(new SwipeSelectionListener("right"));
+    	swipeLeftItem.addSelectionListener(new SwipeSelectionListener("left"));
+    	swipeDownItem.addSelectionListener(new SwipeSelectionListener("down"));
+    	Menu sendKCOptionMenu = new Menu(parentShell, SWT.DROP_DOWN);
+    	sendKCItem.setMenu(sendKCOptionMenu);
+    	MenuItem sendBACKItem = new MenuItem(sendKCOptionMenu, SWT.PUSH);
+    	sendBACKItem.setText("&BACK");
+    	sendBACKItem.addSelectionListener(new SelectionListener() {
+			
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				// TODO Auto-generated method stub
+				performAction(updateAction(mModel.getSelectedNode(), Operate.SENDKC, "back"));
+			}
+			
+			@Override
+			public void widgetDefaultSelected(SelectionEvent e) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
     	return popMenu;
+    	
     }
     
     public void setModel(UiAutomatorModel model, String pageSource, Image screenshot) {
@@ -510,7 +647,7 @@ public class UiAutomatorView extends Composite {
             mScreenshot.dispose();
         }
         mScreenshot = screenshot;
-
+        pageSources.add(pageSource);
         redrawScreenshot();
     }
 
@@ -523,11 +660,88 @@ public class UiAutomatorView extends Composite {
             mModel.toggleShowNaf();
         }
     }
+    
+	/**
+	 * @return the mRIListViewer
+	 */
+	public ListViewer getmRIListViewer() {
+		return mRIListViewer;
+	}
 
+	/**
+	 * @return the runningInfos
+	 */
+	public ArrayList<RunningInfo> getRunningInfos() {
+		return runningInfos;
+	}
+
+	/**
+	 * @param mRIListViewer the mRIListViewer to set
+	 */
+	public void setmRIListViewer(ListViewer mRIListViewer) {
+		this.mRIListViewer = mRIListViewer;
+	}
+
+	/**
+	 * @param runningInfos the runningInfos to set
+	 */
+	public void setRunningInfos(ArrayList<RunningInfo> runningInfos) {
+		this.runningInfos = runningInfos;
+	}
+
+	/**
+	 * @param pageSources the pageSources to set
+	 */
+	public void setPageSources(ArrayList<String> pageSources) {
+		this.pageSources = pageSources;
+	}
+
+	/**
+	 * @return the pageSources
+	 */
+	public ArrayList<String> getPageSources() {
+		return pageSources;
+	}
+
+	/**
+	 * @return the appiumConfig
+	 */
+	public AppiumConfig getAppiumConfig() {
+		return appiumConfig;
+	}
+
+	/**
+	 * @param appiumConfig the appiumConfig to set
+	 */
+	public void setAppiumConfig(AppiumConfig appiumConfig) {
+		this.appiumConfig = appiumConfig;
+	}
+
+	/**
+	 * @return the mListViewer
+	 */
+	public ListViewer getmListViewer() {
+		return mListViewer;
+	}
 	/**
 	 * @return the actions
 	 */
 	public ArrayList<Action> getActions() {
 		return actions;
+	}
+	public void addRunningInfos(RunningInfo info){
+		synchronized(this){
+			runningInfos.add(info);
+			if (Display.getDefault().getThread() != Thread.currentThread()) {
+	            Display.getDefault().syncExec(new Runnable() {
+	                @Override
+	                public void run() {
+	                    mRIListViewer.refresh();
+	                }
+	            });
+	        } else {
+                mRIListViewer.refresh();
+	        }
+		}
 	}
 }

@@ -20,9 +20,15 @@ public class Action {
 		this.xPath = xPath;
 		operation = type + "::" + xPath ;
 	}
-	public void setInput(String input) {
+	
+	public Action(String type) {
 		// TODO Auto-generated constructor stub
-		operation += "|" + input;
+		this.type = type;
+		this.operation = type + "::";
+	}
+	public void setArgument(String arg) {
+		// TODO Auto-generated constructor stub
+		operation += "|" + arg;
 	}
 	/**
 	 * @return the type

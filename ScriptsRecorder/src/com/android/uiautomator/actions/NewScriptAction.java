@@ -4,10 +4,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
 import org.eclipse.core.runtime.IProgressMonitor;
-import org.eclipse.core.runtime.IStatus;
-import org.eclipse.core.runtime.Status;
 import org.eclipse.jface.action.Action;
-import org.eclipse.jface.dialogs.ErrorDialog;
 import org.eclipse.jface.dialogs.ProgressMonitorDialog;
 import org.eclipse.jface.operation.IRunnableWithProgress;
 import org.eclipse.jface.resource.ImageDescriptor;
@@ -22,7 +19,9 @@ import com.android.uiautomator.UiAutomatorHelper;
 import com.android.uiautomator.UiAutomatorViewer;
 import com.android.uiautomator.UiAutomatorHelper.UiAutomatorException;
 import com.android.uiautomator.UiAutomatorHelper.UiAutomatorResult;
+import com.android.uiautomator.UiAutomatorView;
 import com.jack.model.AppiumConfig;
+import com.jack.utils.ErrorHandler;
 
 public class NewScriptAction extends Action {
 
@@ -66,18 +65,29 @@ public class NewScriptAction extends Action {
                 public void run(IProgressMonitor monitor) throws InvocationTargetException,
                                                                         InterruptedException {
                     UiAutomatorResult result = null;
+                    UiAutomatorView mView = mViewer.getView();
+                    System.out.println(this.getClass()+" try to start appium");
                     try {
-                    	new AppiumConfig(NewScriptDialog.getsAPKFile(), 
+                    	mView.setAppiumConfig(
+                    			new AppiumConfig(NewScriptDialog.getsAPKFile(), 
                     			NewScriptDialog.getsIDevice(),
-                    			NewScriptDialog.getmPackage(),
-                    			NewScriptDialog.getmActivity(),
-                    			NewScriptDialog.getmPort());
+                    			NewScriptDialog.getmPort()));
+                        System.out.println(this.getClass()+" appium init done");
+                    	if(mView.getAppiumConfig().getDriver() == null){
+                    		monitor.done();
+                    		ErrorHandler.showError(mViewer.getShell()
+                    				, "please check the params and retry!"
+                    				, new Exception("appium inint error"));
+                    		return;
+                    	}
                     	Thread.sleep(3*1000);
-                        result = UiAutomatorHelper.takeSnapshot(monitor);
+                        System.out.println(this.getClass()+" appium ok, go to set model");
+                        result = UiAutomatorHelper.takeSnapshot(monitor, mView.getAppiumConfig().getDriver());
                     } catch (UiAutomatorException e) {
                         monitor.done();
-                        AppiumConfig.getDriver().quit();
-                        showError(e.getMessage(), e);
+                        mView.getAppiumConfig().getDriver().quit();
+                        ErrorHandler.showError(mViewer.getShell()
+                        		, e.getMessage(), e);
                         return;
                     } catch (Exception e){
                     	e.printStackTrace();
@@ -90,18 +100,8 @@ public class NewScriptAction extends Action {
                 }
             });
         } catch (Exception e) {
-            showError("Unexpected error while obtaining UI hierarchy", e);
+            ErrorHandler.showError(mViewer.getShell()
+            		, "Unexpected error while obtaining UI hierarchy", e);
         }
 	}
-
-    private void showError(final String msg, final Throwable t) {
-        mViewer.getShell().getDisplay().syncExec(new Runnable() {
-            @Override
-            public void run() {
-                Status s = new Status(IStatus.ERROR, "Screenshot", msg, t);
-                ErrorDialog.openError(
-                        mViewer.getShell(), "Error", "Error obtaining UI hierarchy", s);
-            }
-        });
-    }
 }

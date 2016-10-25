@@ -20,5 +20,6 @@
 	<classpathentry kind="lib" path="E:/GitRepo/AutoTraveler/lib/selenium-java-2.53.0.jar"/>
 	<classpathentry kind="lib" path="E:/GitRepo/AutoTraveler/lib/selenium-safari-driver-2.47.1.jar"/>
 	<classpathentry kind="lib" path="E:/GitRepo/AutoTraveler/lib/selenium-server-standalone-2.53.0.jar"/>
+	<classpathentry kind="lib" path="E:/GitRepo/AutoTraveler/lib/file-handling.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

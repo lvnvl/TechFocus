@@ -120,7 +120,7 @@ public class XmlUtils {
         for(Action a:actions){
         	Element act = document.createElement("action");
         	act.appendChild(document.createTextNode(a.getOperation()));
-        	System.out.println("operation is: " + a.getOperation().substring(0, 10));
+        	System.out.println("operation is: " + a.getOperation());
         	acts.appendChild(act);
         }
         
