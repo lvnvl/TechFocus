@@ -69,7 +69,9 @@ public class UiAutomatorViewer extends ApplicationWindow {
 
     public static void main(String args[]) {
         DebugBridge.init();
-
+//        System.out.println("--------------------------");
+//        System.getProperties().list(System.out);
+//        System.out.println("--------------------------");
         try {
             UiAutomatorViewer window = new UiAutomatorViewer();
             window.setBlockOnOpen(true);
