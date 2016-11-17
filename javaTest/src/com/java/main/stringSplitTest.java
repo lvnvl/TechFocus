@@ -5,8 +5,11 @@ public class stringSplitTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String oper = "E:\\GitRepo\\TechFocus\\UiautomatorTest\\bin\\AutoInstaller.jar";
-		System.out.println(oper.substring(oper.lastIndexOf("\\")+1));
+		String model = "m1 note";
+		System.out.println(model.replaceAll(" ", "_"));
+		System.out.println(model.replaceAll("\\s", "_"));
+//		String oper = "E:\\GitRepo\\TechFocus\\UiautomatorTest\\bin\\AutoInstaller.jar";
+//		System.out.println(oper.substring(oper.lastIndexOf("\\")+1));
 		
 //		String oper = "input:://android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.EditText[1]|528437847@qq.com"; 
 //		for(String s : oper.split("[|]")){
@@ -20,9 +23,12 @@ public class stringSplitTest {
 //		for(String s : oper.split("::")){
 //			System.out.println(s);
 //		}
-//		System.out.println("------------");
-//		String bounds = "[0,100][2048,196]";
-//		String[] splitBounds = bounds.trim().split("[,\\[\\]]");
+		System.out.println("------------");
+		String bounds = "[0,100][2048,196]";
+		String[] splitBounds = bounds.trim().split("[,\\[\\]]");
+		for(String str:splitBounds){
+			System.out.println("|"+str+"|");
+		}
 //		
 //		System.out.println("meizu-m1_note-71MBBLE25GLV".split("-")[1]);
 //
